@@ -244,7 +244,8 @@
 
         function renderPreferenceList() {
             preferenceUl.innerHTML = '';
-            preferenceList.forEach((index, uni) => {
+            // HATA BURADAYDI: (index, uni) yerine (uni, index) DOĞRU KULLANIMDIR
+            preferenceList.forEach((uni, index) => {
                 const li = document.createElement('li');
                 li.innerHTML = `<span><strong>${index + 1}. ${uni.name}</strong> - ${uni.program} (<span class="rank">${uni.rank2024}</span>)</span>
                                 <button class="btn btn-remove" data-id="${uni.id}">Kaldır</button>`;
