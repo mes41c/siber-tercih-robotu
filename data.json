@@ -10,6 +10,7 @@
         "rank2023": 72154,
         "rank2022": "D",
         "reputation": 95,
+        "curriculum_url": "https://www.sis.itu.edu.tr/TR/ogrenci/lisans/ders-planlari/plan/SGM/202310.html",
         "details": {
             "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Güçlü (Sektör ve akademik kökenli, alanında uzman isimler).</li><li><b>Uygulamalı Eğitim:</b> Var (Gelişmiş Siber Güvenlik Laboratuvarı), CCNA/CEH gibi sertifikasyonlara odaklı müfredat.</li><li><b>İngilizce Desteği:</b> Zorunlu Hazırlık, %100 İngilizce eğitim ile küresel kaynaklara tam erişim.</li></ul>",
             "career": "<ul><li><b>Staj Programı:</b> Zorunlu (40 İş Günü).</li><li><b>Sektör İşbirlikleri:</b> İTÜ Arı Teknokent bünyesindeki yüzlerce teknoloji şirketi, Savunma Sanayii ve Bankacılık sektörü ile güçlü bağlar.</li><li><b>Teknopark:</b> Var (Türkiye'nin en büyüklerinden biri olan İTÜ Arı Teknokent).</li></ul>",
@@ -29,6 +30,7 @@
         "rank2023": 126310,
         "rank2022": "D",
         "reputation": 88,
+        "curriculum_url": "https://www.gtu.edu.tr/kategori/3355/0/siber-guvenlik-myo.aspx",
         "details": {
             "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Güçlü (Teknik üniversite olmasının getirdiği yetkin akademik kadro).</li><li><b>Uygulamalı Eğitim:</b> Var (Modern laboratuvarlar), araştırma odaklı bir ekosistem.</li><li><b>İngilizce Desteği:</b> Var (%30 İngilizce eğitim programı).</li></ul>",
             "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> TÜBİTAK ve çevresindeki araştırma merkezleri, Gebze ve Kocaeli sanayi bölgelerindeki teknoloji firmaları.</li><li><b>Teknopark:</b> Var (GTÜ Teknopark).</li></ul>",
@@ -48,6 +50,7 @@
         "rank2023": 131899,
         "rank2022": "D",
         "reputation": 90,
+        "curriculum_url": "https://bbs.ankara.edu.tr/Amac_Hedef.aspx?bno=5337&bot=1214",
         "details": {
             "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Güçlü (Köklü devlet üniversitesi altyapısı).</li><li><b>Uygulamalı Eğitim:</b> Var (Üniversitenin genel bilişim altyapısı ve laboratuvarları).</li><li><b>İngilizce Desteği:</b> Standart (İsteğe bağlı veya zorunlu hazırlık imkanı).</li></ul>",
             "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> Ankara'daki Savunma Sanayii firmaları (Aselsan, TUSAŞ, Havelsan) ve kamu kurumları ile güçlü potansiyel bağlar.</li><li><b>Teknopark:</b> Var (Ankara Üniversitesi Teknokent).</li></ul>",
@@ -67,6 +70,7 @@
         "rank2023": 150130,
         "rank2022": "D",
         "reputation": 85,
+        "curriculum_url": "https://ebs.ege.edu.tr/Bolum/Detay/1025?AyID=11986",
         "details": {
             "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Deneyimli (Büyük ve köklü bir üniversitenin akademik birikimi).</li><li><b>Uygulamalı Eğitim:</b> Var (Ege MYO bünyesindeki bilgisayar laboratuvarları).</li><li><b>İngilizce Desteği:</b> Standart (Program dili Türkçe, üniversitede hazırlık imkanı var).</li></ul>",
             "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> İzmir'deki teknoloji firmaları ve sanayi bölgeleri.</li><li><b>Teknopark:</b> Var (Ege Teknopark).</li></ul>",
@@ -85,6 +89,7 @@
         "rank2024": 161393,
         "rank2023": 185567,
         "rank2022": 184843,
+        "curriculum_url": "https://bologna.cankaya.edu.tr/program/1202",
         "details": {
             "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Yetkin (Vakıf üniversitesi dinamizmi).</li><li><b>Uygulamalı Eğitim:</b> Var (Güncel teknolojiye sahip laboratuvarlar).</li><li><b>İngilizce Desteği:</b> Güçlü (Program dili İngilizce).</li></ul>",
             "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> Ankara'daki özel sektör teknoloji firmaları ile yakın ilişkiler.</li><li><b>Teknopark:</b> Yok (Ancak Ankara'daki diğer teknoparklara yakınlık).</li></ul>",
@@ -104,6 +109,7 @@
         "rank2023": 160807,
         "rank2022": 158033,
         "reputation": 86,
+        "curriculum_url": "https://tbmyo.marmara.edu.tr/akademik/bolumler/bilgisayar-teknolojileri-bolumu/bilgisayar-programciligi-programi/dersler",
         "details": {
             "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Güçlü ve deneyimli.</li><li><b>Uygulamalı Eğitim:</b> Var (Bilgisayar laboratuvarları).</li><li><b>İngilizce Desteği:</b> Program dili Türkçe, ancak üniversite genelinde hazırlık imkanı mevcut.</li></ul>",
             "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> İstanbul'un finans ve teknoloji merkezlerine yakınlık, geniş staj ve iş imkanı potansiyeli.</li><li><b>Teknopark:</b> Var (Marmara Teknokent).</li></ul>",
@@ -122,6 +128,7 @@
         "rank2024": 191611,
         "rank2023": 225849,
         "rank2022": 243152,
+        "curriculum_url": "https://ebs.ticaret.edu.tr/tr/program/on-lisans/siber-guvenlik/dersler",
         "details": {
             "academic": "<ul><li><b>Akademisyen Kadrosu:</b> İyi (Sektörle iç içe bir yapı).</li><li><b>Uygulamalı Eğitim:</b> Var (Modern laboratuvarlar).</li><li><b>İngilizce Desteği:</b> Var (İngilizce hazırlık sınıfı mevcut).</li></ul>",
             "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> İstanbul Ticaret Odası (İTO) desteği ile ticaret ve finans sektöründeki firmalarla güçlü bağlar.</li><li><b>Teknopark:</b> Var (Bilgiyi Ticarileştirme Merkezi).</li></ul>",
@@ -141,6 +148,7 @@
         "rank2023": 178660,
         "rank2022": 161848,
         "reputation": 78,
+        "curriculum_url": "https://ects.ieu.edu.tr/tr/program/on-lisans/bilgisayar-programciligi/dersler",
         "details": {
             "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Yetkin (Vakıf üniversitesi dinamizmi, sektörle ilişkili).</li><li><b>Uygulamalı Eğitim:</b> Var (Modern laboratuvarlar, proje odaklı eğitim).</li><li><b>İngilizce Desteği:</b> Güçlü (Eğitim dili genellikle İngilizce'dir).</li></ul>",
             "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> Güçlü (İzmir Ticaret Odası Eğitim ve Sağlık Vakfı desteği, yerel teknoloji firmaları).</li><li><b>Teknopark:</b> Var (İEÜ Teknoloji Geliştirme Bölgesi - Embryonix).</li></ul>",
@@ -159,6 +167,7 @@
         "rank2024": 199148,
         "rank2023": 181231,
         "rank2022": 176395,
+        "curriculum_url": "https://www.bilgi.edu.tr/tr/akademik/meslek-yuksekokulu/bilgisayar-programciligi/dersler-ve-icerikleri/",
         "details": {
             "academic": "<ul><li><b>Akademisyen Kadrosu:</b> İyi (Uluslararası vizyona sahip, sektörden gelen isimler).</li><li><b>Uygulamalı Eğitim:</b> Var (Proje tabanlı öğrenme yaklaşımı).</li><li><b>İngilizce Desteği:</b> Güçlü (Eğitim dili genellikle İngilizce'dir).</li></ul>",
             "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> Geniş (Yaratıcı endüstriler, teknoloji ve sivil toplum kuruluşları ile güçlü ağ).</li><li><b>Teknopark:</b> Yok (Ancak Kuluçka Merkezi mevcut: BİLGİ TTO).</li></ul>",
@@ -177,6 +186,7 @@
         "rank2024": 253940,
         "rank2023": 238151,
         "rank2022": 215062,
+        "curriculum_url": "https://tbmyo.iuc.edu.tr/tr/content/bilgisayar-teknolojileri-bolumu/bilgisayar-programciligi",
         "details": {
             "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Deneyimli (Türkiye'nin en köklü üniversitelerinden birinin akademik geleneği).</li><li><b>Uygulamalı Eğitim:</b> Var (Büyükçekmece kampüsünde standart bilgisayar laboratuvarları).</li><li><b>İngilizce Desteği:</b> Standart (Program dili Türkçe, üniversite genelinde hazırlık okuma imkanı).</li></ul>",
             "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> Üniversitenin geniş sanayi ve kamu kurumları ağı üzerinden staj ve kariyer imkanları.</li><li><b>Teknopark:</b> Var (İÜC Teknokent, Avcılar kampüsünde yer alır ve teknoloji firmalarına ev sahipliği yapar).</li></ul>",
@@ -196,6 +206,7 @@
         "rank2023": 184466,
         "rank2022": 196573,
         "reputation": 76,
+        "curriculum_url": "https://tbmyo.baskent.edu.tr/bilgisayar-programciligi-on-lisans-programi-ders-icerikleri/",
         "details": {
             "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Yetkin.</li><li><b>Uygulamalı Eğitim:</b> Var (Modern ve donanımlı laboratuvarlar).</li><li><b>İngilizce Desteği:</b> Standart (Hazırlık imkanı mevcut).</li></ul>",
             "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> Özellikle sağlık bilişimi alanında güçlü (Üniversitenin hastaneleri mevcut).</li><li><b>Teknopark:</b> Var (Başkent Üniversitesi Teknopark).</li></ul>",
@@ -215,6 +226,7 @@
         "rank2023": 210933,
         "rank2022": 222373,
         "reputation": 70,
+        "curriculum_url": "https://www.ostimteknik.edu.tr/bilgisayar-programciligi-21-tr",
         "details": {
             "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Sektör Odaklı (OSTİM sanayisinin içinden gelen, tecrübeli eğitmenler).</li><li><b>Uygulamalı Eğitim:</b> Çok Güçlü ('İşyeri Deneyimi' modeli ile eğitim süresince yoğun bir şekilde sanayi içinde uygulama imkanı).</li><li><b>İngilizce Desteği:</b> Geliştiriliyor (İsteğe bağlı hazırlık ve mesleki İngilizce dersleri).</li></ul>",
             "career": "<ul><li><b>Staj Programı:</b> Zorunlu ve yaygın (Eğitim modelinin ayrılmaz bir parçası, OSTİM içerisindeki firmalarda).</li><li><b>Sektör İşbirlikleri:</b> Çok Güçlü (OSTİM Sanayi Bölgesi'ndeki binlerce KOBİ, savunma sanayii ve teknoloji firmasıyla organik bağ).</li><li><b>Teknopark:</b> Doğal Teknopark (OSTİM'in kendisi bir sanayi ve teknoloji ekosistemi).</li></ul>",
@@ -234,6 +246,7 @@
         "rank2023": 217946,
         "rank2022": 272230,
         "reputation": 77,
+        "curriculum_url": "https://www.acibadem.edu.tr/fakulte/meslek-yuksekokulu/program/bilgisayar-programciligi-mufradat",
         "details": {
             "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Yetkin (Özellikle sağlık bilişimi ve teknolojileri alanında güçlü akademik kadro).</li><li><b>Uygulamalı Eğitim:</b> Var (Modern laboratuvarlar, sağlık bilişimi ve biyomedikal teknolojiler odaklı projeler).</li><li><b>İngilizce Desteği:</b> Güçlü (İngilizce Hazırlık Programı mevcut, mesleki İngilizce'ye önem veriliyor).</li></ul>",
             "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> Çok Güçlü (Başta Acıbadem Sağlık Grubu ve grubun teknoloji şirketleri olmak üzere sağlık sektöründe geniş staj ve iş imkanı).</li><li><b>Teknopark:</b> Yok (Ancak üniversitenin Kuluçka Merkezi ve proje geliştirme ofisleri aktif).</li></ul>",
@@ -252,6 +265,7 @@
         "rank2024": 252225,
         "rank2023": 202902,
         "rank2022": 196516,
+        "curriculum_url": "https://abmyo.aydin.edu.tr/bolumler/bilgisayar-programciligi-ingilizce/Sayfalar/ders-icerikleri.aspx",
         "details": {
             "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Geniş ve uluslararası deneyime sahip öğretim üyeleri.</li><li><b>Uygulamalı Eğitim:</b> Var (Çok sayıda uygulama laboratuvarı ve proje geliştirme imkanı).</li><li><b>İngilizce Desteği:</b> Çok Güçlü (Program dili tamamen İngilizce, küresel yetkinlik kazandırma hedefi).</li></ul>",
             "career": "<ul><li><b>Staj Programı:</b> Zorunlu ('Yerinde Uygulama' modeli ile öğrenciler sektörde deneyim kazanır).</li><li><b>Sektör İşbirlikleri:</b> Çok Geniş (Türkiye'nin önde gelen teknoloji, yazılım ve sanayi firmalarıyla kapsamlı işbirlikleri).</li><li><b>Teknopark:</b> Var (İAÜ Teknoloji Geliştirme Merkezi - Tekmer).</li></ul>",
@@ -270,6 +284,7 @@
         "rank2024": 324294,
         "rank2023": 224330,
         "rank2022": 201979,
+        "curriculum_url": "https://www.ankaramedipol.edu.tr/meslek-yuksekokulu/bilgisayar-programciligi-2/",
         "details": {
             "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Gelişmekte olan, dinamik bir kadro.</li><li><b>Uygulamalı Eğitim:</b> Var (Yeni ve modern laboratuvarlar).</li><li><b>İngilizce Desteği:</b> Güçlü (Hazırlık imkanı).</li></ul>",
             "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> Medipol Sağlık Grubu ve Ankara'daki teknoloji ekosistemi ile gelişen ilişkiler.</li><li><b>Teknopark:</b> Yok.</li></ul>",
@@ -288,6 +303,7 @@
         "rank2024": 326115,
         "rank2023": 188292,
         "rank2022": 207429,
+        "curriculum_url": "https://www.medipol.edu.tr/meslek-yuksekokulu/bolumler/bilgisayar-programciligi/dersler",
         "details": {
             "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Geniş ve yetkin.</li><li><b>Uygulamalı Eğitim:</b> Var (Modern laboratuvarlar).</li><li><b>İngilizce Desteği:</b> Güçlü (Hazırlık okulu mevcut).</li></ul>",
             "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> Güçlü (Medipol Sağlık Grubu başta olmak üzere çeşitli sektörlerle işbirlikleri).</li><li><b>Teknopark:</b> Yok (Ancak Teknoloji Transfer Ofisi aktif).</li></ul>",
@@ -306,6 +322,7 @@
         "rank2024": 239073,
         "rank2023": 193911,
         "rank2022": 208937,
+        "curriculum_url": "https://halic.edu.tr/tr/akademik/meslek-yuksekokulu/bilgisayar-programciligi-on-lisans-programi/ders-plani",
         "details": {
             "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Deneyimli, sektörle bağları olan bir kadro.</li><li><b>Uygulamalı Eğitim:</b> Var (Yeni ve modern kampüslerdeki güncel donanımlı bilgisayar laboratuvarları).</li><li><b>İngilizce Desteği:</b> Var (İsteğe bağlı veya zorunlu hazırlık programları mevcut).</li></ul>",
             "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> Üniversitenin genel iş dünyası ve sanayi ilişkileri sayesinde staj olanakları.</li><li><b>Teknopark:</b> Yok (Ancak İstanbul'daki merkezi konumu teknoparklara ve şirketlere ulaşım avantajı sağlar).</li></ul>",
@@ -324,6 +341,7 @@
         "rank2024": 573119,
         "rank2023": "D",
         "rank2022": "D",
+        "curriculum_url": "https://ebs.ticaret.edu.tr/tr/program/on-lisans/siber-guvenlik/dersler",
         "details": {
             "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Burslu program ile aynı.</li><li><b>Uygulamalı Eğitim:</b> Burslu program ile aynı.</li><li><b>İngilizce Desteği:</b> Burslu program ile aynı.</li></ul>",
             "career": "<ul><li><b>Staj Programı:</b> Burslu program ile aynı.</li><li><b>Sektör İşbirlikleri:</b> Burslu program ile aynı.</li><li><b>Teknopark:</b> Burslu program ile aynı.</li></ul>",
@@ -342,6 +360,7 @@
         "rank2024": 329088,
         "rank2023": 193937,
         "rank2022": 208937,
+        "curriculum_url": "https://halic.edu.tr/tr/akademik/meslek-yuksekokulu/bilgisayar-programciligi-on-lisans-programi/ders-plani"
         "details": { "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Deneyimli.</li><li><b>Uygulamalı Eğitim:</b> Var (Yeni kampüste modern laboratuvarlar).</li><li><b>İngilizce Desteği:</b> Var (Hazırlık okulu mevcut).</li></ul>", "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> Üniversitenin yerleşik sanayi ve iş dünyası ilişkileri.</li><li><b>Teknopark:</b> Yok.</li></ul>", "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Aktif.</li><li><b>Ulaşım Kolaylığı:</b> İyi (Toplu taşımaya yakın).</li></ul>", "finance": "<ul><li><b>Yurt İmkanı:</b> Anlaşmalı yurtlar mevcut.</li><li><b>Ek Burs Olanakları:</b> Var.</li><li><b>Şehir Yaşam Maliyeti:</b> Yüksek.</li></ul>" },
         "scores": { "academic": 3, "practical": 3, "english": 3, "career": 2, "technopark": 1, "transport": 4, "social": 3 }
     },
@@ -355,6 +374,7 @@
         "rank2024": 395484,
         "rank2023": 418189,
         "rank2022": 415357,
+        "curriculum_url": "https://www.adapazari.subu.edu.tr/tr/program-bilgileri-29",
         "details": { "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Uygulama odaklı, yetkin bir kadro.</li><li><b>Uygulamalı Eğitim:</b> Çok Güçlü (+1 Eğitim Modeli ile bir dönem tam zamanlı işyeri uygulaması).</li><li><b>İngilizce Desteği:</b> Standart (Mesleki İngilizce dersleri).</li></ul>", "career": "<ul><li><b>Staj Programı:</b> Zorunlu ve eğitim modeline entegre.</li><li><b>Sektör İşbirlikleri:</b> Çok Güçlü (Sakarya ve çevre illerdeki sanayi kuruluşlarıyla entegre eğitim).</li><li><b>Teknopark:</b> Var (SUBÜ Teknokent).</li></ul>", "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Aktif (Teknoloji ve network üzerine kulüpler).</li><li><b>Ulaşım Kolaylığı:</b> İyi.</li></ul>", "finance": "<ul><li><b>Yurt İmkanı:</b> İyi (Şehirde geniş KYK ve özel yurt ağı).</li><li><b>Şehir Yaşam Maliyeti:</b> Düşük-Orta.</li></ul>" },
         "scores": { "academic": 3, "practical": 5, "english": 2, "career": 5, "technopark": 4, "transport": 4, "social": 3 }
     },
@@ -369,6 +389,7 @@
         "rank2023": 123775,
         "rank2022": 77718,
         "reputation": 75,
+        "curriculum_url": "https://abmyo.aydin.edu.tr/bolumler/bilgisayar-programciligi-uzaktan-egitim/Sayfalar/ders-icerikleri.aspx"
         "details": { "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Örgün öğretim ile ortak, geniş kadro.</li><li><b>Uygulamalı Eğitim:</b> Sanal laboratuvarlar ve proje bazlı ödevler üzerinden.</li><li><b>İngilizce Desteği:</b> Uzaktan eğitim modeline uygun materyaller.</li></ul>", "career": "<ul><li><b>Staj Programı:</b> Zorunlu (Öğrenci kendi yaşadığı şehirde stajını ayarlayabilir).</li><li><b>Sektör İşbirlikleri:</b> Üniversitenin genel anlaşmalarından faydalanma imkanı.</li><li><b>Teknopark:</b> Var (İAÜ Teknoloji Geliştirme Merkezi).</li></ul>", "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Dijital platformlar üzerinden katılım mümkün.</li><li><b>Ulaşım Kolaylığı:</b> Uygulanamaz (Uzaktan Eğitim).</li></ul>", "finance": "<ul><li><b>Yurt İmkanı:</b> Uygulanamaz.</li><li><b>Şehir Yaşam Maliyeti:</b> Öğrencinin yaşadığı şehre göre değişir.</li></ul>" },
         "scores": { "academic": 2, "practical": 2, "english": 1, "career": 2, "technopark": 4, "transport": 1, "social": 1 }
     },
@@ -382,6 +403,7 @@
         "rank2024": 573119,
         "rank2023": "D",
         "rank2022": "D",
+        "curriculum_url": "https://ebs.ticaret.edu.tr/tr/program/on-lisans/siber-guvenlik/dersler"
         "details": { "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Burslu program ile aynı.</li><li><b>Uygulamalı Eğitim:</b> Burslu program ile aynı.</li><li><b>İngilizce Desteği:</b> Burslu program ile aynı.</li></ul>", "career": "<ul><li><b>Staj Programı:</b> Burslu program ile aynı.</li><li><b>Sektör İşbirlikleri:</b> Burslu program ile aynı.</li><li><b>Teknopark:</b> Burslu program ile aynı.</li></ul>", "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Burslu program ile aynı.</li><li><b>Ulaşım Kolaylığı:</b> Burslu program ile aynı.</li></ul>", "finance": "<ul><li><b>Yurt İmkanı:</b> Burslu program ile aynı.</li><li><b>Ek Burs Olanakları:</b> Genellikle daha sınırlı, ancak akademik başarıya göre sonradan burs kazanma imkanları olabilir.</li><li><b>Şehir Yaşam Maliyeti:</b> Yüksek.</li></ul>" },
         "scores": { "academic": 3, "practical": 3, "english": 3, "career": 4, "technopark": 2, "transport": 4, "social": 3 }
     },
@@ -396,6 +418,7 @@
         "rank2023": 217946,
         "rank2022": 272230,
         "reputation": 77,
+        "curriculum_url": "https://www.acibadem.edu.tr/fakulte/meslek-yuksekokulu/program/bilgisayar-programciligi-mufradat"
         "details": {
             "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Yetkin (Özellikle sağlık bilişimi ve teknolojileri alanında güçlü akademik kadro).</li><li><b>Uygulamalı Eğitim:</b> Var (Modern laboratuvarlar, sağlık bilişimi ve biyomedikal teknolojiler odaklı projeler).</li><li><b>İngilizce Desteği:</b> Güçlü (İngilizce Hazırlık Programı mevcut, mesleki İngilizce'ye önem veriliyor).</li></ul>",
             "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> Çok Güçlü (Başta Acıbadem Sağlık Grubu ve grubun teknoloji şirketleri olmak üzere sağlık sektöründe geniş staj ve iş imkanı).</li><li><b>Teknopark:</b> Yok (Ancak üniversitenin Kuluçka Merkezi ve proje geliştirme ofisleri aktif).</li></ul>",
@@ -414,6 +437,7 @@
         "rank2024": 239073,
         "rank2023": 193911,
         "rank2022": 208937,
+        "curriculum_url": "https://halic.edu.tr/tr/akademik/meslek-yuksekokulu/bilgisayar-programciligi-on-lisans-programi/ders-plani"
         "details": {
             "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Deneyimli, sektörle bağları olan bir kadro.</li><li><b>Uygulamalı Eğitim:</b> Var (Yeni ve modern kampüslerdeki güncel donanımlı bilgisayar laboratuvarları).</li><li><b>İngilizce Desteği:</b> Var (İsteğe bağlı veya zorunlu hazırlık programları mevcut).</li></ul>",
             "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> Üniversitenin genel iş dünyası ve sanayi ilişkileri sayesinde staj olanakları.</li><li><b>Teknopark:</b> Yok (Ancak İstanbul'daki merkezi konumu teknoparklara ve şirketlere ulaşım avantajı sağlar).</li></ul>",
@@ -433,6 +457,7 @@
         "rank2023": 202902,
         "rank2022": 196516,
         "reputation": 75,
+        "curriculum_url": "https://abmyo.aydin.edu.tr/bolumler/bilgisayar-programciligi-ingilizce/Sayfalar/ders-icerikleri.aspx"
         "details": {
             "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Geniş ve uluslararası deneyime sahip öğretim üyeleri.</li><li><b>Uygulamalı Eğitim:</b> Var (Çok sayıda uygulama laboratuvarı ve proje geliştirme imkanı).</li><li><b>İngilizce Desteği:</b> Çok Güçlü (Program dili tamamen İngilizce, küresel yetkinlik kazandırma hedefi).</li></ul>",
             "career": "<ul><li><b>Staj Programı:</b> Zorunlu ('Yerinde Uygulama' modeli ile öğrenciler sektörde deneyim kazanır).</li><li><b>Sektör İşbirlikleri:</b> Çok Geniş (Türkiye'nin önde gelen teknoloji, yazılım ve sanayi firmalarıyla kapsamlı işbirlikleri).</li><li><b>Teknopark:</b> Var (İAÜ Teknoloji Geliştirme Merkezi - Tekmer).</li></ul>",
@@ -452,6 +477,7 @@
         "rank2023": 210933,
         "rank2022": 222373,
         "reputation": 70,
+        "curriculum_url": "https://www.ostimteknik.edu.tr/bilgisayar-programciligi-21-tr"
         "details": {
             "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Sektör Odaklı (OSTİM sanayisinin içinden gelen, tecrübeli eğitmenler).</li><li><b>Uygulamalı Eğitim:</b> Çok Güçlü ('İşyeri Deneyimi' modeli ile eğitim süresince yoğun bir şekilde sanayi içinde uygulama imkanı).</li><li><b>İngilizce Desteği:</b> Geliştiriliyor (İsteğe bağlı hazırlık ve mesleki İngilizce dersleri).</li></ul>",
             "career": "<ul><li><b>Staj Programı:</b> Zorunlu ve yaygın (Eğitim modelinin ayrılmaz bir parçası, OSTİM içerisindeki firmalarda).</li><li><b>Sektör İşbirlikleri:</b> Çok Güçlü (OSTİM Sanayi Bölgesi'ndeki binlerce KOBİ, savunma sanayii ve teknoloji firmasıyla organik bağ).</li><li><b>Teknopark:</b> Doğal Teknopark (OSTİM'in kendisi bir sanayi ve teknoloji ekosistemi).</li></ul>",
@@ -470,6 +496,7 @@
         "rank2024": 253940,
         "rank2023": 238151,
         "rank2022": 215062,
+        "curriculum_url": "https://tbmyo.iuc.edu.tr/tr/content/bilgisayar-teknolojileri-bolumu/bilgisayar-programciligi"
         "details": {
             "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Deneyimli (Türkiye'nin en köklü üniversitelerinden birinin akademik geleneği).</li><li><b>Uygulamalı Eğitim:</b> Var (Büyükçekmece kampüsünde standart bilgisayar laboratuvarları).</li><li><b>İngilizce Desteği:</b> Standart (Program dili Türkçe, üniversite genelinde hazırlık okuma imkanı).</li></ul>",
             "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> Üniversitenin geniş sanayi ve kamu kurumları ağı üzerinden staj ve kariyer imkanları.</li><li><b>Teknopark:</b> Var (İÜC Teknokent, Avcılar kampüsünde yer alır ve teknoloji firmalarına ev sahipliği yapar).</li></ul>",
@@ -489,6 +516,7 @@
         "rank2023": 196774,
         "rank2022": 169613,
         "reputation": 79,
+        "curriculum_url": "https://www.bilgi.edu.tr/tr/akademik/meslek-yuksekokulu/bilgisayar-programciligi-io/dersler-ve-icerikleri/",
         "details": {
             "academic": "<ul><li><b>Akademisyen Kadrosu:</b> İyi (Uluslararası vizyona sahip, sektörden gelen isimlerin de ders verdiği bir kadro).</li><li><b>Uygulamalı Eğitim:</b> Var (Proje tabanlı öğrenme yaklaşımı, modern laboratuvarlar).</li><li><b>İngilizce Desteği:</b> Güçlü (Eğitim dili Türkçe olsa da üniversitenin güçlü bir İngilizce hazırlık programı var).</li></ul>",
             "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> Geniş (Yaratıcı endüstriler, teknoloji şirketleri ve sivil toplum kuruluşları ile güçlü ağ).</li><li><b>Teknopark:</b> Yok (Ancak Kuluçka Merkezi BİLGİ TTO ve girişimcilik ekosistemi aktif).</li></ul>",
@@ -508,6 +536,7 @@
         "rank2023": 238512,
         "rank2022": 244885,
         "reputation": 74,
+        "curriculum_url": "https://www.istinye.edu.tr/tr/akademik/meslek-yuksekokulu/bilgisayar-programciligi/ders-plani",
         "details": {
             "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Yetkin ve dinamik bir kadro.</li><li><b>Uygulamalı Eğitim:</b> Var (Topkapı kampüsündeki modern teknoloji ve yazılım laboratuvarları).</li><li><b>İngilizce Desteği:</b> Güçlü (İngilizce Hazırlık Programı mevcut).</li></ul>",
             "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> Güçlü (MLPCare Grubu (Liv Hospital, Medical Park, VM Medical Park) başta olmak üzere sağlık ve teknoloji sektöründe işbirliği).</li><li><b>Teknopark:</b> Yok (Ancak üniversite-sanayi işbirliği ofisi aktif).</li></ul>",
@@ -526,6 +555,7 @@
         "rank2024": 260712,
         "rank2023": 220699,
         "rank2022": 213307,
+        "curriculum_url": "https://www.maltepe.edu.tr/myo/tr/bilgisayar-programc%C4%B1l%C4%B1%C4%9F%C4%B1-program%C4%B1-uzaktan-%C3%B6%C4%9Fretim",
         "details": {
             "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Deneyimli bir akademik kadro.</li><li><b>Uygulamalı Eğitim:</b> Var (Uygulama laboratuvarları ve proje atölyeleri).</li><li><b>İngilizce Desteği:</b> Var (İngilizce Hazırlık Okulu mevcut).</li></ul>",
             "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> Üniversitenin sanayi ve iş dünyasıyla kurduğu genel işbirlikleri.</li><li><b>Teknopark:</b> Yok (Ancak Teknoloji Transfer Ofisi mevcut).</li></ul>",
@@ -544,6 +574,7 @@
         "rank2024": 287985,
         "rank2023": 218015,
         "rank2022": 230388,
+        "curriculum_url": "https://tbmyo.marmara.edu.tr/akademik/bolumler/bilgisayar-teknolojileri-bolumu/bilgisayar-programciligi-uzaktan-ogretim-programi/dersler",
         "details": {
             "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Örgün öğretim ile ortak, güçlü ve deneyimli kadro.</li><li><b>Uygulamalı Eğitim:</b> Sanal laboratuvarlar, proje tabanlı ödevler ve online simülasyonlar üzerinden yürütülür.</li><li><b>İngilizce Desteği:</b> Uzaktan eğitim modeline uygun dijital materyaller ve kaynaklar sunulur.</li></ul>",
             "career": "<ul><li><b>Staj Programı:</b> Zorunlu (Öğrencinin ikamet ettiği şehirde stajını ayarlamasına olanak tanır, esneklik sağlar).</li><li><b>Sektör İşbirlikleri:</b> Üniversitenin genel anlaşmaları ve mezun ağı, kariyer fırsatları için bir avantajdır.</li><li><b>Teknopark:</b> Var (Marmara Teknokent).</li></ul>",
@@ -563,6 +594,7 @@
         "rank2023": 274593,
         "rank2022": 283141,
         "reputation": 92,
+        "curriculum_url": "http://truva.baskent.edu.tr/bilgipaketi/?dil=TR&menu=akademik&inner=katalog&birim=471"
         "details": {
             "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Güçlü (Türkiye'nin en iyi üniversitelerinden birinin akademik yetkinliği).</li><li><b>Uygulamalı Eğitim:</b> Var (Organize Sanayi Bölgesi (OSB) içinde konumlanması, uygulamalı eğitime odaklandığını gösterir).</li><li><b>İngilizce Desteği:</b> Standart (Üniversite genelinde güçlü bir hazırlık eğitimi imkanı var).</li></ul>",
             "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> Güçlü (Başkent OSB içerisindeki sanayi ve teknoloji firmalarıyla doğal bir işbirliği potansiyeli).</li><li><b>Teknopark:</b> Var (Hacettepe Teknokent, Ankara'nın en önemli teknoloji merkezlerinden biridir).</li></ul>",
