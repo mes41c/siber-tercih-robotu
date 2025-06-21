@@ -51,7 +51,7 @@
             "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Çok Aktif (Üniversite genelinde çok sayıda öğrenci topluluğu).</li><li><b>Ulaşım Kolaylığı:</b> İyi (Gölbaşı kampüsüne düzenli otobüs seferleri).</li></ul>",
             "finance": "<ul><li><b>Yurt İmkanı:</b> İyi (Ankara genelinde geniş KYK yurt ağı).</li><li><b>Şehir Yaşam Maliyeti:</b> Orta.</li></ul>"
         },
-        "scores": { "academic": 4, "practical": 3, "english": 2, "career": 5, "technopark": 4, "transport": 4, "social": 4 }
+        "scores": { "academic": 5, "practical": 4, "english": 2, "career": 5, "technopark": 4, "transport": 4, "social": 4 }
     },
     {
         "id": 4,
@@ -249,7 +249,7 @@
             "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Çok Aktif (Siber Güvenlik Kulübü dahil, teknoloji ve bilişim alanında çok sayıda kulüp).</li><li><b>Ulaşım Kolaylığı:</b> Çok İyi (Metrobüs hattı üzerinde, ulaşımı çok kolay bir lokasyon).</li></ul>",
             "finance": "<ul><li><b>Yurt İmkanı:</b> Var (Kampüs içinde ve çevresinde geniş kapasiteli yurtlar).</li><li><b>Ek Burs Olanakları:</b> Var (Geniş yelpazede başarı, spor ve ihtiyaç bursları).</li><li><b>Şehir Yaşam Maliyeti:</b> Yüksek.</li></ul>"
         },
-        "scores": { "academic": 4, "practical": 4, "english": 5, "career": 4, "technopark": 4, "transport": 5, "social": 4 }
+        "scores": { "academic": 3, "practical": 4, "english": 5, "career": 4, "technopark": 4, "transport": 5, "social": 4 }
     },
     {
         "id": 15,
