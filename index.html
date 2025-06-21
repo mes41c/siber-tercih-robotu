@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Düzeltilmiş Gelişmiş Tercih Asistanı</title>
+    <style>
+        :root {
+            --primary-color: #0056b3;
+            --secondary-color: #2a9d8f;
+            --background-color: #f4f7f6;
+            --font-color: #333;
+            --card-bg-color: #ffffff;
+            --border-color: #e0e0e0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            background-color: var(--background-color);
+            margin: 0;
+            padding: 20px;
+            color: var(--font-color);
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
+        .filter-container {
+            background: var(--card-bg-color);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 25px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            align-items: end;
+        }
+        .filter-group {
+            display: flex;
+            flex-direction: column;
+        }
+        .filter-group label {
+            font-weight: 600;
+            font-size: 0.9em;
+            margin-bottom: 5px;
+            color: var(--primary-color);
+        }
+        .filter-group input, .filter-group select {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid var(--border-color);
+            font-size: 1em;
+        }
+        .main-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--card-bg-color);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        .main-table th {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 12px;
+            text-align: left;
+            cursor: pointer;
+            user-select: none;
+        }
+        .main-table th:hover {
+            background-color: #004a9a;
+        }
+        .main-table .sort-indicator {
+            float: right;
+            opacity: 0.7;
+        }
+        .university-row {
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+        .university-row:hover {
+            background-color: #f1f9ff;
+        }
+        .university-row.active {
+            background-color: #e3f2fd;
+        }
+        .university-row td {
+            padding: 12px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .details-row {
+            display: none;
+        }
+        .details-row.show {
+            display: table-row;
+        }
+        .details-row td {
+            padding: 0;
+        }
+        .details-card {
+            background-color: #fafcff;
+            padding: 20px;
+            border-left: 5px solid var(--secondary-color);
+        }
+        .details-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .details-table th { background-color: transparent; color: var(--primary-color); padding: 10px; width: 25%; vertical-align: top; text-align: left; border-bottom: 1px solid #e8f0f7; cursor: default; }
+        .details-table td { padding: 10px; border-bottom: 1px solid #e8f0f7; }
+        .details-table ul { margin: 0; padding-left: 20px; }
+        .details-table li { margin-bottom: 8px; }
+        .rank { font-weight: bold; color: var(--secondary-color); }
+        .btn {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1em;
+        }
+        .btn-add {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+        .btn-add:hover {
+            background-color: #248a7e;
+        }
+        .preference-list {
+            margin-top: 30px;
+            background: var(--card-bg-color);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        .preference-list h2 { color: var(--primary-color); border-bottom: 2px solid var(--primary-color); padding-bottom: 10px; }
+        .preference-list ul { list-style-type: none; padding: 0; }
+        .preference-list li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .preference-list .btn-remove {
+            background-color: #e63946;
+            color: white;
+            font-size: 0.8em;
+            padding: 5px 10px;
+        }
+        .modal-backdrop {
+            display: none; /* Varsayılan olarak gizli */
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.5);
+            animation: fadeIn 0.3s;
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: 10% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 600px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            animation: slideIn 0.3s;
+        }
+        .modal-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-color); padding-bottom: 10px; margin-bottom: 20px;}
+        .modal-header h2 { margin: 0; color: var(--primary-color); }
+        .close-btn { color: #aaa; float: right; font-size: 28px; font-weight: bold; border: none; background: none; cursor: pointer; }
+        .close-btn:hover, .close-btn:focus { color: black; text-decoration: none; }
+        .modal-body p { font-size: 0.9em; color: #666; }
+        .priority-slider { margin-bottom: 15px; }
+        .priority-slider label { display: block; margin-bottom: 5px; font-weight: 500;}
+        .priority-slider input[type=range] { width: 80%; vertical-align: middle; }
+        .priority-slider .slider-value { display: inline-block; width: 15%; text-align: center; font-weight: bold; color: var(--secondary-color); }
+        .modal-footer { text-align: right; margin-top: 20px; }
+        #priorities-btn { background-color: #e76f51; color: white; }
+        #save-priorities-btn { background-color: var(--primary-color); color: white; }
+
+        @keyframes fadeIn { from {opacity: 0;} to {opacity: 1;} }
+        @keyframes slideIn { from {transform: translateY(-50px);} to {transform: translateY(0);} }
+
+        /* Kişisel Puan için Stil */
+        .personal-score {
+            font-weight: bold;
+            color: #d90429;
+            background-color: #ffccd5;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 style="text-align: center; color: var(--primary-color);">Gelişmiş Tercih Asistanı (Düzeltilmiş Versiyon)</h1>
+
+        <div class="filter-container">
+            <div class="filter-group">
+                <label for="filter-uni">Üniversite Adı</label>
+                <input type="text" id="filter-uni" placeholder="örn: İstanbul Teknik">
+            </div>
+            <div class="filter-group">
+                <label for="filter-city">Şehir</label>
+                <input type="text" id="filter-city" placeholder="örn: Ankara">
+            </div>
+            <div class="filter-group">
+                <label for="filter-type">Üniversite Türü</label>
+                <select id="filter-type">
+                    <option value="">Tümü</option>
+                    <option value="Devlet">Devlet</option>
+                    <option value="Vakıf">Vakıf</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="filter-teaching">Öğretim Türü</label>
+                <select id="filter-teaching">
+                    <option value="">Tümü</option>
+                    <option value="Örgün">Örgün</option>
+                    <option value="Uzaktan">Uzaktan</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="filter-rank-start">Sıralama Aralığı (En Yüksek)</label>
+                <input type="number" id="filter-rank-start" placeholder="örn: 50000">
+            </div>
+            <div class="filter-group">
+                <label for="filter-rank-end">Sıralama Aralığı (En Düşük)</label>
+                <input type="number" id="filter-rank-end" placeholder="örn: 200000">
+            </div>
+            <button id="priorities-btn" class="btn">Önceliklerim</button>
+        </div>
+
+        <table class="main-table">
+            <thead>
+                <tr>
+                    <th data-sort="name">Üniversite Adı / Program<span class="sort-indicator"></span></th>
+                    <th data-sort="city">Şehir<span class="sort-indicator"></span></th>
+                    <th>Sıralamalar (24/23/22)</th>
+                    <th data-sort="trend">Trend<span class="sort-indicator"></span></th>
+                    <th data-sort="personalScore">Kişisel Puan<span class="sort-indicator"></span></th>
+                    <th>Tercih</th>
+                </tr>
+            </thead>
+            <tbody id="university-table-body">
+                </tbody>
+        </table>
+
+        <div class="preference-list">
+            <h2>Tercih Listem</h2>
+            <ul id="preference-ul">
+                </ul>
+        </div>
+
+        <div id="priorities-modal" class="modal-backdrop">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Kişisel Önceliklerinizi Belirleyin</h2>
+                    <button id="close-modal-btn" class="close-btn">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p>Her bir kriterin sizin için ne kadar önemli olduğunu 1 (Az Önemli) ile 5 (Çok Önemli) arasında belirleyin.</p>
+                    <div class="priority-slider">
+                        <label for="weight-academic">Akademik Kadro ve Müfredat</label>
+                        <input type="range" id="weight-academic" min="1" max="5" value="3" data-weight-key="academic">
+                        <span class="slider-value">3</span>
+                    </div>
+                    <div class="priority-slider">
+                        <label for="weight-practical">Uygulamalı Eğitim / Laboratuvar</label>
+                        <input type="range" id="weight-practical" min="1" max="5" value="3" data-weight-key="practical">
+                        <span class="slider-value">3</span>
+                    </div>
+                    <div class="priority-slider">
+                        <label for="weight-english">İngilizce Desteği</label>
+                        <input type="range" id="weight-english" min="1" max="5" value="3" data-weight-key="english">
+                        <span class="slider-value">3</span>
+                    </div>
+                    <div class="priority-slider">
+                        <label for="weight-career">Kariyer / Sektör İşbirlikleri</label>
+                        <input type="range" id="weight-career" min="1" max="5" value="3" data-weight-key="career">
+                        <span class="slider-value">3</span>
+                    </div>
+                     <div class="priority-slider">
+                        <label for="weight-technopark">Teknopark / Kuluçka Merkezi</label>
+                        <input type="range" id="weight-technopark" min="1" max="5" value="3" data-weight-key="technopark">
+                        <span class="slider-value">3</span>
+                    </div>
+                    <div class="priority-slider">
+                        <label for="weight-transport">Ulaşım Kolaylığı</label>
+                        <input type="range" id="weight-transport" min="1" max="5" value="3" data-weight-key="transport">
+                        <span class="slider-value">3</span>
+                    </div>
+                     <div class="priority-slider">
+                        <label for="weight-social">Kampüs Hayatı / Öğrenci Kulüpleri</label>
+                        <input type="range" id="weight-social" min="1" max="5" value="3" data-weight-key="social">
+                        <span class="slider-value">3</span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button id="save-priorities-btn" class="btn">Kaydet ve Uygula</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    document.addEventListener('DOMContentLoaded', async function () {
+        
+        // ===================================================================================
+        // YARDIMCI FONKSİYONLAR
+        // ===================================================================================
+        function normalizeString(str) {
+            if (typeof str !== 'string') return '';
+            return str.toLowerCase()
+                .replace(/ı/g, 'i').replace(/ğ/g, 'g').replace(/ü/g, 'u')
+                .replace(/ş/g, 's').replace(/ö/g, 'o').replace(/ç/g, 'c');
+        }
+
+        // ===================================================================================
+        // DEĞİŞKENLER VE DOM ELEMENTLERİ
+        // ===================================================================================
+        let universityData = [];
+        let currentSort = { key: 'personalScore', direction: 'desc' };
+        let preferenceList = [];
+        let userWeights = {
+            academic: 3, practical: 3, english: 3, career: 3,
+            technopark: 3, transport: 3, social: 3
+        };
+
+        const tableBody = document.getElementById('university-table-body');
+        const preferenceUl = document.getElementById('preference-ul');
+        const modal = document.getElementById('priorities-modal');
+        const prioritiesBtn = document.getElementById('priorities-btn');
+        const closeModalBtn = document.getElementById('close-modal-btn');
+        const savePrioritiesBtn = document.getElementById('save-priorities-btn');
+        const sliders = document.querySelectorAll('.priority-slider input[type=range]');
+
+        // ===================================================================================
+        // KİŞİSEL PUAN VE TREND HESAPLAMA
+        // ===================================================================================
+        function calculatePersonalScore(uni, weights) {
+            if (!uni.scores) { return 0; }
+            const uniScores = uni.scores;
+            let totalWeightedScore = 0;
+            let totalWeight = 0;
+            for (const key in weights) {
+                if (uniScores.hasOwnProperty(key)) {
+                    totalWeightedScore += (uniScores[key] || 0) * weights[key];
+                    totalWeight += weights[key];
+                }
+            }
+            if (totalWeight === 0) return 0;
+            const maxPossibleScore = 5 * totalWeight;
+            const finalScore = (totalWeightedScore / maxPossibleScore) * 100;
+            return Math.round(finalScore);
+        }
+
+        function calculateTrend(uni) {
+            const r24 = uni.rank2024;
+            const r23 = uni.rank2023;
+            if (typeof r24 !== 'number' || typeof r23 !== 'number') return { icon: '─', class: 'trend-stable', text: 'Stabil' };
+            if (r24 < r23 * 0.95) return { icon: '▲', class: 'trend-up', text: 'Yükselişte' };
+            if (r24 > r23 * 1.05) return { icon: '▼', class: 'trend-down', text: 'Dalgalı' };
+            return { icon: '─', class: 'trend-stable', text: 'Stabil' };
+        }
+
+        // ===================================================================================
+        // GÖRÜNTÜLEME (RENDER) VE ANA MANTIK FONKSİYONLARI
+        // ===================================================================================
+        function renderTable(data) {
+            tableBody.innerHTML = '';
+            if (data.length === 0) {
+                tableBody.innerHTML = '<tr><td colspan="6" style="text-align:center; padding: 20px;">Bu kriterlere uygun sonuç bulunamadı.</td></tr>';
+                return;
+            }
+            
+            data.forEach(uni => {
+                const ranks = `<b>24:</b> ${uni.rank2024}<br><b>23:</b> ${uni.rank2023}<br><b>22:</b> ${uni.rank2022}`;
+                const trend = uni.trend;
+
+                const rowHTML = `
+                    <tr class="university-row" data-id="${uni.id}">
+                        <td><strong>${uni.name}</strong><br>${uni.program}</td>
+                        <td>${uni.city}</td>
+                        <td>${ranks}</td>
+                        <td title="${trend.text}"><span class="trend-icon ${trend.class}">${trend.icon}</span></td>
+                        <td><span class="personal-score">${uni.personalScore} Puan</span></td>
+                        <td><button class="btn btn-add" data-id="${uni.id}">Listeye Ekle</button></td>
+                    </tr>
+                    <tr class="details-row" data-id="${uni.id}">
+                        <td colspan="6">
+                            <div class="details-card">
+                                 <table class="details-table">
+                                    <tr><th>Akademik & Müfredat</th><td>${uni.details.academic}</td></tr>
+                                    <tr><th>Kariyer & Sektör</th><td>${uni.details.career}</td></tr>
+                                    <tr><th>Kampüs & Sosyal Yaşam</th><td>${uni.details.campus}</td></tr>
+                                    <tr><th>Maliyet & Finansal</th><td>${uni.details.finance}</td></tr>
+                                    <tr class="personal-prediction">
+                                        <th>2025 Tahmin Aralığınız</th>
+                                        <td>
+                                            <h4>Geçmiş Trendler ve Sınav Yorumlarına Göre Kendi Tahmininizi Girin:</h4>
+                                            <div class="prediction-inputs">
+                                                <div><label>En İyimser Sıralama:</label><input type="number" placeholder="örn: ${Math.round(uni.rank2024 * 0.9)}"></div>
+                                                <div><label>En Olası Sıralama:</label><input type="number" placeholder="örn: ${uni.rank2024}"></div>
+                                                <div><label>En Kötümser Sıralama:</label><input type="number" placeholder="örn: ${Math.round(uni.rank2024 * 1.1)}"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                `;
+                tableBody.innerHTML += rowHTML;
+            });
+        }
+        
+        function applyFiltersAndRender() {
+            const uniFilter = document.getElementById('filter-uni').value;
+            const cityFilter = document.getElementById('filter-city').value;
+            const typeFilter = document.getElementById('filter-type').value;
+            const teachingFilter = document.getElementById('filter-teaching').value;
+            const rankStart = parseInt(document.getElementById('filter-rank-start').value) || 0;
+            const rankEnd = parseInt(document.getElementById('filter-rank-end').value) || Infinity;
+
+            const normalizedUniFilter = normalizeString(uniFilter);
+            const normalizedCityFilter = normalizeString(cityFilter);
+
+            let filteredData = universityData.filter(uni => {
+                const rank = uni.rank2024;
+                if (typeof rank !== 'number') return false; 
+                
+                return normalizeString(uni.name).includes(normalizedUniFilter) &&
+                       normalizeString(uni.city).includes(normalizedCityFilter) &&
+                       (typeFilter === "" || uni.type === typeFilter) &&
+                       (teachingFilter === "" || uni.teaching === teachingFilter) &&
+                       (rank >= rankStart && rank <= rankEnd);
+            });
+
+            filteredData.forEach(uni => {
+                uni.personalScore = calculatePersonalScore(uni, userWeights);
+                uni.trend = calculateTrend(uni);
+            });
+            
+            sortData(filteredData);
+            renderTable(filteredData);
+        }
+
+        function sortData(data) {
+             data.sort((a, b) => {
+                let valA = a[currentSort.key];
+                let valB = b[currentSort.key];
+
+                if (currentSort.key === 'trend') {
+                    const trendOrder = { '▲': 3, '─': 2, '▼': 1 };
+                    valA = trendOrder[a.trend.icon];
+                    valB = trendOrder[b.trend.icon];
+                } else if(currentSort.key === 'rank2024' || currentSort.key === 'personalScore'){
+                    valA = typeof valA === 'number' ? valA : Infinity;
+                    valB = typeof valB === 'number' ? valB : Infinity;
+                }
+
+                if (typeof valA === 'string') {
+                    return currentSort.direction === 'asc' 
+                        ? valA.localeCompare(valB, 'tr') 
+                        : valB.localeCompare(valA, 'tr');
+                }
+
+                if (valA < valB) return currentSort.direction === 'asc' ? -1 : 1;
+                if (valA > valB) return currentSort.direction === 'asc' ? 1 : -1;
+                return 0;
+            });
+        }
+        
+        function updateSortIndicators() {
+            document.querySelectorAll('.main-table th[data-sort]').forEach(th => {
+                const indicator = th.querySelector('.sort-indicator');
+                if (indicator) {
+                    if (th.dataset.sort === currentSort.key) {
+                        indicator.textContent = currentSort.direction === 'asc' ? ' ▲' : ' ▼';
+                    } else {
+                        indicator.textContent = ' ';
+                    }
+                }
+            });
+        }
+
+        function renderPreferenceList() {
+            preferenceUl.innerHTML = '';
+            preferenceList.forEach((uni, index) => {
+                const li = document.createElement('li');
+                li.innerHTML = `<span><strong>${index + 1}. ${uni.name}</strong> - ${uni.program} (<span class="rank">${uni.rank2024}</span>)</span>
+                                <button class="btn btn-remove" data-id="${uni.id}">Kaldır</button>`;
+                preferenceUl.appendChild(li);
+            });
+            localStorage.setItem('tercihListem', JSON.stringify(preferenceList));
+        }
+
+        // ===================================================================================
+        // OLAY DİNLEYİCİLER (EVENT LISTENERS) VE UYGULAMA BAŞLATMA
+        // ===================================================================================
+        function setupEventListeners() {
+            document.querySelectorAll('.filter-container input, .filter-container select').forEach(el => {
+                el.addEventListener('keyup', applyFiltersAndRender); 
+                el.addEventListener('change', applyFiltersAndRender);
+            });
+        
+            document.querySelectorAll('.main-table th[data-sort]').forEach(th => {
+                th.addEventListener('click', () => {
+                    const sortKey = th.dataset.sort;
+                    if (currentSort.key === sortKey) {
+                        currentSort.direction = currentSort.direction === 'asc' ? 'desc' : 'asc';
+                    } else {
+                        currentSort.key = sortKey;
+                        currentSort.direction = (sortKey === 'personalScore' || sortKey === 'trend') ? 'desc' : 'asc';
+                    }
+                    applyFiltersAndRender();
+                    updateSortIndicators();
+                });
+            });
+
+            tableBody.addEventListener('click', function(e) {
+                const mainRow = e.target.closest('.university-row');
+            
+                if (e.target.classList.contains('btn-add')) {
+                    e.stopPropagation(); // Detayların açılmasını engelle
+                    const uniId = parseInt(e.target.dataset.id);
+                    const uni = universityData.find(u => u.id === uniId);
+                    if (uni && !preferenceList.some(p => p.id === uniId)) {
+                        preferenceList.push(uni);
+                        renderPreferenceList();
+                    }
+                } else if (mainRow) {
+                    mainRow.classList.toggle('active');
+                    mainRow.nextElementSibling.classList.toggle('show');
+                }
+            });
+
+            preferenceUl.addEventListener('click', function(e) {
+                if (e.target.classList.contains('btn-remove')) {
+                    const uniId = parseInt(e.target.dataset.id);
+                    preferenceList = preferenceList.filter(u => u.id !== uniId);
+                    renderPreferenceList();
+                }
+            });
+
+            prioritiesBtn.addEventListener('click', () => { modal.style.display = 'block'; });
+            closeModalBtn.addEventListener('click', () => { modal.style.display = 'none'; });
+            window.addEventListener('click', (e) => { if (e.target == modal) { modal.style.display = 'none'; } });
+
+            sliders.forEach(slider => {
+                slider.addEventListener('input', (e) => {
+                    e.target.nextElementSibling.textContent = e.target.value;
+                });
+            });
+
+            savePrioritiesBtn.addEventListener('click', () => {
+                sliders.forEach(slider => {
+                    userWeights[slider.dataset.weightKey] = parseInt(slider.value);
+                });
+                localStorage.setItem('tercihAgirliklari', JSON.stringify(userWeights));
+                modal.style.display = 'none';
+                applyFiltersAndRender();
+                updateSortIndicators();
+            });
+        }
+
+        async function initializeApp() {
+            try {
+                const response = await fetch('data.json');
+                if (!response.ok) { throw new Error(`HTTP hatası! Durum: ${response.status}`); }
+                universityData = await response.json();
+                
+                const savedList = localStorage.getItem('tercihListem');
+                if (savedList) { preferenceList = JSON.parse(savedList); }
+
+                const savedWeights = localStorage.getItem('tercihAgirliklari');
+                if (savedWeights) { 
+                    userWeights = JSON.parse(savedWeights);
+                    sliders.forEach(slider => {
+                        const key = slider.dataset.weightKey;
+                        if(userWeights[key] !== undefined) {
+                            slider.value = userWeights[key];
+                            slider.nextElementSibling.textContent = userWeights[key];
+                        }
+                    });
+                }
+
+                setupEventListeners();
+                applyFiltersAndRender();
+                updateSortIndicators();
+                renderPreferenceList();
+
+            } catch (error) {
+                console.error("Veri yüklenirken bir hata oluştu:", error);
+                tableBody.innerHTML = `<tr><td colspan="6" style="text-align:center; padding: 20px; color: red;">Veri yüklenemedi. Lütfen 'data.json' dosyasının doğru yerde olduğundan ve bir yerel sunucu (Live Server) kullandığınızdan emin olun.</td></tr>`;
+            }
+        }
+
+        initializeApp();
+    });
+    </script>
+</body>
+</html>

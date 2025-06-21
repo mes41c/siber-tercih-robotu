@@ -1,0 +1,576 @@
+[
+    {
+        "id": 1,
+        "name": "İstanbul Teknik Üniversitesi",
+        "program": "Siber Güvenlik MYO",
+        "city": "İstanbul",
+        "type": "Devlet",
+        "teaching": "Örgün",
+        "rank2024": 76635,
+        "rank2023": 72154,
+        "rank2022": "D",
+        "details": {
+            "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Güçlü (Sektör ve akademik kökenli, alanında uzman isimler).</li><li><b>Uygulamalı Eğitim:</b> Var (Gelişmiş Siber Güvenlik Laboratuvarı), CCNA/CEH gibi sertifikasyonlara odaklı müfredat.</li><li><b>İngilizce Desteği:</b> Zorunlu Hazırlık, %100 İngilizce eğitim ile küresel kaynaklara tam erişim.</li></ul>",
+            "career": "<ul><li><b>Staj Programı:</b> Zorunlu (40 İş Günü).</li><li><b>Sektör İşbirlikleri:</b> İTÜ Arı Teknokent bünyesindeki yüzlerce teknoloji şirketi, Savunma Sanayii ve Bankacılık sektörü ile güçlü bağlar.</li><li><b>Teknopark:</b> Var (Türkiye'nin en büyüklerinden biri olan İTÜ Arı Teknokent).</li></ul>",
+            "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Çok Aktif (İTÜ Siber Güvenlik Kulübü, Bilgisayar ve Bilişim Kulübü).</li><li><b>Ulaşım Kolaylığı:</b> Çok İyi (Kampüs içinde Metro istasyonu mevcut).</li></ul>",
+            "finance": "<ul><li><b>Yurt İmkanı:</b> İyi (Yüksek kapasiteli yurtlar mevcut, ancak talep yüksek).</li><li><b>Şehir Yaşam Maliyeti:</b> Yüksek.</li></ul>"
+        },
+        "scores": { "academic": 5, "practical": 5, "english": 5, "career": 5, "technopark": 5, "transport": 5, "social": 4 }
+    },
+    {
+        "id": 2,
+        "name": "Gebze Teknik Üniversitesi",
+        "program": "Siber Güvenlik MYO",
+        "city": "Kocaeli",
+        "type": "Devlet",
+        "teaching": "Örgün",
+        "rank2024": 127718,
+        "rank2023": 126310,
+        "rank2022": "D",
+        "details": {
+            "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Güçlü (Teknik üniversite olmasının getirdiği yetkin akademik kadro).</li><li><b>Uygulamalı Eğitim:</b> Var (Modern laboratuvarlar), araştırma odaklı bir ekosistem.</li><li><b>İngilizce Desteği:</b> Var (%30 İngilizce eğitim programı).</li></ul>",
+            "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> TÜBİTAK ve çevresindeki araştırma merkezleri, Gebze ve Kocaeli sanayi bölgelerindeki teknoloji firmaları.</li><li><b>Teknopark:</b> Var (GTÜ Teknopark).</li></ul>",
+            "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Aktif (IEEE, Bilgisayar Topluluğu).</li><li><b>Ulaşım Kolaylığı:</b> Orta (Marmaray ve otobüs hatları ile erişim).</li></ul>",
+            "finance": "<ul><li><b>Yurt İmkanı:</b> İyi (Kampüs içi ve çevresinde KYK yurtları).</li><li><b>Şehir Yaşam Maliyeti:</b> Orta.</li></ul>"
+        },
+        "scores": { "academic": 5, "practical": 4, "english": 3, "career": 5, "technopark": 4, "transport": 3, "social": 3 }
+    },
+    {
+        "id": 3,
+        "name": "Ankara Üniversitesi",
+        "program": "Siber Güvenlik MYO",
+        "city": "Ankara",
+        "type": "Devlet",
+        "teaching": "Örgün",
+        "rank2024": 143466,
+        "rank2023": 131899,
+        "rank2022": "D",
+        "details": {
+            "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Güçlü (Köklü devlet üniversitesi altyapısı).</li><li><b>Uygulamalı Eğitim:</b> Var (Üniversitenin genel bilişim altyapısı ve laboratuvarları).</li><li><b>İngilizce Desteği:</b> Standart (İsteğe bağlı veya zorunlu hazırlık imkanı).</li></ul>",
+            "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> Ankara'daki Savunma Sanayii firmaları (Aselsan, TUSAŞ, Havelsan) ve kamu kurumları ile güçlü potansiyel bağlar.</li><li><b>Teknopark:</b> Var (Ankara Üniversitesi Teknokent).</li></ul>",
+            "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Çok Aktif (Üniversite genelinde çok sayıda öğrenci topluluğu).</li><li><b>Ulaşım Kolaylığı:</b> İyi (Gölbaşı kampüsüne düzenli otobüs seferleri).</li></ul>",
+            "finance": "<ul><li><b>Yurt İmkanı:</b> İyi (Ankara genelinde geniş KYK yurt ağı).</li><li><b>Şehir Yaşam Maliyeti:</b> Orta.</li></ul>"
+        },
+        "scores": { "academic": 4, "practical": 3, "english": 2, "career": 5, "technopark": 4, "transport": 4, "social": 4 }
+    },
+    {
+        "id": 4,
+        "name": "Ege Üniversitesi",
+        "program": "Siber Güvenlik MYO",
+        "city": "İzmir",
+        "type": "Devlet",
+        "teaching": "Örgün",
+        "rank2024": 157234,
+        "rank2023": 150130,
+        "rank2022": "D",
+        "details": {
+            "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Deneyimli (Büyük ve köklü bir üniversitenin akademik birikimi).</li><li><b>Uygulamalı Eğitim:</b> Var (Ege MYO bünyesindeki bilgisayar laboratuvarları).</li><li><b>İngilizce Desteği:</b> Standart (Program dili Türkçe, üniversitede hazırlık imkanı var).</li></ul>",
+            "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> İzmir'deki teknoloji firmaları ve sanayi bölgeleri.</li><li><b>Teknopark:</b> Var (Ege Teknopark).</li></ul>",
+            "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Çok Aktif (Çok sayıda sosyal ve teknik kulüp).</li><li><b>Ulaşım Kolaylığı:</b> Çok İyi (Kampüs içinde Metro istasyonu).</li></ul>",
+            "finance": "<ul><li><b>Yurt İmkanı:</b> İyi (Kampüs içinde ve çevresinde KYK yurtları).</li><li><b>Şehir Yaşam Maliyeti:</b> Orta-Yüksek.</li></ul>"
+        },
+        "scores": { "academic": 4, "practical": 3, "english": 2, "career": 3, "technopark": 4, "transport": 5, "social": 4 }
+    },
+    {
+        "id": 5,
+        "name": "Çankaya Üniversitesi",
+        "program": "Çankaya MYO (Bilgisayar Prog. - İng.)",
+        "city": "Ankara",
+        "type": "Vakıf",
+        "teaching": "Örgün",
+        "rank2024": 161393,
+        "rank2023": 185567,
+        "rank2022": 184843,
+        "details": {
+            "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Yetkin (Vakıf üniversitesi dinamizmi).</li><li><b>Uygulamalı Eğitim:</b> Var (Güncel teknolojiye sahip laboratuvarlar).</li><li><b>İngilizce Desteği:</b> Güçlü (Program dili İngilizce).</li></ul>",
+            "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> Ankara'daki özel sektör teknoloji firmaları ile yakın ilişkiler.</li><li><b>Teknopark:</b> Yok (Ancak Ankara'daki diğer teknoparklara yakınlık).</li></ul>",
+            "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Aktif (Bilişim ve teknoloji odaklı kulüpler).</li><li><b>Ulaşım Kolaylığı:</b> İyi (Şehrin merkezi bir konumunda).</li></ul>",
+            "finance": "<ul><li><b>Yurt İmkanı:</b> Var (Üniversiteye ait yurtlar).</li><li><b>Ek Burs Olanakları:</b> Var (Akademik başarı ve diğer ek burslar).</li><li><b>Şehir Yaşam Maliyeti:</b> Orta.</li></ul>"
+        },
+        "scores": { "academic": 4, "practical": 3, "english": 5, "career": 3, "technopark": 1, "transport": 4, "social": 3 }
+    },
+    {
+        "id": 6,
+        "name": "Marmara Üniversitesi",
+        "program": "Teknik Bilimler MYO (Bilgisayar Programcılığı)",
+        "city": "İstanbul",
+        "type": "Devlet",
+        "teaching": "Örgün",
+        "rank2024": 161811,
+        "rank2023": 160807,
+        "rank2022": 158033,
+        "details": {
+            "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Güçlü ve deneyimli.</li><li><b>Uygulamalı Eğitim:</b> Var (Bilgisayar laboratuvarları).</li><li><b>İngilizce Desteği:</b> Program dili Türkçe, ancak üniversite genelinde hazırlık imkanı mevcut.</li></ul>",
+            "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> İstanbul'un finans ve teknoloji merkezlerine yakınlık, geniş staj ve iş imkanı potansiyeli.</li><li><b>Teknopark:</b> Var (Marmara Teknokent).</li></ul>",
+            "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Çok Aktif (Teknoloji, Yazılım ve Girişimcilik kulüpleri popüler).</li><li><b>Ulaşım Kolaylığı:</b> Çok İyi (Metro, Marmaray, Metrobüs ve otobüs ağının merkezinde).</li></ul>",
+            "finance": "<ul><li><b>Yurt İmkanı:</b> Sınırlı (Kampüs çevresinde KYK ve özel yurt seçenekleri).</li><li><b>Şehir Yaşam Maliyeti:</b> Yüksek.</li></ul>"
+        },
+        "scores": { "academic": 4, "practical": 2, "english": 2, "career": 3, "technopark": 4, "transport": 5, "social": 4 }
+    },
+    {
+        "id": 7,
+        "name": "İstanbul Ticaret Üniversitesi",
+        "program": "MYO (Siber Güvenlik - Burslu)",
+        "city": "İstanbul",
+        "type": "Vakıf",
+        "teaching": "Örgün",
+        "rank2024": 191611,
+        "rank2023": 225849,
+        "rank2022": 243152,
+        "details": {
+            "academic": "<ul><li><b>Akademisyen Kadrosu:</b> İyi (Sektörle iç içe bir yapı).</li><li><b>Uygulamalı Eğitim:</b> Var (Modern laboratuvarlar).</li><li><b>İngilizce Desteği:</b> Var (İngilizce hazırlık sınıfı mevcut).</li></ul>",
+            "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> İstanbul Ticaret Odası (İTO) desteği ile ticaret ve finans sektöründeki firmalarla güçlü bağlar.</li><li><b>Teknopark:</b> Var (Bilgiyi Ticarileştirme Merkezi).</li></ul>",
+            "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Aktif (Bilişim, Siber Güvenlik ve Girişimcilik kulüpleri).</li><li><b>Ulaşım Kolaylığı:</b> İyi (Haliç kenarında merkezi konum).</li></ul>",
+            "finance": "<ul><li><b>Yurt İmkanı:</b> Sınırlı (Anlaşmalı yurtlar mevcut).</li><li><b>Ek Burs Olanakları:</b> Var (İTO ve çeşitli kurumlardan ek burs imkanları).</li><li><b>Şehir Yaşam Maliyeti:</b> Yüksek.</li></ul>"
+        },
+        "scores": { "academic": 3, "practical": 3, "english": 3, "career": 4, "technopark": 2, "transport": 4, "social": 3 }
+    },
+    {
+        "id": 8,
+        "name": "İzmir Ekonomi Üniversitesi",
+        "program": "MYO (Bilgisayar Prog. - Burslu)",
+        "city": "İzmir",
+        "type": "Vakıf",
+        "teaching": "Örgün",
+        "rank2024": 196529,
+        "rank2023": 178660,
+        "rank2022": 161848,
+        "details": {
+            "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Yetkin (Vakıf üniversitesi dinamizmi, sektörle ilişkili).</li><li><b>Uygulamalı Eğitim:</b> Var (Modern laboratuvarlar, proje odaklı eğitim).</li><li><b>İngilizce Desteği:</b> Güçlü (Eğitim dili genellikle İngilizce'dir).</li></ul>",
+            "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> Güçlü (İzmir Ticaret Odası Eğitim ve Sağlık Vakfı desteği, yerel teknoloji firmaları).</li><li><b>Teknopark:</b> Var (İEÜ Teknoloji Geliştirme Bölgesi - Embryonix).</li></ul>",
+            "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Aktif (Mühendislik, Yazılım, IEEE).</li><li><b>Ulaşım Kolaylığı:</b> İyi (Otobüs hatları, metroya yakın).</li></ul>",
+            "finance": "<ul><li><b>Yurt İmkanı:</b> Var (Kampüs içinde yurt mevcut).</li><li><b>Ek Burs Olanakları:</b> Var (Başarı, ihtiyaç ve sporcu bursları).</li><li><b>Şehir Yaşam Maliyeti:</b> Orta-Yüksek.</li></ul>"
+        },
+        "scores": { "academic": 4, "practical": 3, "english": 5, "career": 4, "technopark": 4, "transport": 4, "social": 3 }
+    },
+    {
+        "id": 9,
+        "name": "İstanbul Bilgi Üniversitesi",
+        "program": "MYO (Bilgisayar Prog. - Burslu)",
+        "city": "İstanbul",
+        "type": "Vakıf",
+        "teaching": "Örgün",
+        "rank2024": 199148,
+        "rank2023": 181231,
+        "rank2022": 176395,
+        "details": {
+            "academic": "<ul><li><b>Akademisyen Kadrosu:</b> İyi (Uluslararası vizyona sahip, sektörden gelen isimler).</li><li><b>Uygulamalı Eğitim:</b> Var (Proje tabanlı öğrenme yaklaşımı).</li><li><b>İngilizce Desteği:</b> Güçlü (Eğitim dili genellikle İngilizce'dir).</li></ul>",
+            "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> Geniş (Yaratıcı endüstriler, teknoloji ve sivil toplum kuruluşları ile güçlü ağ).</li><li><b>Teknopark:</b> Yok (Ancak Kuluçka Merkezi mevcut: BİLGİ TTO).</li></ul>",
+            "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Çok Aktif (Türkiye'nin en aktif öğrenci hayatlarından birine sahip).</li><li><b>Ulaşım Kolaylığı:</b> İyi (Üniversitenin özel servisleri ve toplu taşıma).</li></ul>",
+            "finance": "<ul><li><b>Yurt İmkanı:</b> Sınırlı (Anlaşmalı yurtlar ve kampüse yakın özel yurt seçenekleri).</li><li><b>Ek Burs Olanakları:</b> Var (Geniş yelpazede ihtiyaç, başarı ve yetenek bursları).</li><li><b>Şehir Yaşam Maliyeti:</b> Yüksek.</li></ul>"
+        },
+        "scores": { "academic": 3, "practical": 3, "english": 5, "career": 3, "technopark": 2, "transport": 4, "social": 5 }
+    },
+    {
+        "id": 10,
+        "name": "İstanbul Üniversitesi-Cerrahpaşa",
+        "program": "Teknik Bilimler MYO (Bilgisayar Prog.)",
+        "city": "İstanbul",
+        "type": "Devlet",
+        "teaching": "Örgün",
+        "rank2024": 253940,
+        "rank2023": 238151,
+        "rank2022": 215062,
+        "details": {
+            "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Deneyimli (Türkiye'nin en köklü üniversitelerinden birinin akademik geleneği).</li><li><b>Uygulamalı Eğitim:</b> Var (Büyükçekmece kampüsünde standart bilgisayar laboratuvarları).</li><li><b>İngilizce Desteği:</b> Standart (Program dili Türkçe, üniversite genelinde hazırlık okuma imkanı).</li></ul>",
+            "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> Üniversitenin geniş sanayi ve kamu kurumları ağı üzerinden staj ve kariyer imkanları.</li><li><b>Teknopark:</b> Var (İÜC Teknokent, Avcılar kampüsünde yer alır ve teknoloji firmalarına ev sahipliği yapar).</li></ul>",
+            "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Aktif (Üniversite genelinde çok sayıda sosyal ve teknik öğrenci kulübü).</li><li><b>Ulaşım Kolaylığı:</b> Orta (Büyükçekmece kampüsüne Metrobüs ve otobüs hatları ile aktarmalı ulaşım).</li></ul>",
+            "finance": "<ul><li><b>Yurt İmkanı:</b> Sınırlı (Kampüs çevresinde ve Avcılar'da KYK yurt seçenekleri).</li><li><b>Şehir Yaşam Maliyeti:</b> Yüksek.</li></ul>"
+        },
+        "scores": { "academic": 3, "practical": 2, "english": 1, "career": 2, "technopark": 4, "transport": 3, "social": 3 }
+    },
+    {
+        "id": 11,
+        "name": "Başkent Üniversitesi",
+        "program": "Teknik Bilimler MYO (Bilgisayar Prog. - Burslu)",
+        "city": "Ankara",
+        "type": "Vakıf",
+        "teaching": "Örgün",
+        "rank2024": 266373,
+        "rank2023": 184466,
+        "rank2022": 196573,
+        "details": {
+            "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Yetkin.</li><li><b>Uygulamalı Eğitim:</b> Var (Modern ve donanımlı laboratuvarlar).</li><li><b>İngilizce Desteği:</b> Standart (Hazırlık imkanı mevcut).</li></ul>",
+            "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> Özellikle sağlık bilişimi alanında güçlü (Üniversitenin hastaneleri mevcut).</li><li><b>Teknopark:</b> Var (Başkent Üniversitesi Teknopark).</li></ul>",
+            "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Aktif.</li><li><b>Ulaşım Kolaylığı:</b> Orta (Şehir merkezine biraz uzak, özel servisler ve otobüsler).</li></ul>",
+            "finance": "<ul><li><b>Yurt İmkanı:</b> Var (Kampüs içinde yurt imkanları).</li><li><b>Ek Burs Olanakları:</b> Var.</li><li><b>Şehir Yaşam Maliyeti:</b> Orta.</li></ul>"
+        },
+        "scores": { "academic": 3, "practical": 3, "english": 2, "career": 3, "technopark": 4, "transport": 3, "social": 3 }
+    },
+    {
+        "id": 12,
+        "name": "Ostim Teknik Üniversitesi",
+        "program": "MYO (Bilgisayar Programcılığı - Burslu)",
+        "city": "Ankara",
+        "type": "Vakıf",
+        "teaching": "Örgün",
+        "rank2024": 253420,
+        "rank2023": 210933,
+        "rank2022": 222373,
+        "details": {
+            "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Sektör Odaklı (OSTİM sanayisinin içinden gelen, tecrübeli eğitmenler).</li><li><b>Uygulamalı Eğitim:</b> Çok Güçlü ('İşyeri Deneyimi' modeli ile eğitim süresince yoğun bir şekilde sanayi içinde uygulama imkanı).</li><li><b>İngilizce Desteği:</b> Geliştiriliyor (İsteğe bağlı hazırlık ve mesleki İngilizce dersleri).</li></ul>",
+            "career": "<ul><li><b>Staj Programı:</b> Zorunlu ve yaygın (Eğitim modelinin ayrılmaz bir parçası, OSTİM içerisindeki firmalarda).</li><li><b>Sektör İşbirlikleri:</b> Çok Güçlü (OSTİM Sanayi Bölgesi'ndeki binlerce KOBİ, savunma sanayii ve teknoloji firmasıyla organik bağ).</li><li><b>Teknopark:</b> Doğal Teknopark (OSTİM'in kendisi bir sanayi ve teknoloji ekosistemi).</li></ul>",
+            "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Gelişmekte Olan (Teknoloji, girişimcilik ve üretim odaklı).</li><li><b>Ulaşım Kolaylığı:</b> İyi (Metro ve otobüs hatları üzerinde).</li></ul>",
+            "finance": "<ul><li><b>Yurt İmkanı:</b> Çevrede geniş özel ve KYK yurt seçenekleri mevcut.</li><li><b>Ek Burs Olanakları:</b> Var (OSTİM Vakfı ve sanayiciler tarafından desteklenen burslar).</li><li><b>Şehir Yaşam Maliyeti:</b> Orta.</li></ul>"
+        },
+        "scores": { "academic": 2, "practical": 5, "english": 1, "career": 5, "technopark": 5, "transport": 4, "social": 2 }
+    },
+    {
+        "id": 13,
+        "name": "Acıbadem Mehmet Ali Aydınlar Üniversitesi",
+        "program": "MYO (Bilgisayar Programcılığı - Burslu)",
+        "city": "İstanbul",
+        "type": "Vakıf",
+        "teaching": "Örgün",
+        "rank2024": 238373,
+        "rank2023": 217946,
+        "rank2022": 272230,
+        "details": {
+            "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Yetkin (Özellikle sağlık bilişimi ve teknolojileri alanında güçlü akademik kadro).</li><li><b>Uygulamalı Eğitim:</b> Var (Modern laboratuvarlar, sağlık bilişimi ve biyomedikal teknolojiler odaklı projeler).</li><li><b>İngilizce Desteği:</b> Güçlü (İngilizce Hazırlık Programı mevcut, mesleki İngilizce'ye önem veriliyor).</li></ul>",
+            "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> Çok Güçlü (Başta Acıbadem Sağlık Grubu ve grubun teknoloji şirketleri olmak üzere sağlık sektöründe geniş staj ve iş imkanı).</li><li><b>Teknopark:</b> Yok (Ancak üniversitenin Kuluçka Merkezi ve proje geliştirme ofisleri aktif).</li></ul>",
+            "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Aktif (Sağlık, teknoloji ve sosyal sorumluluk odaklı kulüpler).</li><li><b>Ulaşım Kolaylığı:</b> İyi (Ataşehir'deki kampüs, metro ve otobüs hatlarına yakın bir konumda).</li></ul>",
+            "finance": "<ul><li><b>Yurt İmkanı:</b> Var (Kampüs içinde modern öğrenci konukevi bulunmaktadır).</li><li><b>Ek Burs Olanakları:</b> Var (Akademik başarıya dayalı ek burslar ve destekler).</li><li><b>Şehir Yaşam Maliyeti:</b> Yüksek.</li></ul>"
+        },
+        "scores": { "academic": 3, "practical": 4, "english": 4, "career": 5, "technopark": 2, "transport": 4, "social": 3 }
+    },
+    {
+        "id": 14,
+        "name": "İstanbul Aydın Üniversitesi",
+        "program": "Anadolu BİL MYO (Bilgisayar Prog. - İngilizce - Burslu)",
+        "city": "İstanbul",
+        "type": "Vakıf",
+        "teaching": "Örgün",
+        "rank2024": 252225,
+        "rank2023": 202902,
+        "rank2022": 196516,
+        "details": {
+            "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Geniş ve uluslararası deneyime sahip öğretim üyeleri.</li><li><b>Uygulamalı Eğitim:</b> Var (Çok sayıda uygulama laboratuvarı ve proje geliştirme imkanı).</li><li><b>İngilizce Desteği:</b> Çok Güçlü (Program dili tamamen İngilizce, küresel yetkinlik kazandırma hedefi).</li></ul>",
+            "career": "<ul><li><b>Staj Programı:</b> Zorunlu ('Yerinde Uygulama' modeli ile öğrenciler sektörde deneyim kazanır).</li><li><b>Sektör İşbirlikleri:</b> Çok Geniş (Türkiye'nin önde gelen teknoloji, yazılım ve sanayi firmalarıyla kapsamlı işbirlikleri).</li><li><b>Teknopark:</b> Var (İAÜ Teknoloji Geliştirme Merkezi - Tekmer).</li></ul>",
+            "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Çok Aktif (Siber Güvenlik Kulübü dahil, teknoloji ve bilişim alanında çok sayıda kulüp).</li><li><b>Ulaşım Kolaylığı:</b> Çok İyi (Metrobüs hattı üzerinde, ulaşımı çok kolay bir lokasyon).</li></ul>",
+            "finance": "<ul><li><b>Yurt İmkanı:</b> Var (Kampüs içinde ve çevresinde geniş kapasiteli yurtlar).</li><li><b>Ek Burs Olanakları:</b> Var (Geniş yelpazede başarı, spor ve ihtiyaç bursları).</li><li><b>Şehir Yaşam Maliyeti:</b> Yüksek.</li></ul>"
+        },
+        "scores": { "academic": 4, "practical": 4, "english": 5, "career": 4, "technopark": 4, "transport": 5, "social": 4 }
+    },
+    {
+        "id": 15,
+        "name": "Ankara Medipol Üniversitesi",
+        "program": "MYO (Bilgisayar Prog. - Burslu)",
+        "city": "Ankara",
+        "type": "Vakıf",
+        "teaching": "Örgün",
+        "rank2024": 324294,
+        "rank2023": 224330,
+        "rank2022": 201979,
+        "details": {
+            "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Gelişmekte olan, dinamik bir kadro.</li><li><b>Uygulamalı Eğitim:</b> Var (Yeni ve modern laboratuvarlar).</li><li><b>İngilizce Desteği:</b> Güçlü (Hazırlık imkanı).</li></ul>",
+            "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> Medipol Sağlık Grubu ve Ankara'daki teknoloji ekosistemi ile gelişen ilişkiler.</li><li><b>Teknopark:</b> Yok.</li></ul>",
+            "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Gelişmekte olan.</li><li><b>Ulaşım Kolaylığı:</b> Çok İyi (Ankara'nın merkezinde, Ulus'ta).</li></ul>",
+            "finance": "<ul><li><b>Yurt İmkanı:</b> Üniversite yurdu yok, çevrede özel ve KYK seçenekleri mevcut.</li><li><b>Ek Burs Olanakları:</b> Var.</li><li><b>Şehir Yaşam Maliyeti:</b> Orta.</li></ul>"
+        },
+        "scores": { "academic": 2, "practical": 3, "english": 4, "career": 2, "technopark": 1, "transport": 5, "social": 2 }
+    },
+    {
+        "id": 16,
+        "name": "İstanbul Medipol Üniversitesi",
+        "program": "MYO (Bilgisayar Prog. - Burslu)",
+        "city": "İstanbul",
+        "type": "Vakıf",
+        "teaching": "Örgün",
+        "rank2024": 326115,
+        "rank2023": 188292,
+        "rank2022": 207429,
+        "details": {
+            "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Geniş ve yetkin.</li><li><b>Uygulamalı Eğitim:</b> Var (Modern laboratuvarlar).</li><li><b>İngilizce Desteği:</b> Güçlü (Hazırlık okulu mevcut).</li></ul>",
+            "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> Güçlü (Medipol Sağlık Grubu başta olmak üzere çeşitli sektörlerle işbirlikleri).</li><li><b>Teknopark:</b> Yok (Ancak Teknoloji Transfer Ofisi aktif).</li></ul>",
+            "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Aktif.</li><li><b>Ulaşım Kolaylığı:</b> İyi (Ana yollara yakın, otobüs hatları).</li></ul>",
+            "finance": "<ul><li><b>Yurt İmkanı:</b> Var (Kampüs içinde yurt imkanları).</li><li><b>Ek Burs Olanakları:</b> Var.</li><li><b>Şehir Yaşam Maliyeti:</b> Yüksek.</li></ul>"
+        },
+        "scores": { "academic": 3, "practical": 3, "english": 4, "career": 3, "technopark": 2, "transport": 4, "social": 3 }
+    },
+    {
+        "id": 17,
+        "name": "Haliç Üniversitesi",
+        "program": "MYO (Bilgisayar Prog. - Burslu)",
+        "city": "İstanbul",
+        "type": "Vakıf",
+        "teaching": "Örgün",
+        "rank2024": 239073,
+        "rank2023": 193911,
+        "rank2022": 208937,
+        "details": {
+            "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Deneyimli, sektörle bağları olan bir kadro.</li><li><b>Uygulamalı Eğitim:</b> Var (Yeni ve modern kampüslerdeki güncel donanımlı bilgisayar laboratuvarları).</li><li><b>İngilizce Desteği:</b> Var (İsteğe bağlı veya zorunlu hazırlık programları mevcut).</li></ul>",
+            "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> Üniversitenin genel iş dünyası ve sanayi ilişkileri sayesinde staj olanakları.</li><li><b>Teknopark:</b> Yok (Ancak İstanbul'daki merkezi konumu teknoparklara ve şirketlere ulaşım avantajı sağlar).</li></ul>",
+            "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Aktif (Bilişim, yazılım ve çeşitli sosyal kulüpler).</li><li><b>Ulaşım Kolaylığı:</b> İyi (Merkezi lokasyondaki kampüslere toplu taşıma ile kolay erişim).</li></ul>",
+            "finance": "<ul><li><b>Yurt İmkanı:</b> Anlaşmalı yurtlar mevcut.</li><li><b>Ek Burs Olanakları:</b> Var (Başarı ve ihtiyaç bursları sunulmaktadır).</li><li><b>Şehir Yaşam Maliyeti:</b> Yüksek.</li></ul>"
+        },
+        "scores": { "academic": 3, "practical": 3, "english": 3, "career": 2, "technopark": 1, "transport": 4, "social": 3 }
+    },
+    {
+        "id": 18,
+        "name": "İstanbul Aydın Üniversitesi",
+        "program": "Anadolu BİL MYO (Bilgisayar Prog. - U.Ö.)",
+        "city": "İstanbul",
+        "type": "Vakıf",
+        "teaching": "Uzaktan",
+        "rank2024": 456012,
+        "rank2023": 123775,
+        "rank2022": 77718,
+        "details": {
+            "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Örgün öğretim ile ortak, geniş kadro.</li><li><b>Uygulamalı Eğitim:</b> Sanal laboratuvarlar ve proje bazlı ödevler üzerinden.</li><li><b>İngilizce Desteği:</b> Uzaktan eğitim modeline uygun materyaller.</li></ul>",
+            "career": "<ul><li><b>Staj Programı:</b> Zorunlu (Öğrenci kendi yaşadığı şehirde stajını ayarlayabilir).</li><li><b>Sektör İşbirlikleri:</b> Üniversitenin genel anlaşmalarından faydalanma imkanı.</li><li><b>Teknopark:</b> Var (İAÜ Teknoloji Geliştirme Merkezi).</li></ul>",
+            "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Dijital platformlar üzerinden katılım mümkün.</li><li><b>Ulaşım Kolaylığı:</b> Uygulanamaz (Uzaktan Eğitim).</li></ul>",
+            "finance": "<ul><li><b>Yurt İmkanı:</b> Uygulanamaz.</li><li><b>Şehir Yaşam Maliyeti:</b> Öğrencinin yaşadığı şehre göre değişir.</li></ul>"
+        },
+        "scores": { "academic": 2, "practical": 2, "english": 1, "career": 2, "technopark": 4, "transport": 1, "social": 1 }
+    },
+    {
+        "id": 19,
+        "name": "İstanbul Ticaret Üniversitesi",
+        "program": "MYO (Siber Güvenlik - Ücretli / %50 İndirimli)",
+        "city": "İstanbul",
+        "type": "Vakıf",
+        "teaching": "Örgün",
+        "rank2024": 573119,
+        "rank2023": "D",
+        "rank2022": "D",
+        "details": {
+            "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Burslu program ile aynı.</li><li><b>Uygulamalı Eğitim:</b> Burslu program ile aynı.</li><li><b>İngilizce Desteği:</b> Burslu program ile aynı.</li></ul>",
+            "career": "<ul><li><b>Staj Programı:</b> Burslu program ile aynı.</li><li><b>Sektör İşbirlikleri:</b> Burslu program ile aynı.</li><li><b>Teknopark:</b> Burslu program ile aynı.</li></ul>",
+            "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Burslu program ile aynı.</li><li><b>Ulaşım Kolaylığı:</b> Burslu program ile aynı.</li></ul>",
+            "finance": "<ul><li><b>Yurt İmkanı:</b> Burslu program ile aynı.</li><li><b>Ek Burs Olanakları:</b> Genellikle daha sınırlı, ancak akademik başarıya göre sonradan burs kazanma imkanları olabilir.</li><li><b>Şehir Yaşam Maliyeti:</b> Yüksek.</li></ul>"
+        },
+        "scores": { "academic": 3, "practical": 3, "english": 3, "career": 4, "technopark": 2, "transport": 4, "social": 3 }
+    },
+    {
+        "id": 20,
+        "name": "Haliç Üniversitesi",
+        "program": "MYO (Bilgisayar Prog. - Burslu)",
+        "city": "İstanbul",
+        "type": "Vakıf",
+        "teaching": "Örgün",
+        "rank2024": 329088,
+        "rank2023": 193937,
+        "rank2022": 208937,
+        "details": { "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Deneyimli.</li><li><b>Uygulamalı Eğitim:</b> Var (Yeni kampüste modern laboratuvarlar).</li><li><b>İngilizce Desteği:</b> Var (Hazırlık okulu mevcut).</li></ul>", "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> Üniversitenin yerleşik sanayi ve iş dünyası ilişkileri.</li><li><b>Teknopark:</b> Yok.</li></ul>", "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Aktif.</li><li><b>Ulaşım Kolaylığı:</b> İyi (Toplu taşımaya yakın).</li></ul>", "finance": "<ul><li><b>Yurt İmkanı:</b> Anlaşmalı yurtlar mevcut.</li><li><b>Ek Burs Olanakları:</b> Var.</li><li><b>Şehir Yaşam Maliyeti:</b> Yüksek.</li></ul>" },
+        "scores": { "academic": 3, "practical": 3, "english": 3, "career": 2, "technopark": 1, "transport": 4, "social": 3 }
+    },
+    {
+        "id": 21,
+        "name": "Sakarya Uygulamalı Bilimler Üniversitesi",
+        "program": "Sakarya MYO (İnternet ve Ağ Teknolojileri)",
+        "city": "Sakarya",
+        "type": "Devlet",
+        "teaching": "Örgün",
+        "rank2024": 395484,
+        "rank2023": 418189,
+        "rank2022": 415357,
+        "details": { "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Uygulama odaklı, yetkin bir kadro.</li><li><b>Uygulamalı Eğitim:</b> Çok Güçlü (+1 Eğitim Modeli ile bir dönem tam zamanlı işyeri uygulaması).</li><li><b>İngilizce Desteği:</b> Standart (Mesleki İngilizce dersleri).</li></ul>", "career": "<ul><li><b>Staj Programı:</b> Zorunlu ve eğitim modeline entegre.</li><li><b>Sektör İşbirlikleri:</b> Çok Güçlü (Sakarya ve çevre illerdeki sanayi kuruluşlarıyla entegre eğitim).</li><li><b>Teknopark:</b> Var (SUBÜ Teknokent).</li></ul>", "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Aktif (Teknoloji ve network üzerine kulüpler).</li><li><b>Ulaşım Kolaylığı:</b> İyi.</li></ul>", "finance": "<ul><li><b>Yurt İmkanı:</b> İyi (Şehirde geniş KYK ve özel yurt ağı).</li><li><b>Şehir Yaşam Maliyeti:</b> Düşük-Orta.</li></ul>" },
+        "scores": { "academic": 3, "practical": 5, "english": 2, "career": 5, "technopark": 4, "transport": 4, "social": 3 }
+    },
+    {
+        "id": 22,
+        "name": "İstanbul Aydın Üniversitesi",
+        "program": "Anadolu BİL MYO (Bilgisayar Prog. - U.Ö.)",
+        "city": "İstanbul",
+        "type": "Vakıf",
+        "teaching": "Uzaktan",
+        "rank2024": 456012,
+        "rank2023": 123775,
+        "rank2022": 77718,
+        "details": { "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Örgün öğretim ile ortak, geniş kadro.</li><li><b>Uygulamalı Eğitim:</b> Sanal laboratuvarlar ve proje bazlı ödevler üzerinden.</li><li><b>İngilizce Desteği:</b> Uzaktan eğitim modeline uygun materyaller.</li></ul>", "career": "<ul><li><b>Staj Programı:</b> Zorunlu (Öğrenci kendi yaşadığı şehirde stajını ayarlayabilir).</li><li><b>Sektör İşbirlikleri:</b> Üniversitenin genel anlaşmalarından faydalanma imkanı.</li><li><b>Teknopark:</b> Var (İAÜ Teknoloji Geliştirme Merkezi).</li></ul>", "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Dijital platformlar üzerinden katılım mümkün.</li><li><b>Ulaşım Kolaylığı:</b> Uygulanamaz (Uzaktan Eğitim).</li></ul>", "finance": "<ul><li><b>Yurt İmkanı:</b> Uygulanamaz.</li><li><b>Şehir Yaşam Maliyeti:</b> Öğrencinin yaşadığı şehre göre değişir.</li></ul>" },
+        "scores": { "academic": 2, "practical": 2, "english": 1, "career": 2, "technopark": 4, "transport": 1, "social": 1 }
+    },
+    {
+        "id": 23,
+        "name": "İstanbul Ticaret Üniversitesi",
+        "program": "MYO (Siber Güvenlik - Ücretli / %50 İndirimli)",
+        "city": "İstanbul",
+        "type": "Vakıf",
+        "teaching": "Örgün",
+        "rank2024": 573119,
+        "rank2023": "D",
+        "rank2022": "D",
+        "details": { "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Burslu program ile aynı.</li><li><b>Uygulamalı Eğitim:</b> Burslu program ile aynı.</li><li><b>İngilizce Desteği:</b> Burslu program ile aynı.</li></ul>", "career": "<ul><li><b>Staj Programı:</b> Burslu program ile aynı.</li><li><b>Sektör İşbirlikleri:</b> Burslu program ile aynı.</li><li><b>Teknopark:</b> Burslu program ile aynı.</li></ul>", "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Burslu program ile aynı.</li><li><b>Ulaşım Kolaylığı:</b> Burslu program ile aynı.</li></ul>", "finance": "<ul><li><b>Yurt İmkanı:</b> Burslu program ile aynı.</li><li><b>Ek Burs Olanakları:</b> Genellikle daha sınırlı, ancak akademik başarıya göre sonradan burs kazanma imkanları olabilir.</li><li><b>Şehir Yaşam Maliyeti:</b> Yüksek.</li></ul>" },
+        "scores": { "academic": 3, "practical": 3, "english": 3, "career": 4, "technopark": 2, "transport": 4, "social": 3 }
+    },
+    {
+        "id": 24,
+        "name": "Acıbadem Mehmet Ali Aydınlar Üniversitesi",
+        "program": "MYO (Bilgisayar Programcılığı - Burslu)",
+        "city": "İstanbul",
+        "type": "Vakıf",
+        "teaching": "Örgün",
+        "rank2024": 238373,
+        "rank2023": 217946,
+        "rank2022": 272230,
+        "details": {
+            "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Yetkin (Özellikle sağlık bilişimi ve teknolojileri alanında güçlü akademik kadro).</li><li><b>Uygulamalı Eğitim:</b> Var (Modern laboratuvarlar, sağlık bilişimi ve biyomedikal teknolojiler odaklı projeler).</li><li><b>İngilizce Desteği:</b> Güçlü (İngilizce Hazırlık Programı mevcut, mesleki İngilizce'ye önem veriliyor).</li></ul>",
+            "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> Çok Güçlü (Başta Acıbadem Sağlık Grubu ve grubun teknoloji şirketleri olmak üzere sağlık sektöründe geniş staj ve iş imkanı).</li><li><b>Teknopark:</b> Yok (Ancak üniversitenin Kuluçka Merkezi ve proje geliştirme ofisleri aktif).</li></ul>",
+            "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Aktif (Sağlık, teknoloji ve sosyal sorumluluk odaklı kulüpler).</li><li><b>Ulaşım Kolaylığı:</b> İyi (Ataşehir'deki kampüs, metro ve otobüs hatlarına yakın bir konumda).</li></ul>",
+            "finance": "<ul><li><b>Yurt İmkanı:</b> Var (Kampüs içinde modern öğrenci konukevi bulunmaktadır).</li><li><b>Ek Burs Olanakları:</b> Var (Akademik başarıya dayalı ek burslar ve destekler).</li><li><b>Şehir Yaşam Maliyeti:</b> Yüksek.</li></ul>"
+        },
+        "scores": { "academic": 3, "practical": 4, "english": 4, "career": 5, "technopark": 2, "transport": 4, "social": 3 }
+    },
+    {
+        "id": 25,
+        "name": "Haliç Üniversitesi",
+        "program": "MYO (Bilgisayar Programcılığı - Burslu)",
+        "city": "İstanbul",
+        "type": "Vakıf",
+        "teaching": "Örgün",
+        "rank2024": 239073,
+        "rank2023": 193911,
+        "rank2022": 208937,
+        "details": {
+            "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Deneyimli, sektörle bağları olan bir kadro.</li><li><b>Uygulamalı Eğitim:</b> Var (Yeni ve modern kampüslerdeki güncel donanımlı bilgisayar laboratuvarları).</li><li><b>İngilizce Desteği:</b> Var (İsteğe bağlı veya zorunlu hazırlık programları mevcut).</li></ul>",
+            "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> Üniversitenin genel iş dünyası ve sanayi ilişkileri sayesinde staj olanakları.</li><li><b>Teknopark:</b> Yok (Ancak İstanbul'daki merkezi konumu teknoparklara ve şirketlere ulaşım avantajı sağlar).</li></ul>",
+            "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Aktif (Bilişim, yazılım ve çeşitli sosyal kulüpler).</li><li><b>Ulaşım Kolaylığı:</b> İyi (Merkezi lokasyondaki kampüslere toplu taşıma ile kolay erişim).</li></ul>",
+            "finance": "<ul><li><b>Yurt İmkanı:</b> Anlaşmalı yurtlar mevcut.</li><li><b>Ek Burs Olanakları:</b> Var (Başarı ve ihtiyaç bursları sunulmaktadır).</li><li><b>Şehir Yaşam Maliyeti:</b> Yüksek.</li></ul>"
+        },
+        "scores": { "academic": 3, "practical": 3, "english": 3, "career": 2, "technopark": 1, "transport": 4, "social": 3 }
+    },
+    {
+        "id": 26,
+        "name": "İstanbul Aydın Üniversitesi",
+        "program": "Anadolu BİL MYO (Bilgisayar Prog. - İngilizce - Burslu)",
+        "city": "İstanbul",
+        "type": "Vakıf",
+        "teaching": "Örgün",
+        "rank2024": 252225,
+        "rank2023": 202902,
+        "rank2022": 196516,
+        "details": {
+            "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Geniş ve uluslararası deneyime sahip öğretim üyeleri.</li><li><b>Uygulamalı Eğitim:</b> Var (Çok sayıda uygulama laboratuvarı ve proje geliştirme imkanı).</li><li><b>İngilizce Desteği:</b> Çok Güçlü (Program dili tamamen İngilizce, küresel yetkinlik kazandırma hedefi).</li></ul>",
+            "career": "<ul><li><b>Staj Programı:</b> Zorunlu ('Yerinde Uygulama' modeli ile öğrenciler sektörde deneyim kazanır).</li><li><b>Sektör İşbirlikleri:</b> Çok Geniş (Türkiye'nin önde gelen teknoloji, yazılım ve sanayi firmalarıyla kapsamlı işbirlikleri).</li><li><b>Teknopark:</b> Var (İAÜ Teknoloji Geliştirme Merkezi - Tekmer).</li></ul>",
+            "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Çok Aktif (Siber Güvenlik Kulübü dahil, teknoloji ve bilişim alanında çok sayıda kulüp).</li><li><b>Ulaşım Kolaylığı:</b> Çok İyi (Metrobüs hattı üzerinde, ulaşımı çok kolay bir lokasyon).</li></ul>",
+            "finance": "<ul><li><b>Yurt İmkanı:</b> Var (Kampüs içinde ve çevresinde geniş kapasiteli yurtlar).</li><li><b>Ek Burs Olanakları:</b> Var (Geniş yelpazede başarı, spor ve ihtiyaç bursları).</li><li><b>Şehir Yaşam Maliyeti:</b> Yüksek.</li></ul>"
+        },
+        "scores": { "academic": 4, "practical": 4, "english": 5, "career": 4, "technopark": 4, "transport": 5, "social": 4 }
+    },
+    {
+        "id": 27,
+        "name": "Ostim Teknik Üniversitesi",
+        "program": "MYO (Bilgisayar Programcılığı - Burslu)",
+        "city": "Ankara",
+        "type": "Vakıf",
+        "teaching": "Örgün",
+        "rank2024": 253420,
+        "rank2023": 210933,
+        "rank2022": 222373,
+        "details": {
+            "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Sektör Odaklı (OSTİM sanayisinin içinden gelen, tecrübeli eğitmenler).</li><li><b>Uygulamalı Eğitim:</b> Çok Güçlü ('İşyeri Deneyimi' modeli ile eğitim süresince yoğun bir şekilde sanayi içinde uygulama imkanı).</li><li><b>İngilizce Desteği:</b> Geliştiriliyor (İsteğe bağlı hazırlık ve mesleki İngilizce dersleri).</li></ul>",
+            "career": "<ul><li><b>Staj Programı:</b> Zorunlu ve yaygın (Eğitim modelinin ayrılmaz bir parçası, OSTİM içerisindeki firmalarda).</li><li><b>Sektör İşbirlikleri:</b> Çok Güçlü (OSTİM Sanayi Bölgesi'ndeki binlerce KOBİ, savunma sanayii ve teknoloji firmasıyla organik bağ).</li><li><b>Teknopark:</b> Doğal Teknopark (OSTİM'in kendisi bir sanayi ve teknoloji ekosistemi).</li></ul>",
+            "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Gelişmekte Olan (Teknoloji, girişimcilik ve üretim odaklı).</li><li><b>Ulaşım Kolaylığı:</b> İyi (Metro ve otobüs hatları üzerinde).</li></ul>",
+            "finance": "<ul><li><b>Yurt İmkanı:</b> Çevrede geniş özel ve KYK yurt seçenekleri mevcut.</li><li><b>Ek Burs Olanakları:</b> Var (OSTİM Vakfı ve sanayiciler tarafından desteklenen burslar).</li><li><b>Şehir Yaşam Maliyeti:</b> Orta.</li></ul>"
+        },
+        "scores": { "academic": 2, "practical": 5, "english": 1, "career": 5, "technopark": 5, "transport": 4, "social": 2 }
+    },
+    {
+        "id": 28,
+        "name": "İstanbul Üniversitesi-Cerrahpaşa",
+        "program": "Teknik Bilimler MYO (Bilgisayar Programcılığı)",
+        "city": "İstanbul",
+        "type": "Devlet",
+        "teaching": "Örgün",
+        "rank2024": 253940,
+        "rank2023": 238151,
+        "rank2022": 215062,
+        "details": {
+            "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Deneyimli (Türkiye'nin en köklü üniversitelerinden birinin akademik geleneği).</li><li><b>Uygulamalı Eğitim:</b> Var (Büyükçekmece kampüsünde standart bilgisayar laboratuvarları).</li><li><b>İngilizce Desteği:</b> Standart (Program dili Türkçe, üniversite genelinde hazırlık okuma imkanı).</li></ul>",
+            "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> Üniversitenin geniş sanayi ve kamu kurumları ağı üzerinden staj ve kariyer imkanları.</li><li><b>Teknopark:</b> Var (İÜC Teknokent, Avcılar kampüsünde yer alır ve teknoloji firmalarına ev sahipliği yapar).</li></ul>",
+            "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Aktif (Üniversite genelinde çok sayıda sosyal ve teknik öğrenci kulübü).</li><li><b>Ulaşım Kolaylığı:</b> Orta (Büyükçekmece kampüsüne Metrobüs ve otobüs hatları ile aktarmalı ulaşım).</li></ul>",
+            "finance": "<ul><li><b>Yurt İmkanı:</b> Sınırlı (Kampüs çevresinde ve Avcılar'da KYK yurt seçenekleri).</li><li><b>Şehir Yaşam Maliyeti:</b> Yüksek.</li></ul>"
+        },
+        "scores": { "academic": 3, "practical": 2, "english": 1, "career": 2, "technopark": 4, "transport": 3, "social": 3 }
+    },
+    {
+        "id": 29,
+        "name": "İstanbul Bilgi Üniversitesi",
+        "program": "MYO (Bilgisayar Programcılığı - İÖ - Burslu)",
+        "city": "İstanbul",
+        "type": "Vakıf",
+        "teaching": "Örgün",
+        "rank2024": 256089,
+        "rank2023": 196774,
+        "rank2022": 169613,
+        "details": {
+            "academic": "<ul><li><b>Akademisyen Kadrosu:</b> İyi (Uluslararası vizyona sahip, sektörden gelen isimlerin de ders verdiği bir kadro).</li><li><b>Uygulamalı Eğitim:</b> Var (Proje tabanlı öğrenme yaklaşımı, modern laboratuvarlar).</li><li><b>İngilizce Desteği:</b> Güçlü (Eğitim dili Türkçe olsa da üniversitenin güçlü bir İngilizce hazırlık programı var).</li></ul>",
+            "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> Geniş (Yaratıcı endüstriler, teknoloji şirketleri ve sivil toplum kuruluşları ile güçlü ağ).</li><li><b>Teknopark:</b> Yok (Ancak Kuluçka Merkezi BİLGİ TTO ve girişimcilik ekosistemi aktif).</li></ul>",
+            "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Çok Aktif (Türkiye'nin en renkli ve aktif öğrenci hayatlarından birine sahip).</li><li><b>Ulaşım Kolaylığı:</b> İyi (Santralistanbul kampüsüne üniversitenin özel servisleri ve toplu taşıma ile ulaşım).</li></ul>",
+            "finance": "<ul><li><b>Yurt İmkanı:</b> Sınırlı (Anlaşmalı yurtlar ve kampüse yakın özel yurt seçenekleri).</li><li><b>Ek Burs Olanakları:</b> Var (Geniş yelpazede ihtiyaç, başarı ve yetenek bursları).</li><li><b>Şehir Yaşam Maliyeti:</b> Yüksek.</li></ul>"
+        },
+        "scores": { "academic": 3, "practical": 3, "english": 4, "career": 3, "technopark": 2, "transport": 4, "social": 5 }
+    },
+    {
+        "id": 30,
+        "name": "İstinye Üniversitesi",
+        "program": "MYO (Bilgisayar Programcılığı - Burslu)",
+        "city": "İstanbul",
+        "type": "Vakıf",
+        "teaching": "Örgün",
+        "rank2024": 257745,
+        "rank2023": 238512,
+        "rank2022": 244885,
+        "details": {
+            "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Yetkin ve dinamik bir kadro.</li><li><b>Uygulamalı Eğitim:</b> Var (Topkapı kampüsündeki modern teknoloji ve yazılım laboratuvarları).</li><li><b>İngilizce Desteği:</b> Güçlü (İngilizce Hazırlık Programı mevcut).</li></ul>",
+            "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> Güçlü (MLPCare Grubu (Liv Hospital, Medical Park, VM Medical Park) başta olmak üzere sağlık ve teknoloji sektöründe işbirliği).</li><li><b>Teknopark:</b> Yok (Ancak üniversite-sanayi işbirliği ofisi aktif).</li></ul>",
+            "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Aktif (Bilişim, teknoloji ve e-spor kulüpleri popüler).</li><li><b>Ulaşım Kolaylığı:</b> Çok İyi (Topkapı'daki kampüs, metro, metrobüs ve tramvay hatlarının kesişim noktasında).</li></ul>",
+            "finance": "<ul><li><b>Yurt İmkanı:</b> Var (Kampüse yakın anlaşmalı yurtlar ve öğrenci rezidansları).</li><li><b>Ek Burs Olanakları:</b> Var (Akademik başarıya göre ek burs imkanları).</li><li><b>Şehir Yaşam Maliyeti:</b> Yüksek.</li></ul>"
+        },
+        "scores": { "academic": 4, "practical": 3, "english": 4, "career": 4, "technopark": 2, "transport": 5, "social": 3 }
+    },
+    {
+        "id": 31,
+        "name": "Maltepe Üniversitesi",
+        "program": "MYO (Bilgisayar Programcılığı - Burslu)",
+        "city": "İstanbul",
+        "type": "Vakıf",
+        "teaching": "Örgün",
+        "rank2024": 260712,
+        "rank2023": 220699,
+        "rank2022": 213307,
+        "details": {
+            "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Deneyimli bir akademik kadro.</li><li><b>Uygulamalı Eğitim:</b> Var (Uygulama laboratuvarları ve proje atölyeleri).</li><li><b>İngilizce Desteği:</b> Var (İngilizce Hazırlık Okulu mevcut).</li></ul>",
+            "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> Üniversitenin sanayi ve iş dünyasıyla kurduğu genel işbirlikleri.</li><li><b>Teknopark:</b> Yok (Ancak Teknoloji Transfer Ofisi mevcut).</li></ul>",
+            "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Aktif (Geniş bir yelpazede sosyal, kültürel ve teknik kulüpler).</li><li><b>Ulaşım Kolaylığı:</b> Orta (Marmara Eğitim Köyü kampüsüne metro ve sonrasında ring servisleri ile ulaşım).</li></ul>",
+            "finance": "<ul><li><b>Yurt İmkanı:</b> Var (Kampüs içerisinde geniş kapasiteli yurt olanakları).</li><li><b>Ek Burs Olanakları:</b> Var (Başarı, sporcu ve ihtiyaç bursları).</li><li><b>Şehir Yaşam Maliyeti:</b> Yüksek.</li></ul>"
+        },
+        "scores": { "academic": 3, "practical": 3, "english": 3, "career": 2, "technopark": 2, "transport": 3, "social": 3 }
+    },
+    {
+        "id": 32,
+        "name": "Marmara Üniversitesi",
+        "program": "Teknik Bilimler MYO (Bilgisayar Programcılığı - U.Ö.)",
+        "city": "İstanbul",
+        "type": "Devlet",
+        "teaching": "Uzaktan",
+        "rank2024": 287985,
+        "rank2023": 218015,
+        "rank2022": 230388,
+        "details": {
+            "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Örgün öğretim ile ortak, güçlü ve deneyimli kadro.</li><li><b>Uygulamalı Eğitim:</b> Sanal laboratuvarlar, proje tabanlı ödevler ve online simülasyonlar üzerinden yürütülür.</li><li><b>İngilizce Desteği:</b> Uzaktan eğitim modeline uygun dijital materyaller ve kaynaklar sunulur.</li></ul>",
+            "career": "<ul><li><b>Staj Programı:</b> Zorunlu (Öğrencinin ikamet ettiği şehirde stajını ayarlamasına olanak tanır, esneklik sağlar).</li><li><b>Sektör İşbirlikleri:</b> Üniversitenin genel anlaşmaları ve mezun ağı, kariyer fırsatları için bir avantajdır.</li><li><b>Teknopark:</b> Var (Marmara Teknokent).</li></ul>",
+            "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Dijital platformlar ve etkinlikler üzerinden katılım mümkün.</li><li><b>Ulaşım Kolaylığı:</b> Uygulanamaz (Uzaktan Eğitim).</li></ul>",
+            "finance": "<ul><li><b>Yurt İmkanı:</b> Uygulanamaz.</li><li><b>Şehir Yaşam Maliyeti:</b> Öğrencinin yaşadığı şehre göre değişir, bu durum bir avantaj olabilir.</li></ul>"
+        },
+        "scores": { "academic": 4, "practical": 2, "english": 1, "career": 2, "technopark": 4, "transport": 1, "social": 1 }
+    },
+    {
+        "id": 33,
+        "name": "Hacettepe Üniversitesi",
+        "program": "Başkent OSB Teknik Bilimler MYO (Bilgisayar Programcılığı)",
+        "city": "Ankara",
+        "type": "Devlet",
+        "teaching": "Örgün",
+        "rank2024": 290641,
+        "rank2023": 274593,
+        "rank2022": 283141,
+        "details": {
+            "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Güçlü (Türkiye'nin en iyi üniversitelerinden birinin akademik yetkinliği).</li><li><b>Uygulamalı Eğitim:</b> Var (Organize Sanayi Bölgesi (OSB) içinde konumlanması, uygulamalı eğitime odaklandığını gösterir).</li><li><b>İngilizce Desteği:</b> Standart (Üniversite genelinde güçlü bir hazırlık eğitimi imkanı var).</li></ul>",
+            "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> Güçlü (Başkent OSB içerisindeki sanayi ve teknoloji firmalarıyla doğal bir işbirliği potansiyeli).</li><li><b>Teknopark:</b> Var (Hacettepe Teknokent, Ankara'nın en önemli teknoloji merkezlerinden biridir).</li></ul>",
+            "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Üniversite genelinde çok aktif (Ana kampüsteki kulüplere katılım imkanı).</li><li><b>Ulaşım Kolaylığı:</b> Orta (Şehir merkezine uzak, özel servisler ve EGO otobüsleri ile ulaşım sağlanır).</li></ul>",
+            "finance": "<ul><li><b>Yurt İmkanı:</b> Sınırlı (Ana kampüs ve şehir merkezindeki KYK yurtları değerlendirilebilir).</li><li><b>Şehir Yaşam Maliyeti:</b> Orta.</li></ul>"
+        },
+        "scores": { "academic": 5, "practical": 4, "english": 3, "career": 4, "technopark": 5, "transport": 3, "social": 4 }
+    }
+]
