@@ -63,6 +63,75 @@
         .prediction-inputs { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }
         .prediction-inputs div { display: flex; flex-direction: column; }
         .prediction-inputs input { width: 100%; box-sizing: border-box; padding: 8px; border: 1px solid #ccc; border-radius: 4px; }
+        .calculator-container {
+            background: var(--card-bg-color);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 25px;
+        }
+        .calculator-container h2 {
+            text-align: center;
+            color: var(--primary-color);
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+        .form-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 10px;
+            align-items: center;
+        }
+        .form-grid label {
+            font-weight: 600;
+        }
+        .form-grid input {
+            padding: 8px;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            width: 100%;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .form-grid input[readonly] {
+            background-color: #f0f0f0;
+            font-weight: bold;
+            cursor: not-allowed;
+        }
+        .col-header {
+            font-weight: bold;
+            text-align: center;
+            font-size: 0.9em;
+            color: #555;
+        }
+        .obp-section {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .button-container .btn-reset {
+            background-color: #6c757d;
+            color: white;
+            margin-left: 10px;
+        }
+        #calculator-results {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #e3f2fd;
+            border: 1px solid #bde0fe;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 1.2em;
+            display: none; /* Başlangıçta gizli */
+        }
+        #calculator-results p {
+            margin: 5px 0;
+        }
     </style>
 </head>
 <body>
@@ -70,6 +139,49 @@
     <div class="container">
         <h1 style="text-align: center; color: var(--primary-color);">Stratejik Tercih Asistanı</h1>
 
+        <div class="calculator-container">
+            <h2>TYT Puan Hesaplama (2024 Katsayıları ile)</h2>
+            <form id="tyt-calculator-form">
+                <div class="form-grid">
+                    <div class="col-header">Ders</div>
+                    <div class="col-header">Doğru</div>
+                    <div class="col-header">Yanlış</div>
+                    <div class="col-header">Net</div>
+
+                    <label for="turkce-dogru">Türkçe (40 Soru)</label>
+                    <input type="number" id="turkce-dogru" min="0" max="40" placeholder="0">
+                    <input type="number" id="turkce-yanlis" min="0" max="40" placeholder="0">
+                    <input type="text" id="turkce-net" readonly>
+
+                    <label for="sosyal-dogru">Sosyal Bilimler (20 Soru)</label>
+                    <input type="number" id="sosyal-dogru" min="0" max="20" placeholder="0">
+                    <input type="number" id="sosyal-yanlis" min="0" max="20" placeholder="0">
+                    <input type="text" id="sosyal-net" readonly>
+
+                    <label for="mat-dogru">Temel Matematik (40 Soru)</label>
+                    <input type="number" id="mat-dogru" min="0" max="40" placeholder="0">
+                    <input type="number" id="mat-yanlis" min="0" max="40" placeholder="0">
+                    <input type="text" id="mat-net" readonly>
+
+                    <label for="fen-dogru">Fen Bilimleri (20 Soru)</label>
+                    <input type="number" id="fen-dogru" min="0" max="20" placeholder="0">
+                    <input type="number" id="fen-yanlis" min="0" max="20" placeholder="0">
+                    <input type="text" id="fen-net" readonly>
+                </div>
+                <hr>
+                <div class="obp-section">
+                    <label for="obp-input">Diploma Notu (100'lük) veya OBP (500'lük):</label>
+                    <input type="number" id="obp-input" step="any" placeholder="örn: 85 veya 425">
+                </div>
+                <div class="button-container">
+                    <button type="submit" class="btn">Hesapla</button>
+                    <button type="reset" id="reset-calc-btn" class="btn btn-reset">Sıfırla</button>
+                </div>
+            </form>
+            <div id="calculator-results">
+                </div>
+        </div>
+        
         <div class="analysis-box">
             <h3>2025 YKS Genel Yorum ve Stratejik Analiz</h3>
             <p>Yaptığımız araştırmalara göre, 2025 TYT'nin Matematik bölümünün 2024'e kıyasla daha seçici olduğu, Türkçe bölümünün ise benzer zorlukta olduğu yönünde genel bir kanı mevcuttur. Matematikteki bu durum, standart sapmayı ve puan yığılmalarını etkileyerek sıralamalarda beklenmedik oynamalara neden olabilir. Bu nedenle, tercih yaparken sadece net ve puanlara değil, <strong>bölümlerin popülerite trendlerine (▲,─,▼) ve kendi tahmin aralığınıza</strong> odaklanmanız stratejik olarak önemlidir.</p>
@@ -320,6 +432,87 @@
         }
 
         initializeApp();
+        const tytForm = document.getElementById('tyt-calculator-form');
+            const resultsDiv = document.getElementById('calculator-results');
+            const resetCalcBtn = document.getElementById('reset-calc-btn');
+
+            const inputs = {
+                turkce: { dogru: document.getElementById('turkce-dogru'), yanlis: document.getElementById('turkce-yanlis'), net: document.getElementById('turkce-net'), max: 40 },
+                sosyal: { dogru: document.getElementById('sosyal-dogru'), yanlis: document.getElementById('sosyal-yanlis'), net: document.getElementById('sosyal-net'), max: 20 },
+                mat: { dogru: document.getElementById('mat-dogru'), yanlis: document.getElementById('mat-yanlis'), net: document.getElementById('mat-net'), max: 40 },
+                fen: { dogru: document.getElementById('fen-dogru'), yanlis: document.getElementById('fen-yanlis'), net: document.getElementById('fen-net'), max: 20 }
+            };
+
+            function updateNet(ders) {
+                const dogru = parseFloat(inputs[ders].dogru.value) || 0;
+                const yanlis = parseFloat(inputs[ders].yanlis.value) || 0;
+                if (dogru + yanlis > inputs[ders].max) {
+                    inputs[ders].dogru.style.borderColor = 'red';
+                    inputs[ders].yanlis.style.borderColor = 'red';
+                    inputs[ders].net.value = "HATA!";
+                    return;
+                }
+                inputs[ders].dogru.style.borderColor = '';
+                inputs[ders].yanlis.style.borderColor = '';
+                const net = dogru - (yanlis / 4);
+                inputs[ders].net.value = net.toFixed(2);
+            }
+
+            Object.keys(inputs).forEach(ders => {
+                inputs[ders].dogru.addEventListener('input', () => updateNet(ders));
+                inputs[ders].yanlis.addEventListener('input', () => updateNet(ders));
+            });
+
+            tytForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+
+                // Katsayılar (2024 YKS'ye göre)
+                const katsayi = { turkce: 3.3, sosyal: 3.4, mat: 3.3, fen: 3.4 };
+                const hamPuanTaban = 100;
+
+                let toplamHamPuan = hamPuanTaban;
+                let hata = false;
+
+                Object.keys(inputs).forEach(ders => {
+                    updateNet(ders);
+                    if (inputs[ders].net.value === "HATA!") {
+                        hata = true;
+                    }
+                    const net = parseFloat(inputs[ders].net.value) || 0;
+                    toplamHamPuan += net * katsayi[ders];
+                });
+
+                if (hata) {
+                    resultsDiv.style.display = 'block';
+                    resultsDiv.innerHTML = `<p style="color: red;">Lütfen doğru ve yanlış sayılarını kontrol edin. Toplamları, dersin soru sayısını aşamaz.</p>`;
+                    return;
+                }
+
+                let obpInput = parseFloat(document.getElementById('obp-input').value) || 0;
+                let obpPuan = 0;
+                if (obpInput >= 50 && obpInput <= 100) { // Diploma notu olarak girilmiş
+                    obpPuan = obpInput * 5;
+                } else if (obpInput >= 250 && obpInput <= 500) { // OBP olarak girilmiş
+                    obpPuan = obpInput;
+                }
+                
+                const yerlestirmePuani = toplamHamPuan + (obpPuan * 0.6);
+
+                resultsDiv.style.display = 'block';
+                resultsDiv.innerHTML = `
+                    <p><strong>TYT Ham Puanınız:</strong> <span class="rank">${toplamHamPuan.toFixed(3)}</span></p>
+                    ${obpPuan > 0 ? `<p><strong>TYT Yerleştirme Puanınız:</strong> <span class="rank">${yerlestirmePuani.toFixed(3)}</span></p>` : ''}
+                `;
+            });
+
+            resetCalcBtn.addEventListener('click', function() {
+                Object.keys(inputs).forEach(ders => {
+                    inputs[ders].net.value = '';
+                    inputs[ders].dogru.style.borderColor = '';
+                    inputs[ders].yanlis.style.borderColor = '';
+                });
+                resultsDiv.style.display = 'none';
+            });
     });
     </script>
 </body>
