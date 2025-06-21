@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Düzeltilmiş Gelişmiş Tercih Asistanı</title>
+    <title>Stratejik Tercih Asistanı</title>
     <style>
         :root {
             --primary-color: #0056b3;
@@ -21,233 +21,76 @@
             padding: 20px;
             color: var(--font-color);
         }
-        .container {
-            max-width: 1200px;
-            margin: auto;
-        }
-        .filter-container {
-            background: var(--card-bg-color);
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            margin-bottom: 25px;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 15px;
-            align-items: end;
-        }
-        .filter-group {
-            display: flex;
-            flex-direction: column;
-        }
-        .filter-group label {
-            font-weight: 600;
-            font-size: 0.9em;
-            margin-bottom: 5px;
-            color: var(--primary-color);
-        }
-        .filter-group input, .filter-group select {
-            padding: 10px;
-            border-radius: 5px;
-            border: 1px solid var(--border-color);
-            font-size: 1em;
-        }
-        .main-table {
-            width: 100%;
-            border-collapse: collapse;
-            background: var(--card-bg-color);
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-        }
-        .main-table th {
-            background-color: var(--primary-color);
-            color: white;
-            padding: 12px;
-            text-align: left;
-            cursor: pointer;
-            user-select: none;
-        }
-        .main-table th:hover {
-            background-color: #004a9a;
-        }
-        .main-table .sort-indicator {
-            float: right;
-            opacity: 0.7;
-        }
-        .university-row {
-            cursor: pointer;
-            transition: background-color 0.2s ease;
-        }
-        .university-row:hover {
-            background-color: #f1f9ff;
-        }
-        .university-row.active {
-            background-color: #e3f2fd;
-        }
-        .university-row td {
-            padding: 12px;
-            border-bottom: 1px solid var(--border-color);
-        }
-        .details-row {
-            display: none;
-        }
-        .details-row.show {
-            display: table-row;
-        }
-        .details-row td {
-            padding: 0;
-        }
-        .details-card {
-            background-color: #fafcff;
-            padding: 20px;
-            border-left: 5px solid var(--secondary-color);
-        }
-        .details-table {
-            width: 100%;
-            border-collapse: collapse;
-        }
+        .container { max-width: 1200px; margin: auto; }
+        .filter-container { background: var(--card-bg-color); padding: 20px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-bottom: 25px; display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; align-items: end; }
+        .filter-group { display: flex; flex-direction: column; }
+        .filter-group label { font-weight: 600; font-size: 0.9em; margin-bottom: 5px; color: var(--primary-color); }
+        .filter-group input, .filter-group select { padding: 10px; border-radius: 5px; border: 1px solid var(--border-color); font-size: 1em; }
+        .main-table { width: 100%; border-collapse: collapse; background: var(--card-bg-color); border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); font-size: 0.95em; }
+        .main-table th { background-color: var(--primary-color); color: white; padding: 12px 10px; text-align: left; cursor: pointer; user-select: none; }
+        .main-table th:hover { background-color: #004a9a; }
+        .main-table .sort-indicator { float: right; opacity: 0.7; }
+        .university-row { cursor: pointer; transition: background-color 0.2s ease; }
+        .university-row:hover { background-color: #f1f9ff; }
+        .university-row.active { background-color: #e3f2fd; }
+        .university-row td { padding: 12px 10px; border-bottom: 1px solid var(--border-color); vertical-align: middle; }
+        .details-row { display: none; }
+        .details-row.show { display: table-row; }
+        .details-row td { padding: 0; }
+        .details-card { background-color: #fafcff; padding: 20px; border-left: 5px solid var(--secondary-color); }
+        .details-table { width: 100%; border-collapse: collapse; }
         .details-table th { background-color: transparent; color: var(--primary-color); padding: 10px; width: 25%; vertical-align: top; text-align: left; border-bottom: 1px solid #e8f0f7; cursor: default; }
         .details-table td { padding: 10px; border-bottom: 1px solid #e8f0f7; }
         .details-table ul { margin: 0; padding-left: 20px; }
         .details-table li { margin-bottom: 8px; }
         .rank { font-weight: bold; color: var(--secondary-color); }
-        .btn {
-            padding: 10px 15px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-weight: bold;
-            font-size: 1em;
-        }
-        .btn-add {
-            background-color: var(--secondary-color);
-            color: white;
-        }
-        .btn-add:hover {
-            background-color: #248a7e;
-        }
-        .preference-list {
-            margin-top: 30px;
-            background: var(--card-bg-color);
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-        }
+        .btn { padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; font-size: 1em; }
+        .btn-add { background-color: var(--secondary-color); color: white; font-size: 0.9em; padding: 8px 12px; }
+        .btn-add:hover { background-color: #248a7e; }
+        .preference-list { margin-top: 30px; background: var(--card-bg-color); padding: 20px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
         .preference-list h2 { color: var(--primary-color); border-bottom: 2px solid var(--primary-color); padding-bottom: 10px; }
         .preference-list ul { list-style-type: none; padding: 0; }
-        .preference-list li {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px;
-            border-bottom: 1px solid var(--border-color);
-        }
-        .preference-list .btn-remove {
-            background-color: #e63946;
-            color: white;
-            font-size: 0.8em;
-            padding: 5px 10px;
-        }
-        .modal-backdrop {
-            display: none; /* Varsayılan olarak gizli */
-            position: fixed;
-            z-index: 1000;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            background-color: rgba(0,0,0,0.5);
-            animation: fadeIn 0.3s;
-        }
-        .modal-content {
-            background-color: #fefefe;
-            margin: 10% auto;
-            padding: 20px;
-            border: 1px solid #888;
-            width: 80%;
-            max-width: 600px;
-            border-radius: 8px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-            animation: slideIn 0.3s;
-        }
-        .modal-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-color); padding-bottom: 10px; margin-bottom: 20px;}
-        .modal-header h2 { margin: 0; color: var(--primary-color); }
-        .close-btn { color: #aaa; float: right; font-size: 28px; font-weight: bold; border: none; background: none; cursor: pointer; }
-        .close-btn:hover, .close-btn:focus { color: black; text-decoration: none; }
-        .modal-body p { font-size: 0.9em; color: #666; }
-        .priority-slider { margin-bottom: 15px; }
-        .priority-slider label { display: block; margin-bottom: 5px; font-weight: 500;}
-        .priority-slider input[type=range] { width: 80%; vertical-align: middle; }
-        .priority-slider .slider-value { display: inline-block; width: 15%; text-align: center; font-weight: bold; color: var(--secondary-color); }
-        .modal-footer { text-align: right; margin-top: 20px; }
-        #priorities-btn { background-color: #e76f51; color: white; }
-        #save-priorities-btn { background-color: var(--primary-color); color: white; }
-
-        @keyframes fadeIn { from {opacity: 0;} to {opacity: 1;} }
-        @keyframes slideIn { from {transform: translateY(-50px);} to {transform: translateY(0);} }
-
-        /* Kişisel Puan için Stil */
-        .personal-score {
-            font-weight: bold;
-            color: #d90429;
-            background-color: #ffccd5;
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-size: 0.9em;
-        }
+        .preference-list li { display: flex; justify-content: space-between; align-items: center; padding: 10px; border-bottom: 1px solid var(--border-color); }
+        .preference-list .btn-remove { background-color: #e63946; color: white; font-size: 0.8em; padding: 5px 10px; }
+        .trend-icon { font-size: 1.2em; font-weight: bold; text-align: center; display: block; }
+        .trend-up { color: #2a9d8f; }
+        .trend-stable { color: #0077b6; }
+        .trend-down { color: #e76f51; }
+        .analysis-box { background: #fffbe6; border: 1px solid #ffe58f; padding: 15px; border-radius: 8px; margin-bottom: 25px; }
+        .analysis-box h3 { margin-top: 0; color: #d48806; }
+        .personal-prediction { background: #f0f8ff; padding: 15px; margin-top: 15px; border-radius: 5px; border: 1px dashed #a2d2ff; }
+        .personal-prediction h4 { margin-top: 0; color: var(--primary-color); }
+        .prediction-inputs { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }
+        .prediction-inputs div { display: flex; flex-direction: column; }
+        .prediction-inputs input { width: 100%; box-sizing: border-box; padding: 8px; border: 1px solid #ccc; border-radius: 4px; }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1 style="text-align: center; color: var(--primary-color);">Gelişmiş Tercih Asistanı (Düzeltilmiş Versiyon)</h1>
+        <h1 style="text-align: center; color: var(--primary-color);">Stratejik Tercih Asistanı</h1>
 
-        <div class="filter-container">
-            <div class="filter-group">
-                <label for="filter-uni">Üniversite Adı</label>
-                <input type="text" id="filter-uni" placeholder="örn: İstanbul Teknik">
-            </div>
-            <div class="filter-group">
-                <label for="filter-city">Şehir</label>
-                <input type="text" id="filter-city" placeholder="örn: Ankara">
-            </div>
-            <div class="filter-group">
-                <label for="filter-type">Üniversite Türü</label>
-                <select id="filter-type">
-                    <option value="">Tümü</option>
-                    <option value="Devlet">Devlet</option>
-                    <option value="Vakıf">Vakıf</option>
-                </select>
-            </div>
-            <div class="filter-group">
-                <label for="filter-teaching">Öğretim Türü</label>
-                <select id="filter-teaching">
-                    <option value="">Tümü</option>
-                    <option value="Örgün">Örgün</option>
-                    <option value="Uzaktan">Uzaktan</option>
-                </select>
-            </div>
-            <div class="filter-group">
-                <label for="filter-rank-start">Sıralama Aralığı (En Yüksek)</label>
-                <input type="number" id="filter-rank-start" placeholder="örn: 50000">
-            </div>
-            <div class="filter-group">
-                <label for="filter-rank-end">Sıralama Aralığı (En Düşük)</label>
-                <input type="number" id="filter-rank-end" placeholder="örn: 200000">
-            </div>
-            <button id="priorities-btn" class="btn">Önceliklerim</button>
+        <div class="analysis-box">
+            <h3>2025 YKS Genel Yorum ve Stratejik Analiz</h3>
+            <p>Yaptığımız araştırmalara göre, 2025 TYT'nin Matematik bölümünün 2024'e kıyasla daha seçici olduğu, Türkçe bölümünün ise benzer zorlukta olduğu yönünde genel bir kanı mevcuttur. Matematikteki bu durum, standart sapmayı ve puan yığılmalarını etkileyerek sıralamalarda beklenmedik oynamalara neden olabilir. Bu nedenle, tercih yaparken sadece net ve puanlara değil, <strong>bölümlerin popülerite trendlerine (▲,─,▼) ve kendi tahmin aralığınıza</strong> odaklanmanız stratejik olarak önemlidir.</p>
         </div>
 
+        <div class="filter-container">
+            <div class="filter-group"><label for="filter-uni">Üniversite Adı</label><input type="text" id="filter-uni" placeholder="örn: İstanbul Teknik"></div>
+            <div class="filter-group"><label for="filter-city">Şehir</label><input type="text" id="filter-city" placeholder="örn: Ankara"></div>
+            <div class="filter-group"><label for="filter-type">Üniversite Türü</label><select id="filter-type"><option value="">Tümü</option><option value="Devlet">Devlet</option><option value="Vakıf">Vakıf</option></select></div>
+            <div class="filter-group"><label for="filter-teaching">Öğretim Türü</label><select id="filter-teaching"><option value="">Tümü</option><option value="Örgün">Örgün</option><option value="Uzaktan">Uzaktan</option></select></div>
+            <div class="filter-group"><label for="filter-rank-start">Sıralama (En Yüksek)</label><input type="number" id="filter-rank-start" placeholder="örn: 50000"></div>
+            <div class="filter-group"><label for="filter-rank-end">Sıralama (En Düşük)</label><input type="number" id="filter-rank-end" placeholder="örn: 300000"></div>
+        </div>
+        
         <table class="main-table">
             <thead>
                 <tr>
                     <th data-sort="name">Üniversite Adı / Program<span class="sort-indicator"></span></th>
                     <th data-sort="city">Şehir<span class="sort-indicator"></span></th>
-                    <th>Sıralamalar (24/23/22)</th>
+                    <th data-sort="rank2024">2024 Sıralama<span class="sort-indicator"></span></th>
                     <th data-sort="trend">Trend<span class="sort-indicator"></span></th>
-                    <th data-sort="personalScore">Kişisel Puan<span class="sort-indicator"></span></th>
                     <th>Tercih</th>
                 </tr>
             </thead>
@@ -257,60 +100,10 @@
 
         <div class="preference-list">
             <h2>Tercih Listem</h2>
-            <ul id="preference-ul">
-                </ul>
-        </div>
-
-        <div id="priorities-modal" class="modal-backdrop">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2>Kişisel Önceliklerinizi Belirleyin</h2>
-                    <button id="close-modal-btn" class="close-btn">&times;</button>
-                </div>
-                <div class="modal-body">
-                    <p>Her bir kriterin sizin için ne kadar önemli olduğunu 1 (Az Önemli) ile 5 (Çok Önemli) arasında belirleyin.</p>
-                    <div class="priority-slider">
-                        <label for="weight-academic">Akademik Kadro ve Müfredat</label>
-                        <input type="range" id="weight-academic" min="1" max="5" value="3" data-weight-key="academic">
-                        <span class="slider-value">3</span>
-                    </div>
-                    <div class="priority-slider">
-                        <label for="weight-practical">Uygulamalı Eğitim / Laboratuvar</label>
-                        <input type="range" id="weight-practical" min="1" max="5" value="3" data-weight-key="practical">
-                        <span class="slider-value">3</span>
-                    </div>
-                    <div class="priority-slider">
-                        <label for="weight-english">İngilizce Desteği</label>
-                        <input type="range" id="weight-english" min="1" max="5" value="3" data-weight-key="english">
-                        <span class="slider-value">3</span>
-                    </div>
-                    <div class="priority-slider">
-                        <label for="weight-career">Kariyer / Sektör İşbirlikleri</label>
-                        <input type="range" id="weight-career" min="1" max="5" value="3" data-weight-key="career">
-                        <span class="slider-value">3</span>
-                    </div>
-                     <div class="priority-slider">
-                        <label for="weight-technopark">Teknopark / Kuluçka Merkezi</label>
-                        <input type="range" id="weight-technopark" min="1" max="5" value="3" data-weight-key="technopark">
-                        <span class="slider-value">3</span>
-                    </div>
-                    <div class="priority-slider">
-                        <label for="weight-transport">Ulaşım Kolaylığı</label>
-                        <input type="range" id="weight-transport" min="1" max="5" value="3" data-weight-key="transport">
-                        <span class="slider-value">3</span>
-                    </div>
-                     <div class="priority-slider">
-                        <label for="weight-social">Kampüs Hayatı / Öğrenci Kulüpleri</label>
-                        <input type="range" id="weight-social" min="1" max="5" value="3" data-weight-key="social">
-                        <span class="slider-value">3</span>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button id="save-priorities-btn" class="btn">Kaydet ve Uygula</button>
-                </div>
-            </div>
+            <ul id="preference-ul"></ul>
         </div>
     </div>
+
     <script>
     document.addEventListener('DOMContentLoaded', async function () {
         
@@ -322,39 +115,11 @@
         }
 
         let universityData = [];
-        let currentSort = { key: 'personalScore', direction: 'desc' };
+        let currentSort = { key: 'rank2024', direction: 'asc' };
         let preferenceList = [];
-        let userWeights = {
-            academic: 5, career: 5, practical: 4, english: 4,
-            technopark: 3, social: 2, transport: 1
-        };
 
         const tableBody = document.getElementById('university-table-body');
         const preferenceUl = document.getElementById('preference-ul');
-        const modal = document.getElementById('priorities-modal');
-        const prioritiesBtn = document.getElementById('priorities-btn');
-        const closeModalBtn = document.getElementById('close-modal-btn');
-        const savePrioritiesBtn = document.getElementById('save-priorities-btn');
-        const sliders = document.querySelectorAll('.priority-slider input[type=range]');
-
-        function calculatePersonalScore(uni, weights) {
-            if (typeof uni.reputation !== 'number') { return 0; }
-            let baseScore = uni.reputation;
-            let bonusScore = 0;
-            
-            if (uni.scores) {
-                for (const key in weights) {
-                    if (uni.scores.hasOwnProperty(key)) {
-                        const weightMultiplier = (weights[key] - 1) / 4; 
-                        const scoreMultiplier = (uni.scores[key] || 0) / 5;
-                        const maxBonusPerCategory = 4;
-                        bonusScore += scoreMultiplier * weightMultiplier * maxBonusPerCategory;
-                    }
-                }
-            }
-            const finalScore = baseScore + bonusScore;
-            return Math.min(100, Math.round(finalScore));
-        }
 
         function calculateTrend(uni) {
             const r24 = uni.rank2024;
@@ -368,29 +133,30 @@
         function renderTable(data) {
             tableBody.innerHTML = '';
             if (data.length === 0) {
-                tableBody.innerHTML = '<tr><td colspan="6" style="text-align:center; padding: 20px;">Bu kriterlere uygun sonuç bulunamadı.</td></tr>';
+                tableBody.innerHTML = '<tr><td colspan="5" style="text-align:center; padding: 20px;">Bu kriterlere uygun sonuç bulunamadı.</td></tr>';
                 return;
             }
+            
             data.forEach(uni => {
-                const ranks = `<b>24:</b> ${uni.rank2024}<br><b>23:</b> ${uni.rank2023}<br><b>22:</b> ${uni.rank2022}`;
+                const ranksHTML = `<b>24:</b> ${uni.rank2024}<br><b>23:</b> ${uni.rank2023}<br><b>22:</b> ${uni.rank2022}`;
                 const trend = uni.trend;
                 const rowHTML = `
                     <tr class="university-row" data-id="${uni.id}">
                         <td><strong>${uni.name}</strong><br>${uni.program}</td>
                         <td>${uni.city}</td>
-                        <td>${ranks}</td>
+                        <td><span class="rank">${uni.rank2024}</span></td>
                         <td title="${trend.text}"><span class="trend-icon ${trend.class}">${trend.icon}</span></td>
-                        <td><span class="personal-score">${uni.personalScore} Puan</span></td>
                         <td><button class="btn btn-add" data-id="${uni.id}">Listeye Ekle</button></td>
                     </tr>
                     <tr class="details-row" data-id="${uni.id}">
-                        <td colspan="6">
+                        <td colspan="5">
                             <div class="details-card">
                                  <table class="details-table">
                                     <tr><th>Akademik & Müfredat</th><td>${uni.details.academic}</td></tr>
                                     <tr><th>Kariyer & Sektör</th><td>${uni.details.career}</td></tr>
                                     <tr><th>Kampüs & Sosyal Yaşam</th><td>${uni.details.campus}</td></tr>
                                     <tr><th>Maliyet & Finansal</th><td>${uni.details.finance}</td></tr>
+                                    <tr><th>Son 3 Yıl Sıralama Detayı</th><td>${ranksHTML}</td></tr>
                                     <tr class="personal-prediction">
                                         <th>2025 Tahmin Aralığınız</th>
                                         <td>
@@ -432,7 +198,6 @@
             });
 
             filteredData.forEach(uni => {
-                uni.personalScore = calculatePersonalScore(uni, userWeights);
                 uni.trend = calculateTrend(uni);
             });
             
@@ -449,7 +214,7 @@
                     const trendOrder = { '▲': 3, '─': 2, '▼': 1 };
                     valA = trendOrder[a.trend.icon];
                     valB = trendOrder[b.trend.icon];
-                } else if(currentSort.key === 'rank2024' || currentSort.key === 'personalScore'){
+                } else if(currentSort.key === 'rank2024'){
                     valA = typeof valA === 'number' ? valA : Infinity;
                     valB = typeof valB === 'number' ? valB : Infinity;
                 }
@@ -479,7 +244,7 @@
 
         function renderPreferenceList() {
             preferenceUl.innerHTML = '';
-            preferenceList.forEach((uni, index) => {
+            preferenceList.forEach((index, uni) => {
                 const li = document.createElement('li');
                 li.innerHTML = `<span><strong>${index + 1}. ${uni.name}</strong> - ${uni.program} (<span class="rank">${uni.rank2024}</span>)</span>
                                 <button class="btn btn-remove" data-id="${uni.id}">Kaldır</button>`;
@@ -501,7 +266,7 @@
                         currentSort.direction = currentSort.direction === 'asc' ? 'desc' : 'asc';
                     } else {
                         currentSort.key = sortKey;
-                        currentSort.direction = (sortKey === 'personalScore' || sortKey === 'trend') ? 'desc' : 'asc';
+                        currentSort.direction = (sortKey === 'trend') ? 'desc' : 'asc';
                     }
                     applyFiltersAndRender();
                     updateSortIndicators();
@@ -531,26 +296,6 @@
                     renderPreferenceList();
                 }
             });
-
-            prioritiesBtn.addEventListener('click', () => { modal.style.display = 'block'; });
-            closeModalBtn.addEventListener('click', () => { modal.style.display = 'none'; });
-            window.addEventListener('click', (e) => { if (e.target == modal) { modal.style.display = 'none'; } });
-
-            sliders.forEach(slider => {
-                slider.addEventListener('input', (e) => {
-                    e.target.nextElementSibling.textContent = e.target.value;
-                });
-            });
-
-            savePrioritiesBtn.addEventListener('click', () => {
-                sliders.forEach(slider => {
-                    userWeights[slider.dataset.weightKey] = parseInt(slider.value);
-                });
-                localStorage.setItem('tercihAgirliklari', JSON.stringify(userWeights));
-                modal.style.display = 'none';
-                applyFiltersAndRender();
-                updateSortIndicators();
-            });
         }
 
         async function initializeApp() {
@@ -562,18 +307,6 @@
                 const savedList = localStorage.getItem('tercihListem');
                 if (savedList) { preferenceList = JSON.parse(savedList); }
 
-                const savedWeights = localStorage.getItem('tercihAgirliklari');
-                if (savedWeights) { 
-                    userWeights = JSON.parse(savedWeights);
-                    sliders.forEach(slider => {
-                        const key = slider.dataset.weightKey;
-                        if(userWeights[key] !== undefined) {
-                            slider.value = userWeights[key];
-                            slider.nextElementSibling.textContent = userWeights[key];
-                        }
-                    });
-                }
-
                 setupEventListeners();
                 applyFiltersAndRender();
                 updateSortIndicators();
@@ -581,7 +314,7 @@
 
             } catch (error) {
                 console.error("Veri yüklenirken bir hata oluştu:", error);
-                tableBody.innerHTML = `<tr><td colspan="6" style="text-align:center; padding: 20px; color: red;">Veri yüklenemedi. Lütfen 'data.json' dosyasının doğru yerde olduğundan ve bir yerel sunucu (Live Server) kullandığınızdan emin olun.</td></tr>`;
+                tableBody.innerHTML = `<tr><td colspan="5" style="text-align:center; padding: 20px; color: red;">Veri yüklenemedi. Lütfen 'data.json' dosyasının doğru yerde olduğundan ve bir yerel sunucu (Live Server) kullandığınızdan emin olun.</td></tr>`;
             }
         }
 
