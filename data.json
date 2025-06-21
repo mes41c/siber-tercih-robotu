@@ -361,7 +361,7 @@
         "rank2023": 193937,
         "rank2022": 208937,
         "curriculum_url": "https://halic.edu.tr/tr/akademik/meslek-yuksekokulu/bilgisayar-programciligi-on-lisans-programi/ders-plani"
-        "details": { "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Deneyimli.</li><li><b>Uygulamalı Eğitim:</b> Var (Yeni kampüste modern laboratuvarlar).</li><li><b>İngilizce Desteği:</b> Var (Hazırlık okulu mevcut).</li></ul>", "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> Üniversitenin yerleşik sanayi ve iş dünyası ilişkileri.</li><li><b>Teknopark:</b> Yok.</li></ul>", "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Aktif.</li><li><b>Ulaşım Kolaylığı:</b> İyi (Toplu taşımaya yakın).</li></ul>", "finance": "<ul><li><b>Yurt İmkanı:</b> Anlaşmalı yurtlar mevcut.</li><li><b>Ek Burs Olanakları:</b> Var.</li><li><b>Şehir Yaşam Maliyeti:</b> Yüksek.</li></ul>" },
+        "details": { "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Deneyimli.</li><li><b>Uygulamalı Eğitim:</b> Var (Yeni kampüste modern laboratuvarlar).</li><li><b>İngilizce Desteği:</b> Var (Hazırlık okulu mevcut).</li></ul>", "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> Üniversitenin yerleşik sanayi ve iş dünyası ilişkileri.</li><li><b>Teknopark:</b> Yok.</li></ul>", "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Aktif.</li><li><b>Ulaşım Kolaylığı:</b> İyi (Toplu taşımaya yakın).</li></ul>", "finance": "<ul><li><b>Yurt İmkanı:</b> Anlaşmalı yurtlar mevcut.</li><li><b>Ek Burs Olanakları:</b> Var.</li><li><b>Şehir Yaşam Maliyeti:</b> Yüksek.</li></ul>" }
         "scores": { "academic": 3, "practical": 3, "english": 3, "career": 2, "technopark": 1, "transport": 4, "social": 3 }
     },
     {
