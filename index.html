@@ -314,9 +314,6 @@
     <script>
     document.addEventListener('DOMContentLoaded', async function () {
         
-        // ===================================================================================
-        // YARDIMCI FONKSİYONLAR
-        // ===================================================================================
         function normalizeString(str) {
             if (typeof str !== 'string') return '';
             return str.toLowerCase()
@@ -324,20 +321,12 @@
                 .replace(/ş/g, 's').replace(/ö/g, 'o').replace(/ç/g, 'c');
         }
 
-        // ===================================================================================
-        // DEĞİŞKENLER VE DOM ELEMENTLERİ
-        // ===================================================================================
         let universityData = [];
         let currentSort = { key: 'personalScore', direction: 'desc' };
         let preferenceList = [];
         let userWeights = {
-            academic: 5,   // Akademik kadro en önemli
-            career: 5,     // Kariyer ve sektör işbirlikleri en önemli
-            practical: 4,  // Uygulamalı eğitim çok önemli
-            english: 3,    // İngilizce desteği çok önemli
-            technopark: 4, // Teknopark önemli
-            social: 2,     // Sosyal yaşam daha az önemli
-            transport: 1   // Ulaşım en az önemli
+            academic: 5, career: 5, practical: 4, english: 4,
+            technopark: 3, social: 2, transport: 1
         };
 
         const tableBody = document.getElementById('university-table-body');
@@ -348,24 +337,23 @@
         const savePrioritiesBtn = document.getElementById('save-priorities-btn');
         const sliders = document.querySelectorAll('.priority-slider input[type=range]');
 
-        // ===================================================================================
-        // KİŞİSEL PUAN VE TREND HESAPLAMA
-        // ===================================================================================
         function calculatePersonalScore(uni, weights) {
-            if (!uni.scores) { return 0; }
-            const uniScores = uni.scores;
-            let totalWeightedScore = 0;
-            let totalWeight = 0;
-            for (const key in weights) {
-                if (uniScores.hasOwnProperty(key)) {
-                    totalWeightedScore += (uniScores[key] || 0) * weights[key];
-                    totalWeight += weights[key];
+            if (typeof uni.reputation !== 'number') { return 0; }
+            let baseScore = uni.reputation;
+            let bonusScore = 0;
+            
+            if (uni.scores) {
+                for (const key in weights) {
+                    if (uni.scores.hasOwnProperty(key)) {
+                        const weightMultiplier = (weights[key] - 1) / 4; 
+                        const scoreMultiplier = (uni.scores[key] || 0) / 5;
+                        const maxBonusPerCategory = 4;
+                        bonusScore += scoreMultiplier * weightMultiplier * maxBonusPerCategory;
+                    }
                 }
             }
-            if (totalWeight === 0) return 0;
-            const maxPossibleScore = 5 * totalWeight;
-            const finalScore = (totalWeightedScore / maxPossibleScore) * 100;
-            return Math.round(finalScore);
+            const finalScore = baseScore + bonusScore;
+            return Math.min(100, Math.round(finalScore));
         }
 
         function calculateTrend(uni) {
@@ -377,20 +365,15 @@
             return { icon: '─', class: 'trend-stable', text: 'Stabil' };
         }
 
-        // ===================================================================================
-        // GÖRÜNTÜLEME (RENDER) VE ANA MANTIK FONKSİYONLARI
-        // ===================================================================================
         function renderTable(data) {
             tableBody.innerHTML = '';
             if (data.length === 0) {
                 tableBody.innerHTML = '<tr><td colspan="6" style="text-align:center; padding: 20px;">Bu kriterlere uygun sonuç bulunamadı.</td></tr>';
                 return;
             }
-            
             data.forEach(uni => {
                 const ranks = `<b>24:</b> ${uni.rank2024}<br><b>23:</b> ${uni.rank2023}<br><b>22:</b> ${uni.rank2022}`;
                 const trend = uni.trend;
-
                 const rowHTML = `
                     <tr class="university-row" data-id="${uni.id}">
                         <td><strong>${uni.name}</strong><br>${uni.program}</td>
@@ -435,14 +418,12 @@
             const teachingFilter = document.getElementById('filter-teaching').value;
             const rankStart = parseInt(document.getElementById('filter-rank-start').value) || 0;
             const rankEnd = parseInt(document.getElementById('filter-rank-end').value) || Infinity;
-
             const normalizedUniFilter = normalizeString(uniFilter);
             const normalizedCityFilter = normalizeString(cityFilter);
 
             let filteredData = universityData.filter(uni => {
                 const rank = uni.rank2024;
                 if (typeof rank !== 'number') return false; 
-                
                 return normalizeString(uni.name).includes(normalizedUniFilter) &&
                        normalizeString(uni.city).includes(normalizedCityFilter) &&
                        (typeFilter === "" || uni.type === typeFilter) &&
@@ -474,9 +455,7 @@
                 }
 
                 if (typeof valA === 'string') {
-                    return currentSort.direction === 'asc' 
-                        ? valA.localeCompare(valB, 'tr') 
-                        : valB.localeCompare(valA, 'tr');
+                    return currentSort.direction === 'asc' ? valA.localeCompare(valB, 'tr') : valB.localeCompare(valA, 'tr');
                 }
 
                 if (valA < valB) return currentSort.direction === 'asc' ? -1 : 1;
@@ -509,9 +488,6 @@
             localStorage.setItem('tercihListem', JSON.stringify(preferenceList));
         }
 
-        // ===================================================================================
-        // OLAY DİNLEYİCİLER (EVENT LISTENERS) VE UYGULAMA BAŞLATMA
-        // ===================================================================================
         function setupEventListeners() {
             document.querySelectorAll('.filter-container input, .filter-container select').forEach(el => {
                 el.addEventListener('keyup', applyFiltersAndRender); 
@@ -534,9 +510,8 @@
 
             tableBody.addEventListener('click', function(e) {
                 const mainRow = e.target.closest('.university-row');
-            
                 if (e.target.classList.contains('btn-add')) {
-                    e.stopPropagation(); // Detayların açılmasını engelle
+                    e.stopPropagation();
                     const uniId = parseInt(e.target.dataset.id);
                     const uni = universityData.find(u => u.id === uniId);
                     if (uni && !preferenceList.some(p => p.id === uniId)) {
