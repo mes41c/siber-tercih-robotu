@@ -331,8 +331,13 @@
         let currentSort = { key: 'personalScore', direction: 'desc' };
         let preferenceList = [];
         let userWeights = {
-            academic: 3, practical: 3, english: 3, career: 3,
-            technopark: 3, transport: 3, social: 3
+            academic: 5,   // Akademik kadro en önemli
+            career: 5,     // Kariyer ve sektör işbirlikleri en önemli
+            practical: 4,  // Uygulamalı eğitim çok önemli
+            english: 3,    // İngilizce desteği çok önemli
+            technopark: 4, // Teknopark önemli
+            social: 2,     // Sosyal yaşam daha az önemli
+            transport: 1   // Ulaşım en az önemli
         };
 
         const tableBody = document.getElementById('university-table-body');
