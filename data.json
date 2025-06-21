@@ -9,6 +9,7 @@
         "rank2024": 76635,
         "rank2023": 72154,
         "rank2022": "D",
+        "reputation": 95,
         "details": {
             "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Güçlü (Sektör ve akademik kökenli, alanında uzman isimler).</li><li><b>Uygulamalı Eğitim:</b> Var (Gelişmiş Siber Güvenlik Laboratuvarı), CCNA/CEH gibi sertifikasyonlara odaklı müfredat.</li><li><b>İngilizce Desteği:</b> Zorunlu Hazırlık, %100 İngilizce eğitim ile küresel kaynaklara tam erişim.</li></ul>",
             "career": "<ul><li><b>Staj Programı:</b> Zorunlu (40 İş Günü).</li><li><b>Sektör İşbirlikleri:</b> İTÜ Arı Teknokent bünyesindeki yüzlerce teknoloji şirketi, Savunma Sanayii ve Bankacılık sektörü ile güçlü bağlar.</li><li><b>Teknopark:</b> Var (Türkiye'nin en büyüklerinden biri olan İTÜ Arı Teknokent).</li></ul>",
@@ -27,6 +28,7 @@
         "rank2024": 127718,
         "rank2023": 126310,
         "rank2022": "D",
+        "reputation": 88,
         "details": {
             "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Güçlü (Teknik üniversite olmasının getirdiği yetkin akademik kadro).</li><li><b>Uygulamalı Eğitim:</b> Var (Modern laboratuvarlar), araştırma odaklı bir ekosistem.</li><li><b>İngilizce Desteği:</b> Var (%30 İngilizce eğitim programı).</li></ul>",
             "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> TÜBİTAK ve çevresindeki araştırma merkezleri, Gebze ve Kocaeli sanayi bölgelerindeki teknoloji firmaları.</li><li><b>Teknopark:</b> Var (GTÜ Teknopark).</li></ul>",
@@ -45,6 +47,7 @@
         "rank2024": 143466,
         "rank2023": 131899,
         "rank2022": "D",
+        "reputation": 90,
         "details": {
             "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Güçlü (Köklü devlet üniversitesi altyapısı).</li><li><b>Uygulamalı Eğitim:</b> Var (Üniversitenin genel bilişim altyapısı ve laboratuvarları).</li><li><b>İngilizce Desteği:</b> Standart (İsteğe bağlı veya zorunlu hazırlık imkanı).</li></ul>",
             "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> Ankara'daki Savunma Sanayii firmaları (Aselsan, TUSAŞ, Havelsan) ve kamu kurumları ile güçlü potansiyel bağlar.</li><li><b>Teknopark:</b> Var (Ankara Üniversitesi Teknokent).</li></ul>",
@@ -63,6 +66,7 @@
         "rank2024": 157234,
         "rank2023": 150130,
         "rank2022": "D",
+        "reputation": 85,
         "details": {
             "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Deneyimli (Büyük ve köklü bir üniversitenin akademik birikimi).</li><li><b>Uygulamalı Eğitim:</b> Var (Ege MYO bünyesindeki bilgisayar laboratuvarları).</li><li><b>İngilizce Desteği:</b> Standart (Program dili Türkçe, üniversitede hazırlık imkanı var).</li></ul>",
             "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> İzmir'deki teknoloji firmaları ve sanayi bölgeleri.</li><li><b>Teknopark:</b> Var (Ege Teknopark).</li></ul>",
@@ -99,6 +103,7 @@
         "rank2024": 161811,
         "rank2023": 160807,
         "rank2022": 158033,
+        "reputation": 86,
         "details": {
             "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Güçlü ve deneyimli.</li><li><b>Uygulamalı Eğitim:</b> Var (Bilgisayar laboratuvarları).</li><li><b>İngilizce Desteği:</b> Program dili Türkçe, ancak üniversite genelinde hazırlık imkanı mevcut.</li></ul>",
             "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> İstanbul'un finans ve teknoloji merkezlerine yakınlık, geniş staj ve iş imkanı potansiyeli.</li><li><b>Teknopark:</b> Var (Marmara Teknokent).</li></ul>",
@@ -135,6 +140,7 @@
         "rank2024": 196529,
         "rank2023": 178660,
         "rank2022": 161848,
+        "reputation": 78,
         "details": {
             "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Yetkin (Vakıf üniversitesi dinamizmi, sektörle ilişkili).</li><li><b>Uygulamalı Eğitim:</b> Var (Modern laboratuvarlar, proje odaklı eğitim).</li><li><b>İngilizce Desteği:</b> Güçlü (Eğitim dili genellikle İngilizce'dir).</li></ul>",
             "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> Güçlü (İzmir Ticaret Odası Eğitim ve Sağlık Vakfı desteği, yerel teknoloji firmaları).</li><li><b>Teknopark:</b> Var (İEÜ Teknoloji Geliştirme Bölgesi - Embryonix).</li></ul>",
@@ -189,6 +195,7 @@
         "rank2024": 266373,
         "rank2023": 184466,
         "rank2022": 196573,
+        "reputation": 76,
         "details": {
             "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Yetkin.</li><li><b>Uygulamalı Eğitim:</b> Var (Modern ve donanımlı laboratuvarlar).</li><li><b>İngilizce Desteği:</b> Standart (Hazırlık imkanı mevcut).</li></ul>",
             "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> Özellikle sağlık bilişimi alanında güçlü (Üniversitenin hastaneleri mevcut).</li><li><b>Teknopark:</b> Var (Başkent Üniversitesi Teknopark).</li></ul>",
@@ -207,6 +214,7 @@
         "rank2024": 253420,
         "rank2023": 210933,
         "rank2022": 222373,
+        "reputation": 70,
         "details": {
             "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Sektör Odaklı (OSTİM sanayisinin içinden gelen, tecrübeli eğitmenler).</li><li><b>Uygulamalı Eğitim:</b> Çok Güçlü ('İşyeri Deneyimi' modeli ile eğitim süresince yoğun bir şekilde sanayi içinde uygulama imkanı).</li><li><b>İngilizce Desteği:</b> Geliştiriliyor (İsteğe bağlı hazırlık ve mesleki İngilizce dersleri).</li></ul>",
             "career": "<ul><li><b>Staj Programı:</b> Zorunlu ve yaygın (Eğitim modelinin ayrılmaz bir parçası, OSTİM içerisindeki firmalarda).</li><li><b>Sektör İşbirlikleri:</b> Çok Güçlü (OSTİM Sanayi Bölgesi'ndeki binlerce KOBİ, savunma sanayii ve teknoloji firmasıyla organik bağ).</li><li><b>Teknopark:</b> Doğal Teknopark (OSTİM'in kendisi bir sanayi ve teknoloji ekosistemi).</li></ul>",
@@ -225,6 +233,7 @@
         "rank2024": 238373,
         "rank2023": 217946,
         "rank2022": 272230,
+        "reputation": 77,
         "details": {
             "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Yetkin (Özellikle sağlık bilişimi ve teknolojileri alanında güçlü akademik kadro).</li><li><b>Uygulamalı Eğitim:</b> Var (Modern laboratuvarlar, sağlık bilişimi ve biyomedikal teknolojiler odaklı projeler).</li><li><b>İngilizce Desteği:</b> Güçlü (İngilizce Hazırlık Programı mevcut, mesleki İngilizce'ye önem veriliyor).</li></ul>",
             "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> Çok Güçlü (Başta Acıbadem Sağlık Grubu ve grubun teknoloji şirketleri olmak üzere sağlık sektöründe geniş staj ve iş imkanı).</li><li><b>Teknopark:</b> Yok (Ancak üniversitenin Kuluçka Merkezi ve proje geliştirme ofisleri aktif).</li></ul>",
@@ -359,6 +368,7 @@
         "rank2024": 456012,
         "rank2023": 123775,
         "rank2022": 77718,
+        "reputation": 75,
         "details": { "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Örgün öğretim ile ortak, geniş kadro.</li><li><b>Uygulamalı Eğitim:</b> Sanal laboratuvarlar ve proje bazlı ödevler üzerinden.</li><li><b>İngilizce Desteği:</b> Uzaktan eğitim modeline uygun materyaller.</li></ul>", "career": "<ul><li><b>Staj Programı:</b> Zorunlu (Öğrenci kendi yaşadığı şehirde stajını ayarlayabilir).</li><li><b>Sektör İşbirlikleri:</b> Üniversitenin genel anlaşmalarından faydalanma imkanı.</li><li><b>Teknopark:</b> Var (İAÜ Teknoloji Geliştirme Merkezi).</li></ul>", "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Dijital platformlar üzerinden katılım mümkün.</li><li><b>Ulaşım Kolaylığı:</b> Uygulanamaz (Uzaktan Eğitim).</li></ul>", "finance": "<ul><li><b>Yurt İmkanı:</b> Uygulanamaz.</li><li><b>Şehir Yaşam Maliyeti:</b> Öğrencinin yaşadığı şehre göre değişir.</li></ul>" },
         "scores": { "academic": 2, "practical": 2, "english": 1, "career": 2, "technopark": 4, "transport": 1, "social": 1 }
     },
@@ -385,6 +395,7 @@
         "rank2024": 238373,
         "rank2023": 217946,
         "rank2022": 272230,
+        "reputation": 77,
         "details": {
             "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Yetkin (Özellikle sağlık bilişimi ve teknolojileri alanında güçlü akademik kadro).</li><li><b>Uygulamalı Eğitim:</b> Var (Modern laboratuvarlar, sağlık bilişimi ve biyomedikal teknolojiler odaklı projeler).</li><li><b>İngilizce Desteği:</b> Güçlü (İngilizce Hazırlık Programı mevcut, mesleki İngilizce'ye önem veriliyor).</li></ul>",
             "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> Çok Güçlü (Başta Acıbadem Sağlık Grubu ve grubun teknoloji şirketleri olmak üzere sağlık sektöründe geniş staj ve iş imkanı).</li><li><b>Teknopark:</b> Yok (Ancak üniversitenin Kuluçka Merkezi ve proje geliştirme ofisleri aktif).</li></ul>",
@@ -421,6 +432,7 @@
         "rank2024": 252225,
         "rank2023": 202902,
         "rank2022": 196516,
+        "reputation": 75,
         "details": {
             "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Geniş ve uluslararası deneyime sahip öğretim üyeleri.</li><li><b>Uygulamalı Eğitim:</b> Var (Çok sayıda uygulama laboratuvarı ve proje geliştirme imkanı).</li><li><b>İngilizce Desteği:</b> Çok Güçlü (Program dili tamamen İngilizce, küresel yetkinlik kazandırma hedefi).</li></ul>",
             "career": "<ul><li><b>Staj Programı:</b> Zorunlu ('Yerinde Uygulama' modeli ile öğrenciler sektörde deneyim kazanır).</li><li><b>Sektör İşbirlikleri:</b> Çok Geniş (Türkiye'nin önde gelen teknoloji, yazılım ve sanayi firmalarıyla kapsamlı işbirlikleri).</li><li><b>Teknopark:</b> Var (İAÜ Teknoloji Geliştirme Merkezi - Tekmer).</li></ul>",
@@ -439,6 +451,7 @@
         "rank2024": 253420,
         "rank2023": 210933,
         "rank2022": 222373,
+        "reputation": 70,
         "details": {
             "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Sektör Odaklı (OSTİM sanayisinin içinden gelen, tecrübeli eğitmenler).</li><li><b>Uygulamalı Eğitim:</b> Çok Güçlü ('İşyeri Deneyimi' modeli ile eğitim süresince yoğun bir şekilde sanayi içinde uygulama imkanı).</li><li><b>İngilizce Desteği:</b> Geliştiriliyor (İsteğe bağlı hazırlık ve mesleki İngilizce dersleri).</li></ul>",
             "career": "<ul><li><b>Staj Programı:</b> Zorunlu ve yaygın (Eğitim modelinin ayrılmaz bir parçası, OSTİM içerisindeki firmalarda).</li><li><b>Sektör İşbirlikleri:</b> Çok Güçlü (OSTİM Sanayi Bölgesi'ndeki binlerce KOBİ, savunma sanayii ve teknoloji firmasıyla organik bağ).</li><li><b>Teknopark:</b> Doğal Teknopark (OSTİM'in kendisi bir sanayi ve teknoloji ekosistemi).</li></ul>",
@@ -475,6 +488,7 @@
         "rank2024": 256089,
         "rank2023": 196774,
         "rank2022": 169613,
+        "reputation": 79,
         "details": {
             "academic": "<ul><li><b>Akademisyen Kadrosu:</b> İyi (Uluslararası vizyona sahip, sektörden gelen isimlerin de ders verdiği bir kadro).</li><li><b>Uygulamalı Eğitim:</b> Var (Proje tabanlı öğrenme yaklaşımı, modern laboratuvarlar).</li><li><b>İngilizce Desteği:</b> Güçlü (Eğitim dili Türkçe olsa da üniversitenin güçlü bir İngilizce hazırlık programı var).</li></ul>",
             "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> Geniş (Yaratıcı endüstriler, teknoloji şirketleri ve sivil toplum kuruluşları ile güçlü ağ).</li><li><b>Teknopark:</b> Yok (Ancak Kuluçka Merkezi BİLGİ TTO ve girişimcilik ekosistemi aktif).</li></ul>",
@@ -493,6 +507,7 @@
         "rank2024": 257745,
         "rank2023": 238512,
         "rank2022": 244885,
+        "reputation": 74,
         "details": {
             "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Yetkin ve dinamik bir kadro.</li><li><b>Uygulamalı Eğitim:</b> Var (Topkapı kampüsündeki modern teknoloji ve yazılım laboratuvarları).</li><li><b>İngilizce Desteği:</b> Güçlü (İngilizce Hazırlık Programı mevcut).</li></ul>",
             "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> Güçlü (MLPCare Grubu (Liv Hospital, Medical Park, VM Medical Park) başta olmak üzere sağlık ve teknoloji sektöründe işbirliği).</li><li><b>Teknopark:</b> Yok (Ancak üniversite-sanayi işbirliği ofisi aktif).</li></ul>",
@@ -547,6 +562,7 @@
         "rank2024": 290641,
         "rank2023": 274593,
         "rank2022": 283141,
+        "reputation": 92,
         "details": {
             "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Güçlü (Türkiye'nin en iyi üniversitelerinden birinin akademik yetkinliği).</li><li><b>Uygulamalı Eğitim:</b> Var (Organize Sanayi Bölgesi (OSB) içinde konumlanması, uygulamalı eğitime odaklandığını gösterir).</li><li><b>İngilizce Desteği:</b> Standart (Üniversite genelinde güçlü bir hazırlık eğitimi imkanı var).</li></ul>",
             "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> Güçlü (Başkent OSB içerisindeki sanayi ve teknoloji firmalarıyla doğal bir işbirliği potansiyeli).</li><li><b>Teknopark:</b> Var (Hacettepe Teknokent, Ankara'nın en önemli teknoloji merkezlerinden biridir).</li></ul>",
