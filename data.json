@@ -213,7 +213,7 @@
             "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Gelişmekte Olan (Teknoloji, girişimcilik ve üretim odaklı).</li><li><b>Ulaşım Kolaylığı:</b> İyi (Metro ve otobüs hatları üzerinde).</li></ul>",
             "finance": "<ul><li><b>Yurt İmkanı:</b> Çevrede geniş özel ve KYK yurt seçenekleri mevcut.</li><li><b>Ek Burs Olanakları:</b> Var (OSTİM Vakfı ve sanayiciler tarafından desteklenen burslar).</li><li><b>Şehir Yaşam Maliyeti:</b> Orta.</li></ul>"
         },
-        "scores": { "academic": 2, "practical": 5, "english": 1, "career": 5, "technopark": 5, "transport": 4, "social": 2 }
+        "scores": { "academic": 3, "practical": 5, "english": 1, "career": 5, "technopark": 5, "transport": 4, "social": 2 }
     },
     {
         "id": 13,
@@ -231,7 +231,7 @@
             "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Aktif (Sağlık, teknoloji ve sosyal sorumluluk odaklı kulüpler).</li><li><b>Ulaşım Kolaylığı:</b> İyi (Ataşehir'deki kampüs, metro ve otobüs hatlarına yakın bir konumda).</li></ul>",
             "finance": "<ul><li><b>Yurt İmkanı:</b> Var (Kampüs içinde modern öğrenci konukevi bulunmaktadır).</li><li><b>Ek Burs Olanakları:</b> Var (Akademik başarıya dayalı ek burslar ve destekler).</li><li><b>Şehir Yaşam Maliyeti:</b> Yüksek.</li></ul>"
         },
-        "scores": { "academic": 3, "practical": 4, "english": 4, "career": 5, "technopark": 2, "transport": 4, "social": 3 }
+        "scores": { "academic": 3, "practical": 4, "english": 4, "career": 5, "technopark": 1, "transport": 4, "social": 3 }
     },
     {
         "id": 14,
@@ -409,7 +409,7 @@
             "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Aktif (Sağlık, teknoloji ve sosyal sorumluluk odaklı kulüpler).</li><li><b>Ulaşım Kolaylığı:</b> İyi (Ataşehir'deki kampüs, metro ve otobüs hatlarına yakın bir konumda).</li></ul>",
             "finance": "<ul><li><b>Yurt İmkanı:</b> Var (Kampüs içinde modern öğrenci konukevi bulunmaktadır).</li><li><b>Ek Burs Olanakları:</b> Var (Akademik başarıya dayalı ek burslar ve destekler).</li><li><b>Şehir Yaşam Maliyeti:</b> Yüksek.</li></ul>"
         },
-        "scores": { "academic": 3, "practical": 4, "english": 4, "career": 5, "technopark": 2, "transport": 4, "social": 3 }
+        "scores": { "academic": 3, "practical": 4, "english": 4, "career": 5, "technopark": 1, "transport": 4, "social": 3 }
     },
     {
         "id": 25,
@@ -463,7 +463,7 @@
             "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Gelişmekte Olan (Teknoloji, girişimcilik ve üretim odaklı).</li><li><b>Ulaşım Kolaylığı:</b> İyi (Metro ve otobüs hatları üzerinde).</li></ul>",
             "finance": "<ul><li><b>Yurt İmkanı:</b> Çevrede geniş özel ve KYK yurt seçenekleri mevcut.</li><li><b>Ek Burs Olanakları:</b> Var (OSTİM Vakfı ve sanayiciler tarafından desteklenen burslar).</li><li><b>Şehir Yaşam Maliyeti:</b> Orta.</li></ul>"
         },
-        "scores": { "academic": 2, "practical": 5, "english": 1, "career": 5, "technopark": 5, "transport": 4, "social": 2 }
+        "scores": { "academic": 3, "practical": 5, "english": 1, "career": 5, "technopark": 5, "transport": 4, "social": 2 }
     },
     {
         "id": 28,
@@ -571,6 +571,6 @@
             "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Üniversite genelinde çok aktif (Ana kampüsteki kulüplere katılım imkanı).</li><li><b>Ulaşım Kolaylığı:</b> Orta (Şehir merkezine uzak, özel servisler ve EGO otobüsleri ile ulaşım sağlanır).</li></ul>",
             "finance": "<ul><li><b>Yurt İmkanı:</b> Sınırlı (Ana kampüs ve şehir merkezindeki KYK yurtları değerlendirilebilir).</li><li><b>Şehir Yaşam Maliyeti:</b> Orta.</li></ul>"
         },
-        "scores": { "academic": 5, "practical": 4, "english": 3, "career": 4, "technopark": 5, "transport": 3, "social": 4 }
+        "scores": { "academic": 5, "practical": 4, "english": 3, "career": 5, "technopark": 5, "transport": 3, "social": 4 }
     }
 ]
