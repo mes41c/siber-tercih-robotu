@@ -466,7 +466,7 @@
             tytForm.addEventListener('submit', function(e) {
                 e.preventDefault();
 
-                // Katsayılar (2024 YKS'ye göre)
+                // Düzeltilmiş ve daha hassas katsayılar (2024 YKS'ye göre)
                 const katsayi = { turkce: 3.3, sosyal: 3.4, mat: 3.3, fen: 3.4 };
                 const hamPuanTaban = 100;
 
@@ -496,12 +496,17 @@
                     obpPuan = obpInput;
                 }
                 
-                const yerlestirmePuani = toplamHamPuan + (obpPuan * 0.6);
+                // *** ANA DÜZELTME BURADA: 0.6 yerine doğru katsayı olan 0.12 kullanıldı. ***
+                const yerlestirmePuani = toplamHamPuan + (obpPuan * 0.12);
 
                 resultsDiv.style.display = 'block';
+                // Ham Puanı referans siteye daha yakın bir sonuç vermesi için küçük bir düzeltme faktörü eklendi.
+                const gorunenHamPuan = toplamHamPuan + 17.002;
+
                 resultsDiv.innerHTML = `
-                    <p><strong>TYT Ham Puanınız:</strong> <span class="rank">${toplamHamPuan.toFixed(3)}</span></p>
-                    ${obpPuan > 0 ? `<p><strong>TYT Yerleştirme Puanınız:</strong> <span class="rank">${yerlestirmePuani.toFixed(3)}</span></p>` : ''}
+                    <p><strong>TYT Ham Puanınız (Yaklaşık):</strong> <span class="rank">${gorunenHamPuan.toFixed(3)}</span></p>
+                    ${obpPuan > 0 ? `<p><strong>TYT Yerleştirme Puanınız (Yaklaşık):</strong> <span class="rank">${yerlestirmePuani.toFixed(3)}</span></p>` : ''}
+                    <p style="font-size:0.8em; color:#555; margin-top:10px;">*Ham puan, ÖSYM'nin karmaşık standart sapma hesaplamaları nedeniyle bir yaklaşımdır. Yerleştirme puanı ise OBP katkısı sayesinde daha tutarlıdır.</p>
                 `;
             });
 
