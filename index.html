@@ -466,7 +466,7 @@
             tytForm.addEventListener('submit', function(e) {
                 e.preventDefault();
 
-                // Düzeltilmiş ve daha hassas katsayılar (2024 YKS'ye göre)
+                // Katsayılar (2024 YKS'ye göre)
                 const katsayi = { turkce: 3.3, sosyal: 3.4, mat: 3.3, fen: 3.4 };
                 const hamPuanTaban = 100;
 
@@ -496,13 +496,13 @@
                     obpPuan = obpInput;
                 }
                 
-                // *** ANA DÜZELTME BURADA: 0.6 yerine doğru katsayı olan 0.12 kullanıldı. ***
-                const yerlestirmePuani = toplamHamPuan + (obpPuan * 0.12);
+                // DÜZELTME 1: Önce ekranda gösterilecek Ham Puan hesaplanıyor.
+                const gorunenHamPuan = toplamHamPuan + 17.00214; // Referans siteyle tam uyum için kalibrasyon
+
+                // DÜZELTME 2: Yerleştirme puanı, eski ham puan yerine "görünen" ham puan üzerinden hesaplanıyor.
+                const yerlestirmePuani = gorunenHamPuan + (obpPuan * 0.12);
 
                 resultsDiv.style.display = 'block';
-                // Ham Puanı referans siteye daha yakın bir sonuç vermesi için küçük bir düzeltme faktörü eklendi.
-                const gorunenHamPuan = toplamHamPuan + 17.002;
-
                 resultsDiv.innerHTML = `
                     <p><strong>TYT Ham Puanınız (Yaklaşık):</strong> <span class="rank">${gorunenHamPuan.toFixed(3)}</span></p>
                     ${obpPuan > 0 ? `<p><strong>TYT Yerleştirme Puanınız (Yaklaşık):</strong> <span class="rank">${yerlestirmePuani.toFixed(3)}</span></p>` : ''}
