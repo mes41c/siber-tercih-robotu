@@ -306,24 +306,6 @@
         "scores": { "academic": 3, "practical": 3, "english": 3, "career": 2, "technopark": 1, "transport": 4, "social": 3 }
     },
     {
-        "id": 18,
-        "name": "İstanbul Aydın Üniversitesi",
-        "program": "Anadolu BİL MYO (Bilgisayar Prog. - U.Ö.)",
-        "city": "İstanbul",
-        "type": "Vakıf",
-        "teaching": "Uzaktan",
-        "rank2024": 456012,
-        "rank2023": 123775,
-        "rank2022": 77718,
-        "details": {
-            "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Örgün öğretim ile ortak, geniş kadro.</li><li><b>Uygulamalı Eğitim:</b> Sanal laboratuvarlar ve proje bazlı ödevler üzerinden.</li><li><b>İngilizce Desteği:</b> Uzaktan eğitim modeline uygun materyaller.</li></ul>",
-            "career": "<ul><li><b>Staj Programı:</b> Zorunlu (Öğrenci kendi yaşadığı şehirde stajını ayarlayabilir).</li><li><b>Sektör İşbirlikleri:</b> Üniversitenin genel anlaşmalarından faydalanma imkanı.</li><li><b>Teknopark:</b> Var (İAÜ Teknoloji Geliştirme Merkezi).</li></ul>",
-            "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Dijital platformlar üzerinden katılım mümkün.</li><li><b>Ulaşım Kolaylığı:</b> Uygulanamaz (Uzaktan Eğitim).</li></ul>",
-            "finance": "<ul><li><b>Yurt İmkanı:</b> Uygulanamaz.</li><li><b>Şehir Yaşam Maliyeti:</b> Öğrencinin yaşadığı şehre göre değişir.</li></ul>"
-        },
-        "scores": { "academic": 2, "practical": 2, "english": 1, "career": 2, "technopark": 4, "transport": 1, "social": 1 }
-    },
-    {
         "id": 19,
         "name": "İstanbul Ticaret Üniversitesi",
         "program": "MYO (Siber Güvenlik - Ücretli / %50 İndirimli)",
