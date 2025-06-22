@@ -366,17 +366,21 @@
     },
     {
         "id": 21,
-        "name": "Sakarya Uygulamalı Bilimler Üniversitesi",
-        "program": "Sakarya MYO (İnternet ve Ağ Teknolojileri)",
-        "city": "Sakarya",
-        "type": "Devlet",
+        "name": "Yeditepe Üniversitesi",
+        "program": "İnternet ve Ağ Teknolojileri (%100 Burslu)",
+        "city": "İstanbul",
+        "type": "Vakıf",
         "teaching": "Örgün",
-        "rank2024": 395484,
-        "rank2023": 418189,
-        "rank2022": 415357,
-        "curriculum_url": "https://ebs.bys.subu.edu.tr/BolumDetay/?bi=386&pi=387&ay=33",
-        "details": { "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Uygulama odaklı, yetkin bir kadro.</li><li><b>Uygulamalı Eğitim:</b> Çok Güçlü (+1 Eğitim Modeli ile bir dönem tam zamanlı işyeri uygulaması).</li><li><b>İngilizce Desteği:</b> Standart (Mesleki İngilizce dersleri).</li></ul>", "career": "<ul><li><b>Staj Programı:</b> Zorunlu ve eğitim modeline entegre.</li><li><b>Sektör İşbirlikleri:</b> Çok Güçlü (Sakarya ve çevre illerdeki sanayi kuruluşlarıyla entegre eğitim).</li><li><b>Teknopark:</b> Var (SUBÜ Teknokent).</li></ul>", "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Aktif (Teknoloji ve network üzerine kulüpler).</li><li><b>Ulaşım Kolaylığı:</b> İyi.</li></ul>", "finance": "<ul><li><b>Yurt İmkanı:</b> İyi (Şehirde geniş KYK ve özel yurt ağı).</li><li><b>Şehir Yaşam Maliyeti:</b> Düşük-Orta.</li></ul>" },
-        "scores": { "academic": 3, "practical": 5, "english": 2, "career": 5, "technopark": 4, "transport": 4, "social": 3 }
+        "rank2024": 243352,
+        "rank2023": 248978,
+        "rank2022": 257190,
+        "reputation": 85,
+        "curriculum_url": "https://myo.yeditepe.edu.tr/tr/internet-ve-ag-teknolojileri-programi/dersler",
+        "details": {
+            "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Yetkin (Sektör deneyimli ve akademik kariyere sahip öğretim görevlileri).</li><li><b>Uygulamalı Eğitim:</b> Var (Cisco Networking Academy işbirliği, modern ağ ve bilgisayar laboratuvarları).</li><li><b>İngilizce Desteği:</b> Güçlü (Üniversitenin genelinde İngilizce'ye verilen önem, birçok bölümde zorunlu hazırlık ve İngilizce eğitim imkanı).</li></ul>",
+            "career": "<ul><li><b>Staj Programı:</b> Zorunlu (Sektörde pratik deneyim için).</li><li><b>Sektör İşbirlikleri:</b> Güçlü (İstanbul'daki ulusal ve uluslararası teknoloji, finans ve telekomünikasyon şirketleri ile yakın ilişkiler).</li><li><b>Teknopark:</b> Yok (Ancak Teknoloji Transfer Ofisi aracılığıyla girişimcilik ve Ar-Ge projeleri desteklenmektedir).</li></ul>",
+            "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Aktif (Yeditepe Bilişim Kulübü, IEEE Öğrenci Kolu, Siber Güvenlik Topluluğu gibi alanla ilgili topluluklar mevcut).</li><li><b>Ulaşım Kolaylığı:</b> Orta (Kampüs Ataşehir'de yer almakta olup, ulaşım üniversitenin ring servisleri ve İETT otobüs hatları ile sağlanmaktadır).</li></ul>",
+            "finance": "<ul><li><b>Yurt İmkanı:</b> Çok İyi (Kampüs içinde '26 Ağustos Yerleşimi' adı verilen yüksek kapasiteli ve donanımlı yurt kompleksleri bulunmaktadır).</li><li><b>Şehir Yaşam Maliyeti:</b> Yüksek.</li></ul>"
     },
     {
         "id": 22,
@@ -602,5 +606,146 @@
             "finance": "<ul><li><b>Yurt İmkanı:</b> Sınırlı (Ana kampüs ve şehir merkezindeki KYK yurtları değerlendirilebilir).</li><li><b>Şehir Yaşam Maliyeti:</b> Orta.</li></ul>"
         },
         "scores": { "academic": 5, "practical": 4, "english": 3, "career": 5, "technopark": 5, "transport": 3, "social": 4 }
+    },
+    {
+        "id": 34,
+        "name": "İstanbul Bilgi Üniversitesi",
+        "program": "Bilişim Güvenliği Teknolojisi (Burslu)",
+        "city": "İstanbul",
+        "type": "Vakıf",
+        "teaching": "Örgün",
+        "rank2024": 290443,
+        "rank2023": 252314,
+        "rank2022": 236278,
+        "reputation": 82,
+        "curriculum_url": "https://ects.bilgi.edu.tr/Department/Curriculum?catalog_departmentId=214660",
+        "details": {
+            "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Yetkin (Sektörle iç içe, alanında tecrübeli akademisyenler).</li><li><b>Uygulamalı Eğitim:</b> Var (Modern bilgisayar laboratuvarları ve proje tabanlı dersler).</li><li><b>İngilizce Desteği:</b> Güçlü (Eğitim dili Türkçe olsa da üniversitenin güçlü İngilizce hazırlık programı ve uluslararası yapısı avantaj sağlar).</li></ul>",
+            "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> Güçlü (İstanbul'un iş merkezlerine yakın kampüsleri sayesinde teknoloji, e-ticaret ve finans firmalarıyla geniş işbirliği ağı).</li><li><b>Teknopark:</b> Yok (Ancak BilgiTTO ve Kuluçkacılık Merkezi ile girişimcilik ekosistemi desteklenmektedir).</li></ul>",
+            "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Çok Aktif (Bilişim & Teknoloji Kulübü, Siber Güvenlik Kulübü dahil 100'den fazla öğrenci kulübü).</li><li><b>Ulaşım Kolaylığı:</b> İyi (Farklı lokasyonlardaki kampüslere (santralİstanbul, Kuştepe) ring servisleri ve toplu taşıma ile ulaşım).</li></ul>",
+            "finance": "<ul><li><b>Yurt İmkanı:</b> Sınırlı (Anlaşmalı yurt seçenekleri mevcuttur).</li><li><b>Şehir Yaşam Maliyeti:</b> Yüksek.</li></ul>"
+        },
+        "scores": { "academic": 4, "practical": 3, "english": 4, "career": 4, "technopark": 2, "transport": 4, "social": 5 }
+    },
+    {
+        "id": 35,
+        "name": "Ostim Teknik Üniversitesi",
+        "program": "Bilişim Güvenliği Teknolojisi (Burslu)",
+        "city": "Ankara",
+        "type": "Vakıf",
+        "teaching": "Örgün",
+        "rank2024": 310486,
+        "rank2023": 291261,
+        "rank2022": 326342,
+        "reputation": 75,
+        "curriculum_url": "https://myobilisim.ostimteknik.edu.tr/en/program-mufredat",
+        "details": {
+            "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Sektör Odaklı (Üniversitenin sanayi odaklı yapısı gereği sektör deneyimi güçlü eğitmenler).</li><li><b>Uygulamalı Eğitim:</b> Çok Güçlü (Türkiye'nin en büyük sanayi bölgesi olan OSTİM'in içinde yer alması sayesinde 'iş yeri deneyimi' modeliyle teorik ve pratik eğitim bir arada).</li><li><b>İngilizce Desteği:</b> Var (İsteğe bağlı veya zorunlu hazırlık programları mevcut).</li></ul>",
+            "career": "<ul><li><b>Staj Programı:</b> Çok Güçlü (Müfredata entegre iş yeri deneyimi ve staj olanakları).</li><li><b>Sektör İşbirlikleri:</b> Çok Güçlü (OSTİM, İvedik OSB ve Ankara'daki savunma sanayii firmaları (ASELSAN, TUSAŞ, HAVELSAN) ile yakın temas).</li><li><b>Teknopark:</b> Var (Ostim Teknopark).</li></ul>",
+            "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Gelişmekte (Siber Güvenlik, Bilişim ve Teknoloji kulüpleri mevcut ve aktif).</li><li><b>Ulaşım Kolaylığı:</b> İyi (Metro istasyonuna yakın konum ve otobüs hatları).</li></ul>",
+            "finance": "<ul><li><b>Yurt İmkanı:</b> Sınırlı (Üniversite çevresindeki özel ve KYK yurtları seçenekleri değerlendirilebilir).</li><li><b>Şehir Yaşam Maliyeti:</b> Orta.</li></ul>"
+        },
+        "scores": { "academic": 3, "practical": 5, "english": 3, "career": 5, "technopark": 4, "transport": 4, "social": 3 }
+    },
+    {
+        "id": 36,
+        "name": "Haliç Üniversitesi",
+        "program": "Bilişim Güvenliği Teknolojisi (Burslu)",
+        "city": "İstanbul",
+        "type": "Vakıf",
+        "teaching": "Örgün",
+        "rank2024": 331882,
+        "rank2023": 342132,
+        "rank2022": "—",
+        "reputation": 70,
+        "curriculum_url": "https://halic.edu.tr/tr/akademik/meslek-yuksekokullari/meslek-yuksek-okulu/bilisim-guvenligi-teknolojisi",
+        "details": {
+            "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Deneyimli (Köklü bir vakıf üniversitesi olmasının getirdiği akademik tecrübe).</li><li><b>Uygulamalı Eğitim:</b> Var (Bilgisayar laboratuvarlarında uygulamalı dersler).</li><li><b>İngilizce Desteği:</b> Var (Hazırlık sınıfı imkanı).</li></ul>",
+            "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> İyi (İstanbul'un merkezi konumdaki kampüsleri sayesinde çeşitli sektörlerden firmalarla işbirliği potansiyeli).</li><li><b>Teknopark:</b> Yok.</li></ul>",
+            "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Aktif (Bilişim ve teknoloji alanında öğrenci kulüpleri faaliyet göstermektedir).</li><li><b>Ulaşım Kolaylığı:</b> Çok İyi (Merkezi lokasyondaki kampüslere (Sütlüce, Levent) toplu taşıma ile kolay erişim).</li></ul>",
+            "finance": "<ul><li><b>Yurt İmkanı:</b> Sınırlı (Anlaşmalı yurtlar bulunmaktadır).</li><li><b>Şehir Yaşam Maliyeti:</b> Yüksek.</li></ul>"
+        },
+        "scores": { "academic": 3, "practical": 3, "english": 3, "career": 3, "technopark": 1, "transport": 5, "social": 3 }
+    },
+    {
+        "id": 37,
+        "name": "Ankara Bilim Üniversitesi",
+        "program": "Bilişim Güvenliği Teknolojisi (Burslu)",
+        "city": "Ankara",
+        "type": "Vakıf",
+        "teaching": "Örgün",
+        "rank2024": 333864,
+        "rank2023": 359840,
+        "rank2022": "—",
+        "reputation": 65,
+        "curriculum_url": "https://ankarabilim.edu.tr/bilisim-guvenligi-teknolojisi/akademik/mufredat",
+        "details": {
+            "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Gelişmekte (Genç ve dinamik bir akademik kadro).</li><li><b>Uygulamalı Eğitim:</b> Var (Modern derslik ve laboratuvar imkanları).</li><li><b>İngilizce Desteği:</b> Var (İngilizce hazırlık programı sunulmaktadır).</li></ul>",
+            "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> Gelişmekte (Ankara'daki teknoloji ekosistemiyle ilişkiler kurulmaktadır).</li><li><b>Teknopark:</b> Yok.</li></ul>",
+            "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Gelişmekte (Yeni kurulan bir üniversite olmasıyla kulüp yapıları şekillenmektedir).</li><li><b>Ulaşım Kolaylığı:</b> Orta (Maltepe'deki merkezi kampüse Ankaray ve otobüslerle ulaşım mümkün).</li></ul>",
+            "finance": "<ul><li><b>Yurt İmkanı:</b> Yok (Öğrenciler çevredeki özel ve KYK yurtlarını kullanmaktadır).</li><li><b>Şehir Yaşam Maliyeti:</b> Orta.</li></ul>"
+        },
+        "scores": { "academic": 3, "practical": 3, "english": 3, "career": 2, "technopark": 1, "transport": 4, "social": 2 }
+    },
+    {
+        "id": 38,
+        "name": "İstinye Üniversitesi",
+        "program": "Bilişim Güvenliği Teknolojisi (Burslu)",
+        "city": "İstanbul",
+        "type": "Vakıf",
+        "teaching": "Örgün",
+        "rank2024": 359700,
+        "rank2023": 325246,
+        "rank2022": 330790,
+        "reputation": 78,
+        "curriculum_url": "https://ois.istinye.edu.tr/bilgipaketi/eobsakts/ogrenimprogrami/program_kodu/2019001/menu_id/p_33/tip/OL/ln/tr/submenuheader/2",
+        "details": {
+            "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Güçlü (Part-time sektör profesyonelleri ile zenginleştirilmiş bir kadro).</li><li><b>Uygulamalı Eğitim:</b> Var (Topkapı kampüsündeki modern teknoloji laboratuvarları).</li><li><b>İngilizce Desteği:</b> Var (İngilizce hazırlık sınıfı imkanı sunulmaktadır).</li></ul>",
+            "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> Güçlü (Üniversitenin bağlı olduğu MLP Grubu ve diğer kurumsal partnerler aracılığıyla geniş staj ve iş imkanları).</li><li><b>Teknopark:</b> Yok.</li></ul>",
+            "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Aktif (ISU Tech, Siber Güvenlik Kulübü gibi teknoloji odaklı kulüpler).</li><li><b>Ulaşım Kolaylığı:</b> Çok İyi (Topkapı'daki ana kampüs, metro, metrobüs ve tramvay hatlarının kesişim noktasında yer alır).</li></ul>",
+            "finance": "<ul><li><b>Yurt İmkanı:</b> Var (Kampüs çevresinde ve içinde anlaşmalı ve üniversiteye ait yurtlar bulunur).</li><li><b>Şehir Yaşam Maliyeti:</b> Yüksek.</li></ul>"
+        },
+        "scores": { "academic": 4, "practical": 4, "english": 3, "career": 4, "technopark": 1, "transport": 5, "social": 4 }
+    },
+    {
+        "id": 39,
+        "name": "İstinye Üniversitesi",
+        "program": "Bilişim Güvenliği Teknolojisi (İÖ) (Burslu)",
+        "city": "İstanbul",
+        "type": "Vakıf",
+        "teaching": "İkinci Öğretim",
+        "rank2024": 364635,
+        "rank2023": 387619,
+        "rank2022": "—",
+        "reputation": 78,
+        "curriculum_url": "https://ois.istinye.edu.tr/bilgipaketi/eobsakts/ogrenimprogrami/program_kodu/2019001/menu_id/p_33/tip/OL/ln/tr/submenuheader/2",
+        "details": {
+            "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Güçlü (Örgün öğretim ile aynı akademik kadro).</li><li><b>Uygulamalı Eğitim:</b> Var (Örgün öğretim ile aynı laboratuvar imkanları).</li><li><b>İngilizce Desteği:</b> Var (Hazırlık sınıfı imkanı).</li></ul>",
+            "career": "<ul><li><b>Staj Programı:</b> Zorunlu (Genellikle gündüz saatlerinde çalışan öğrenciler için esneklik sağlanabilir).</li><li><b>Sektör İşbirlikleri:</b> Güçlü (Aynı kurumsal işbirlikleri geçerlidir).</li><li><b>Teknopark:</b> Yok.</li></ul>",
+            "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Orta (İkinci öğretim öğrencilerinin ders saatleri nedeniyle kulüp faaliyetlerine katılımı daha sınırlı olabilir).</li><li><b>Ulaşım Kolaylığı:</b> Çok İyi (Topkapı kampüsünün merkezi konumu).</li></ul>",
+            "finance": "<ul><li><b>Yurt İmkanı:</b> Var (Aynı yurt imkanları geçerlidir).</li><li><b>Şehir Yaşam Maliyeti:</b> Yüksek.</li></ul>"
+        },
+        "scores": { "academic": 4, "practical": 4, "english": 3, "career": 4, "technopark": 1, "transport": 5, "social": 2 }
+    },
+    {
+        "id": 40,
+        "name": "Fatih Sultan Mehmet Vakıf Üniversitesi",
+        "program": "Bilişim Güvenliği Teknolojisi (Burslu)",
+        "city": "İstanbul",
+        "type": "Vakıf",
+        "teaching": "Örgün",
+        "rank2024": 372987,
+        "rank2023": 363565,
+        "rank2022": 399180,
+        "reputation": 72,
+        "curriculum_url": "https://bgt.fsm.edu.tr/Bilisim-Guvenligi-Teknolojisi-Program-Bilgisi-Mufredat-Bilgisi--2024-2025-Egitim-Ogretim-Yili-Itibariyle-Kayit-Yaptiran-Ogrencilerin-Mufredat-Bilgisi",
+        "details": {
+            "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Deneyimli (Vakıf kültüründen gelen tecrübeli bir akademik yapı).</li><li><b>Uygulamalı Eğitim:</b> Var (Uygulama laboratuvarları mevcuttur).</li><li><b>İngilizce Desteği:</b> Var (İsteğe bağlı hazırlık sınıfı sunulmaktadır).</li></ul>",
+            "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> İyi (İstanbul'da bulunmasının getirdiği avantajlarla çeşitli işbirliği olanakları).</li><li><b>Teknopark:</b> Yok.</li></ul>",
+            "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Aktif (Bilişim ve teknoloji alanında faaliyet gösteren kulüpler).</li><li><b>Ulaşım Kolaylığı:</b> İyi (Haliç'te bulunan kampüse toplu taşıma ile ulaşım kolaydır).</li></ul>",
+            "finance": "<ul><li><b>Yurt İmkanı:</b> Var (Üniversitenin kendi yurtları ve anlaşmalı yurtları mevcuttur).</li><li><b>Şehir Yaşam Maliyeti:</b> Yüksek.</li></ul>"
+        },
+        "scores": { "academic": 3, "practical": 3, "english": 2, "career": 3, "technopark": 1, "transport": 4, "social": 3 }
     }
+]
 ]
