@@ -233,6 +233,24 @@
         const tableBody = document.getElementById('university-table-body');
         const preferenceUl = document.getElementById('preference-ul');
 
+        const rankingData = {
+            "2024": [ // 2024 verileri, en son yerleştirme sonuçlarına göre güncellenmiştir.
+                { score: 500, rank: 1150 }, { score: 450, rank: 17800 }, { score: 400, rank: 64500 },
+                { score: 350, rank: 178000 }, { score: 300, rank: 445000 }, { score: 250, rank: 960000 },
+                { score: 220, rank: 1500000 }
+            ],
+            "2023": [
+                { score: 500, rank: 1041 }, { score: 450, rank: 15682 }, { score: 400, rank: 59301 },
+                { score: 350, rank: 165489 }, { score: 300, rank: 411536 }, { score: 250, rank: 887134 },
+                { score: 220, rank: 1465225 }
+            ],
+            "2022": [
+                { score: 500, rank: 897 }, { score: 450, rank: 13240 }, { score: 400, rank: 52117 },
+                { score: 350, rank: 141043 }, { score: 300, rank: 362432 }, { score: 250, rank: 795811 },
+                { score: 220, rank: 1301453 }
+            ]
+        };
+
         function calculateTrend(uni) {
             const r24 = uni.rank2024;
             const r23 = uni.rank2023;
@@ -242,6 +260,25 @@
             return { icon: '─', class: 'trend-stable', text: 'Stabil' };
         }
 
+        function getEstimatedRank(score, yearData) {
+            let upper, lower;
+            for (let i = 0; i < yearData.length - 1; i++) {
+                if (score >= yearData[i+1].score && score <= yearData[i].score) {
+                    lower = yearData[i+1];
+                    upper = yearData[i];
+                    break;
+                }
+            }
+            if (!upper) {
+                return score > yearData[0].score ? `< ${yearData[0].rank.toLocaleString('tr-TR')}` : `> ${yearData[yearData.length - 1].rank.toLocaleString('tr-TR')}`;
+            }
+            const scoreRange = upper.score - lower.score;
+            const rankRange = upper.rank - lower.rank;
+            const scoreRatio = (score - lower.score) / scoreRange;
+            const estimatedRank = lower.rank + (scoreRatio * rankRange);
+            return Math.round(estimatedRank).toLocaleString('tr-TR');
+        }
+        
         function renderTable(data) {
             tableBody.innerHTML = '';
             if (data.length === 0) {
@@ -505,12 +542,24 @@
 
                 // DÜZELTME 2: Yerleştirme puanı, eski ham puan yerine "görünen" ham puan üzerinden hesaplanıyor.
                 const yerlestirmePuani = gorunenHamPuan + (obpPuan * 0.12);
+                const estimatedRank2024 = getEstimatedRank(yerlestirmePuani, rankingData["2024"]);
+                const estimatedRank2023 = getEstimatedRank(yerlestirmePuani, rankingData["2023"]);
+                const estimatedRank2022 = getEstimatedRank(yerlestirmePuani, rankingData["2022"]);
 
                 resultsDiv.style.display = 'block';
                 resultsDiv.innerHTML = `
                     <p><strong>TYT Ham Puanınız (Yaklaşık):</strong> <span class="rank">${gorunenHamPuan.toFixed(3)}</span></p>
                     ${obpPuan > 0 ? `<p><strong>TYT Yerleştirme Puanınız (Yaklaşık):</strong> <span class="rank">${yerlestirmePuani.toFixed(3)}</span></p>` : ''}
-                    <p style="font-size:0.8em; color:#555; margin-top:10px;">*Ham puan, ÖSYM'nin karmaşık standart sapma hesaplamaları nedeniyle bir yaklaşımdır. Yerleştirme puanı ise OBP katkısı sayesinde daha tutarlıdır.</p>
+                    <hr>
+                    <h4>Bu Puanın Yıllara Göre Tahmini Sıralama Karşılıkları:</h4>
+                    <ul>
+                        <li><strong>2024 Yılı Tahmini Sıralama:</strong> ${estimatedRank2024}</li>
+                        <li><strong>2023 Yılı Tahmini Sıralama:</strong> ${estimatedRank2023}</li>
+                        <li><strong>2022 Yılı Tahmini Sıralama:</strong> ${estimatedRank2022}</li>
+                    </ul>
+                    <p style="font-size:0.8em; color:#555; margin-top:10px;">
+                        *Sıralama tahminleri, ilgili yıllardaki sınav zorlukları ve yığılmalara dayalı bir yaklaşımdır. Kesinlik taşımaz ve sadece stratejik bir fikir vermesi amaçlanmıştır.
+                    </p>
                 `;
             });
 
