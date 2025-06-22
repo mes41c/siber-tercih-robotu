@@ -204,6 +204,7 @@
                     <th data-sort="rank2024">2024 Sıralama<span class="sort-indicator"></span></th>
                     <th data-sort="trend">Trend<span class="sort-indicator"></span></th>
                     <th>Tercih</th>
+                    <th>YÖK Atlas</th>  </tr>
                 </tr>
             </thead>
             <tbody id="university-table-body">
@@ -298,54 +299,65 @@
         }
         
         function renderTable(data) {
-            tableBody.innerHTML = '';
-            if (data.length === 0) {
-                tableBody.innerHTML = '<tr><td colspan="5" style="text-align:center; padding: 20px;">Bu kriterlere uygun sonuç bulunamadı.</td></tr>';
-                return;
-            }
-            
-            data.forEach(uni => {
-                const ranksHTML = `<b>24:</b> ${uni.rank2024}<br><b>23:</b> ${uni.rank2023}<br><b>22:</b> ${uni.rank2022}`;
-                const trend = uni.trend;
-                const rowHTML = `
-                    <tr class="university-row" data-id="${uni.id}">
-                        <td><strong>${uni.name}</strong><br>${uni.program}</td>
-                        <td>${uni.city}</td>
-                        <td><span class="rank">${uni.rank2024}</span></td>
-                        <td title="${trend.text}"><span class="trend-icon ${trend.class}">${trend.icon}</span></td>
-                        <td><button class="btn btn-add" data-id="${uni.id}">Listeye Ekle</button></td>
-                    </tr>
-                    <tr class="details-row" data-id="${uni.id}">
-                        <td colspan="5">
-                            <div class="details-card">
-                                 <table class="details-table">
-                                    <tr><th>Akademik & Müfredat</th><td>${uni.details.academic}</td></tr>
-                                    <tr>
-                                        <th>Ders Planı / Müfredat</th>
-                                        <td><a href="${uni.curriculum_url}" target="_blank" rel="noopener noreferrer" class="btn btn-add">Müfredatı İncele</a></td>
-                                    </tr>
-                                    <tr><th>Kariyer & Sektör</th><td>${uni.details.career}</td></tr>
-                                    <tr><th>Kampüs & Sosyal Yaşam</th><td>${uni.details.campus}</td></tr>
-                                    <tr><th>Maliyet & Finansal</th><td>${uni.details.finance}</td></tr>
-                                    <tr><th>Son 3 Yıl Sıralama Detayı</th><td>${ranksHTML}</td></tr>
-                                    <tr class="personal-prediction">
-                                        <th>2025 Tahmin Aralığınız</th>
+                tableBody.innerHTML = '';
+                if (data.length === 0) {
+                        // Not: Colspan'ı 6 olarak güncelledim.
+                        tableBody.innerHTML = '<tr><td colspan="6" style="text-align:center; padding: 20px;">Bu kriterlere uygun sonuç bulunamadı.</td></tr>';
+                        return;
+                }
+
+                let allRowsHTML = ''; // Tüm satır HTML'ini biriktirmek için bir değişken (Performans İyileştirmesi)
+
+                data.forEach(uni => {
+                        const ranksHTML = `<b>24:</b> ${uni.rank2024}<br><b>23:</b> ${uni.rank2023}<br><b>22:</b> ${uni.rank2022}`;
+                        const trend = uni.trend;
+
+                        // Her bir üniversite için hem ana satırı hem de detay satırını bir araya getiriyoruz.
+                        allRowsHTML += `
+                                <tr class="university-row" data-id="${uni.id}">
+                                        <td><strong>${uni.name}</strong><br><small>${uni.program}</small></td>
+                                        <td>${uni.city}</td>
+                                        <td><span class="rank">${uni.rank2024}</span></td>
+                                        <td title="${trend.text}"><span class="trend-icon ${trend.class}">${trend.icon}</span></td>
+                                        <td><button class="btn btn-add" data-id="${uni.id}">Ekle</button></td>
+                                        
                                         <td>
-                                            <h4>Geçmiş Trendler ve Sınav Yorumlarına Göre Kendi Tahmininizi Girin:</h4>
-                                            <div class="prediction-inputs">
-                                                <div><label>En İyimser Sıralama:</label><input type="number" placeholder="örn: ${Math.round(uni.rank2024 * 0.9)}"></div>
-                                                <div><label>En Olası Sıralama:</label><input type="number" placeholder="örn: ${uni.rank2024}"></div>
-                                                <div><label>En Kötümser Sıralama:</label><input type="number" placeholder="örn: ${Math.round(uni.rank2024 * 1.1)}"></div>
-                                            </div>
+                                                <a href="${uni.yok_atlas_url}" target="_blank" rel="noopener noreferrer" class="btn btn-add" style="background-color: #0077b6;">Detay</a>
                                         </td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </td>
-                    </tr>
-                `;
-                tableBody.innerHTML += rowHTML;
-            });
+                                </tr>
+                                <tr class="details-row" data-id="${uni.id}">
+                                        <td colspan="6">
+                                                <div class="details-card">
+                                                        <table class="details-table">
+                                                                <tr><th>Akademik & Müfredat</th><td>${uni.details.academic}</td></tr>
+                                                                <tr>
+                                                                        <th>Ders Planı / Müfredat</th>
+                                                                        <td><a href="${uni.curriculum_url}" target="_blank" rel="noopener noreferrer" class="btn btn-add">Müfredatı İncele</a></td>
+                                                                </tr>
+                                                                <tr><th>Kariyer & Sektör</th><td>${uni.details.career}</td></tr>
+                                                                <tr><th>Kampüs & Sosyal Yaşam</th><td>${uni.details.campus}</td></tr>
+                                                                <tr><th>Maliyet & Finansal</th><td>${uni.details.finance}</td></tr>
+                                                                <tr><th>Son 3 Yıl Sıralama Detayı</th><td>${ranksHTML}</td></tr>
+                                                                <tr class="personal-prediction">
+                                                                        <th>2025 Tahmin Aralığınız</th>
+                                                                        <td>
+                                                                                <h4>Geçmiş Trendler ve Sınav Yorumlarına Göre Kendi Tahmininizi Girin:</h4>
+                                                                                <div class="prediction-inputs">
+                                                                                        <div><label>En İyimser Sıralama:</label><input type="number" placeholder="örn: ${Math.round(uni.rank2024 * 0.9)}"></div>
+                                                                                        <div><label>En Olası Sıralama:</label><input type="number" placeholder="örn: ${uni.rank2024}"></div>
+                                                                                        <div><label>En Kötümser Sıralama:</label><input type="number" placeholder="örn: ${Math.round(uni.rank2024 * 1.1)}"></div>
+                                                                                </div>
+                                                                        </td>
+                                                                </tr>
+                                                        </table>
+                                                </div>
+                                        </td>
+                                </tr>
+                        `;
+                });
+
+                // Toplanan tüm HTML'i tek seferde DOM'a ekliyoruz.
+                tableBody.innerHTML = allRowsHTML;
         }
         
         function applyFiltersAndRender() {
