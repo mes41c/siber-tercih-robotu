@@ -499,39 +499,6 @@
         "scores": { "academic": 4, "practical": 4, "english": 5, "career": 4, "technopark": 4, "transport": 5, "social": 4 }
     },
     {
-        "id": 27,
-        "name": "Ostim Teknik Üniversitesi",
-        "program": "MYO (Bilgisayar Programcılığı - Burslu)",
-        "city": "Ankara",
-        "type": "Vakıf",
-        "teaching": "Örgün",
-        "rank2024": 284882,
-        "rank2023": 210933,
-        "rank2022": 253388,
-        "reputation": 70,
-        "curriculum_url": "https://myobilgisayar.ostimteknik.edu.tr/",
-        "yok_atlas_url": "https://yokatlas.yok.gov.tr/onlisans.php?y=210150116",
-        "details": {
-            "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Sektör Odaklı (OSTİM sanayisinin içinden gelen, tecrübeli eğitmenler).</li><li><b>Uygulamalı Eğitim:</b> Çok Güçlü ('İşyeri Deneyimi' modeli ile eğitim süresince yoğun bir şekilde sanayi içinde uygulama imkanı).</li><li><b>İngilizce Desteği:</b> Geliştiriliyor (İsteğe bağlı hazırlık ve mesleki İngilizce dersleri).</li></ul>",
-            "career": "<ul><li><b>Staj Programı:</b> Zorunlu ve yaygın (Eğitim modelinin ayrılmaz bir parçası, OSTİM içerisindeki firmalarda).</li><li><b>Sektör İşbirlikleri:</b> Çok Güçlü (OSTİM Sanayi Bölgesi'ndeki binlerce KOBİ, savunma sanayii ve teknoloji firmasıyla organik bağ).</li><li><b>Teknopark:</b> Doğal Teknopark (OSTİM'in kendisi bir sanayi ve teknoloji ekosistemi).</li></ul>",
-            "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Gelişmekte Olan (Teknoloji, girişimcilik ve üretim odaklı).</li><li><b>Ulaşım Kolaylığı:</b> İyi (Metro ve otobüs hatları üzerinde).</li></ul>",
-            "finance": "<ul><li><b>Yurt İmkanı:</b> Çevrede geniş özel ve KYK yurt seçenekleri mevcut.</li><li><b>Ek Burs Olanakları:</b> Var (OSTİM Vakfı ve sanayiciler tarafından desteklenen burslar).</li><li><b>Şehir Yaşam Maliyeti:</b> Orta.</li></ul>",
-            "barinma": {
-                "durum": "Üniversiteye ait yurt bulunmamaktadır.",
-                "kyk_yurtlari": [
-                    { "ad": "Ankara Yenimahalle KYK Kız Yurdu", "adres": "Yeşilevler Mahallesi 934 Cadde No: 2/2 Yenimahalle Merkez - Ankara" },
-                    { "ad": "Ankara Zübeyde Hanım KYK Kız Yurdu", "adres": "Beştepeler Mahallesi Meriç Sokak No: 9 Beştepe - Ankara" },
-                    { "ad": "Yenimahalle Beştepe KYK Kız Yurdu", "adres": "Beştepeler Mahallesi Meriç Sokak No:11 Yenimahalle - Ankara" },
-                    { "ad": "Gazi KYK Kız Öğrenci Yurdu", "adres": "Beştepe Mahallesi Alparslan Türkeş Caddesi No:3 Yenimahalle - Ankara" },
-                    { "ad": "Hacı Ömer Sabancı KYK Kız Yurdu", "adres": "Emniyet Mahallesi Boğaziçi Sokak No:4 Yenimahalle - Ankara" }
-                ],
-                "notlar": "Tüm yurtlar üniversitenin bulunduğu Yenimahalle ilçesi sınırları içerisindedir."
-             },
-             "adres_url": "https://www.bing.com/maps?where=100.%20Y%C4%B1l%20Bulvar%C4%B1%2C%2055%2FF%2C%20Yenimahalle%2C%20Ankara%2006374%2C%20TR"
-        },
-        "scores": { "academic": 3, "practical": 5, "english": 1, "career": 5, "technopark": 5, "transport": 4, "social": 2 }
-    },
-    {
         "id": 28,
         "name": "İstanbul Üniversitesi-Cerrahpaşa",
         "program": "Teknik Bilimler MYO (Bilgisayar Programcılığı)",
