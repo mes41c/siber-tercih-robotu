@@ -547,10 +547,12 @@ Sıralamalar Geriye Gitmeyecek, İleriye Gelebilir: Geçen sene belirli bir net 
 
                         // === YOL TARİFİ URL'İNİ OLUŞTURUYORUZ ===
                         let directionsUrl = '';
-                        if(campusAddress && yurt.adres) {
+                        if (campusAddress && yurt.adres) {
                             const encodedOrigin = encodeURIComponent(campusAddress);
                             const encodedDestination = encodeURIComponent(yurt.adres);
-                            directionsUrl = `https://maps.app.goo.gl/W2z3i71BgbAcZYPr7?saddr=${encodedOrigin}&daddr=${encodedDestination}`;
+                    
+                    // Google'ın yol tarifi için kullandığı doğru yapı budur:
+                            directionsUrl = `https://www.google.com/maps/search/?api-18query${encodedOrigin}/${encodedDestination}`;
                         }
 
                         yurtlarHTML += `
