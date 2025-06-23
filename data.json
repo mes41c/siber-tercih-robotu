@@ -751,5 +751,110 @@
             "finance": "<ul><li><b>Yurt İmkanı:</b> Var (Üniversitenin kendi yurtları ve anlaşmalı yurtları mevcuttur).</li><li><b>Şehir Yaşam Maliyeti:</b> Yüksek.</li></ul>"
         },
         "scores": { "academic": 3, "practical": 3, "english": 2, "career": 3, "technopark": 1, "transport": 4, "social": 3 }
+    },
+    {
+        "id": 41,
+        "name": "Ankara Bilim Üniversitesi",
+        "program": "Bilgisayar Programcılığı (Meslek Yüksekokulu)",
+        "city": "Ankara",
+        "type": "Vakıf",
+        "teaching": "Örgün",
+        "rank2024": 377455,
+        "rank2023": 372758,
+        "rank2022": "Dolmadı",
+        "reputation": 65,
+        "curriculum_url": "https://ankarabilim.edu.tr/bilgisayar-programciligi/akademik/mufredat",
+        "yok_atlas_url": "https://yokatlas.yok.gov.tr/onlisans.php?y=206650462",
+        "details": {
+            "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Gelişmekte olan, genç ve dinamik bir kadroya sahiptir.</li><li><b>Uygulamalı Eğitim:</b> Var. Üniversitenin yeni ve modern laboratuvarlarında uygulama imkanı sunulmaktadır.</li><li><b>İngilizce Desteği:</b> Var. Zorunlu İngilizce hazırlık sınıfı bulunmaktadır. Bu, siber güvenlik alanındaki global gelişmeleri takip edebilmeniz için sağlam bir temel sağlayacaktır.</li></ul>",
+            "career": "<ul><li><b>Staj Programı:</b> Zorunlu (30 iş günü).</li><li><b>Sektör İşbirlikleri:</b> Gelişmekte. Ankara'daki teknoloji ve savunma sanayii ekosistemiyle bağlar kurmaktadır.</li><li><b>Teknopark:</b> Yok.</li></ul>",
+            "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Gelişmekte. Üniversite ve öğrenci sayısının artmasıyla kulüp faaliyetleri de çeşitlenmektedir.</li><li><b>Ulaşım Kolaylığı:</b> İyi. Maltepe'deki kampüs merkezi bir konumdadır ve toplu taşıma (Ankaray, Otobüs) ile ulaşım kolaydır.</li></ul>",
+            "finance": "<ul><li><b>Yurt İmkanı:</b> Üniversiteye ait yurt bulunmamaktadır, öğrenciler çevredeki özel ve KYK yurtlarını kullanabilir.</li><li><b>Şehir Yaşam Maliyeti:</b> Orta.</li></ul>"
+        },
+        "scores": { "academic": 2, "practical": 2, "english": 3, "career": 2, "technopark": 1, "transport": 4, "social": 2 }
+    },
+    {
+        "id": 42,
+        "name": "Ankara Üniversitesi",
+        "program": "Bilgisayar Programcılığı (Uzaktan Öğretim)",
+        "city": "Ankara",
+        "type": "Devlet",
+        "teaching": "Uzaktan",
+        "rank2024": 355616,
+        "rank2023": 381151,
+        "rank2022": 378283,
+        "reputation": 90,
+        "curriculum_url": "https://abs.ankara.edu.tr/bolum/685/dersler/lisans/2023-2024/1",
+        "yok_atlas_url": "https://yokatlas.yok.gov.tr/onlisans.php?y=101150679",
+        "details": {
+            "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Çok Güçlü. Türkiye'nin en köklü ve saygın üniversitelerinden birinin akademik kadrosundan eğitim alma imkanı.</li><li><b>Uygulamalı Eğitim:</b> Sınırlı. Uzaktan eğitim modeli, kendi kendine öğrenme ve zaman yönetimi disiplini gerektirir. Bu model, size bağımsız çalışma yetkinliği kazandıracaktır.</li><li><b>İngilizce Desteği:</b> Düşük. Eğitim dili Türkçedir. Küresel siber güvenlik arenasındaki gelişmeleri yakalamak ve Türkiye'ye bu alanda en üst düzeyde katkı sunmak için İngilizce'yi mutlaka harici kaynaklarla güçlendirmeniz gerekecektir.</li></ul>",
+            "career": "<ul><li><b>Staj Programı:</b> Zorunlu. Stajınızı ikamet ettiğiniz şehirde yapma esnekliği sunar. Ankara Üniversitesi markası staj yeri bulmanızda önemli bir avantaj sağlayacaktır.</li><li><b>Sektör İşbirlikleri:</b> Çok Güçlü. Üniversitenin kamu ve özel sektördeki geniş ağı, kariyeriniz için güçlü bir referanstır.</li><li><b>Teknopark:</b> Var (Ankara Üniversitesi Teknokent).</li></ul>",
+            "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Uygulanamaz (Uzaktan Eğitim).</li><li><b>Ulaşım Kolaylığı:</b> Uygulanamaz (Uzaktan Eğitim).</li></ul>",
+            "finance": "<ul><li><b>Yurt İmkanı:</b> Uygulanamaz.</li><li><b>Şehir Yaşam Maliyeti:</b> Yaşadığınız şehre göre değişir.</li></ul>"
+        },
+        "scores": { "academic": 4, "practical": 1, "english": 1, "career": 3, "technopark": 4, "transport": 1, "social": 1 }
+    },
+    {
+        "id": 43,
+        "name": "Başkent Üniversitesi",
+        "program": "Bilgisayar Programcılığı (İkinci Öğretim) (Teknik Bilimler MYO)",
+        "city": "Ankara",
+        "type": "Vakıf",
+        "teaching": "İkinci Öğretim",
+        "rank2024": 354254,
+        "rank2023": 362584,
+        "rank2022": 386208,
+        "reputation": 76,
+        "curriculum_url": "https://bilsis.baskent.edu.tr/bologna/program_dersleri.php?birim=47&prg=471&dil=TR",
+        "yok_atlas_url": "https://yokatlas.yok.gov.tr/onlisans.php?y=200790367",
+        "details": {
+            "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Örgün öğretim ile aynı yetkin kadroya sahiptir.</li><li><b>Uygulamalı Eğitim:</b> Var. İkinci öğretim, gündüz saatlerinde çalışarak veya projeler geliştirerek pratik tecrübe kazanmak isteyenler için bir fırsat sunar.</li><li><b>İngilizce Desteği:</b> Standart. Üniversitenin hazırlık imkanlarından faydalanmak, uluslararası siber güvenlik sertifikasyonlarına hazırlanmanızda size avantaj sağlar.</li></ul>",
+            "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> Güçlü. Özellikle üniversitenin hastaneleri üzerinden sağlık bilişimi alanında önemli bağlantıları vardır.</li><li><b>Teknopark:</b> Var (Başkent Üniversitesi Teknopark).</li></ul>",
+            "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Orta. Ders saatleri nedeniyle kulüp faaliyetlerine katılım daha sınırlı olabilir.</li><li><b>Ulaşım Kolaylığı:</b> Orta. Şehir merkezine biraz uzaktır, ulaşım özel servisler ve otobüslerle sağlanır.</li></ul>",
+            "finance": "<ul><li><b>Yurt İmkanı:</b> Var (Kampüs içinde yurt imkanları mevcuttur).</li><li><b>Şehir Yaşam Maliyeti:</b> Orta.</li></ul>"
+        },
+        "scores": { "academic": 3, "practical": 3, "english": 2, "career": 3, "technopark": 4, "transport": 3, "social": 2 }
+    },
+    {
+        "id": 44,
+        "name": "Yüksek İhtisas Üniversitesi",
+        "program": "Bilgisayar Programcılığı (Burslu) (Meslek Yüksekokulu)",
+        "city": "Ankara",
+        "type": "Vakıf",
+        "teaching": "Örgün",
+        "rank2024": 349382,
+        "rank2023": 365074,
+        "rank2022": 416096,
+        "reputation": 68,
+        "curriculum_url": "https://www.yiu.edu.tr/meslek-yuksekokulu-bilgisayar-programciligi-onlisans-programi-ders-icerikleri.html",
+        "yok_atlas_url": "https://yokatlas.yok.gov.tr/onlisans.php?y=207950183",
+        "details": {
+            "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Yetkin. Özellikle sağlık bilişimi alanında odaklanmış bir kadroya sahiptir.</li><li><b>Uygulamalı Eğitim:</b> Var. Üniversitenin sağlık odaklı yapısı, bu alandaki yazılım ve güvenlik uygulamaları için farklı bir bakış açısı sunabilir.</li><li><b>İngilizce Desteği:</b> Var. Sunulan isteğe bağlı hazırlık eğitimi, uluslararası sağlık teknolojileri ve bilişim standartlarını takip etmeniz için bir avantajdır.</li></ul>",
+            "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> Güçlü (Sağlık Alanında). Üniversitenin kurucu vakfı aracılığıyla önde gelen özel hastane grupları (Liv Hospital, Medical Park vb.) ile olan ilişkisi, staj ve kariyer için önemli bir ağ sunar.</li><li><b>Teknopark:</b> Yok.</li></ul>",
+            "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Gelişmekte. Üniversitenin butik yapısı, daha odaklı kulüp faaliyetlerine imkan tanır.</li><li><b>Ulaşım Kolaylığı:</b> Çok İyi. Balgat'taki merkezi konumuyla ulaşım oldukça kolaydır.</li></ul>",
+            "finance": "<ul><li><b>Yurt İmkanı:</b> Anlaşmalı yurtlar bulunmaktadır.</li><li><b>Şehir Yaşam Maliyeti:</b> Orta.</li></ul>"
+        },
+        "scores": { "academic": 3, "practical": 3, "english": 3, "career": 4, "technopark": 1, "transport": 5, "social": 2 }
+    },
+    {
+        "id": 45,
+        "name": "İzmir Ekonomi Üniversitesi",
+        "program": "Bilişim Güvenliği Teknolojisi (Burslu) (Meslek Yüksekokulu)",
+        "city": "İzmir",
+        "type": "Vakıf",
+        "teaching": "Örgün",
+        "rank2024": 343909,
+        "rank2023": 332604,
+        "rank2022": 452652,
+        "reputation": 78,
+        "curriculum_url": "https://ects.ieu.edu.tr/tr/program/on-lisans/bilisim-guvenligi-teknolojisi/dersler",
+        "yok_atlas_url": "https://yokatlas.yok.gov.tr/onlisans.php?y=204190532",
+        "details": {
+            "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Güçlü. Sektör deneyimli ve yetkin bir akademik kadroya sahiptir.</li><li><b>Uygulamalı Eğitim:</b> Var. Modern laboratuvarlarda, proje odaklı ve güncel teknolojilerle eğitim verilmektedir.</li><li><b>İngilizce Desteği:</b> Çok Güçlü. Üniversitenin eğitim dilinin ağırlıklı İngilizce olması, sizi doğrudan küresel siber güvenlik literatürüne ve profesyonel dünyasına hazırlar. Bu, Türkiye'ye hizmet hedefinizde size uluslararası bir vizyon katacaktır.</li></ul>",
+            "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> Güçlü. İzmir Ticaret Odası Eğitim ve Sağlık Vakfı'nın desteği ve bölgedeki teknoloji firmalarıyla güçlü bağları bulunmaktadır.</li><li><b>Teknopark:</b> Var (İEÜ Teknoloji Geliştirme Bölgesi - Embryonix).</li></ul>",
+            "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Aktif. Mühendislik, Yazılım, IEEE ve Siber Güvenlik toplulukları aktiftir.</li><li><b>Ulaşım Kolaylığı:</b> İyi. Toplu taşıma hatları üzerindedir ve metroya yakındır.</li></ul>",
+            "finance": "<ul><li><b>Yurt İmkanı:</b> Var. Kampüs içinde modern yurt imkanları sunulmaktadır.</li><li><b>Şehir Yaşam Maliyeti:</b> Orta-Yüksek.</li></ul>"
+        },
+        "scores": { "academic": 4, "practical": 4, "english": 5, "career": 4, "technopark": 4, "transport": 4, "social": 3 }
     }
 ]
