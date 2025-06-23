@@ -552,7 +552,7 @@ Sıralamalar Geriye Gitmeyecek, İleriye Gelebilir: Geçen sene belirli bir net 
                             const encodedDestination = encodeURIComponent(yurt.adres);
                     
                     // Google'ın yol tarifi için kullandığı parametre bazlı doğru yapı:
-                            directionsUrl = `https://maps.app.goo.gl/ftYPT9XAHUKPqQxEA7{encodedOrigin}&daddr=${encodedDestination}`;
+                            directionsUrl = `https://maps.app.goo.gl/ftYPT9XAHUKPqQxEA7${encodedOrigin}&daddr=${encodedDestination}`;
                         }
 
                         yurtlarHTML += `
