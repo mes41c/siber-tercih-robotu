@@ -525,37 +525,50 @@ Sıralamalar Geriye Gitmeyecek, İleriye Gelebilir: Geçen sene belirli bir net 
                         </table>
                     </div>
                     <div id="tab-barinma" class="tab-content">
-                        </div>
+                    </div>
                 </div>
             `;
             
             detailsCell.innerHTML = detailsCardHTML;
 
-            // ===== YENİ VE GÜNCELLENMİŞ KOD BAŞLANGICI =====
             const barinmaTab = detailsCell.querySelector('#tab-barinma');
             const barinmaData = university.details.barinma;
-            // Not: 'adres_url' anahtarı artık 'details' altında değil, doğrudan ana nesnede olabilir.
-            // Bu yüzden her iki olasılığı da kontrol ediyoruz.
             const adresUrl = university.adres_url || (university.details ? university.details.adres_url : null);
 
             if (barinmaData && adresUrl) {
+                // === YOL TARİFİ İÇİN KAMPÜS ADRESİNİ ALIYORUZ ===
+                const campusAddress = barinmaData.campus_address;
+
                 let yurtlarHTML = '';
                 if (barinmaData.kyk_yurtlari && barinmaData.kyk_yurtlari.length > 0) {
                     
-                    // Yurt listesi yeni veri yapısına göre oluşturuluyor
                     barinmaData.kyk_yurtlari.forEach(yurt => {
                         const cinsiyetClass = yurt.cinsiyet === 'Kız' ? 'gender-kiz' : 'gender-erkek';
+
+                        // === YOL TARİFİ URL'İNİ OLUŞTURUYORUZ ===
+                        let directionsUrl = '';
+                        if(campusAddress && yurt.adres) {
+                            const encodedOrigin = encodeURIComponent(campusAddress);
+                            const encodedDestination = encodeURIComponent(yurt.adres);
+                            directionsUrl = `https://maps.app.goo.gl/W2z3i71BgbAcZYPr7?saddr=${encodedOrigin}&daddr=${encodedDestination}`;
+                        }
+
                         yurtlarHTML += `
                             <li>
                                 <div class="dorm-header">
                                     <strong>${yurt.ad || ''}</strong>
+                                    <div>
+                                        ${yurt.harita_url ? `<a href="${yurt.harita_url}" target="_blank" rel="noopener noreferrer" class="dorm-map-link"><i class="fas fa-map-pin"></i> Yurda Göz At</a>` : ''}
+                                        ${directionsUrl ? `<a href="${directionsUrl}" target="_blank" rel="noopener noreferrer" class="dorm-directions-link"><i class="fas fa-directions"></i> Yol Tarifi Al</a>` : ''}
+                                    </div>
+                                </div>
+                                <div style="margin-top: 5px;">
                                     ${yurt.cinsiyet ? `<span class="dorm-gender ${cinsiyetClass}">${yurt.cinsiyet}</span>` : ''}
                                 </div>
                                 <div class="dorm-details">
                                     ${yurt.ulasim && yurt.ulasim.mesafe_km ? `<span><i class="fas fa-route"></i> Mesafe: ${yurt.ulasim.mesafe_km.toFixed(1)} km</span>` : ''}
                                     ${yurt.ulasim && yurt.ulasim.aracla_dk ? `<span><i class="fas fa-car"></i> Araçla: ~${yurt.ulasim.aracla_dk} dk</span>` : ''}
                                     ${yurt.ulasim && yurt.ulasim.toplu_tasima_dk ? `<span><i class="fas fa-bus"></i> Toplu Taşıma: ~${yurt.ulasim.toplu_tasima_dk} dk</span>` : ''}
-                                    ${yurt.harita_url ? `<a href="${yurt.harita_url}" target="_blank" rel="noopener noreferrer" class="dorm-map-link"><i class="fas fa-map-pin"></i> Yurda Göz At</a>` : ''}
                                 </div>
                                 ${yurt.not ? `<span style="font-size:0.9em; margin-top:8px; display:block;"><em>Not: ${yurt.not}</em></span>` : ''}
                             </li>
@@ -578,7 +591,6 @@ Sıralamalar Geriye Gitmeyecek, İleriye Gelebilir: Geçen sene belirli bir net 
             } else {
                 barinmaTab.innerHTML = '<p>Bu üniversite için detaylı adres ve yurt bilgisi henüz eklenmemiştir.</p>';
             }
-            // ===== YENİ VE GÜNCELLENMİŞ KOD SONU =====
 
             const tabButtons = detailsCell.querySelectorAll('.tab-button');
             tabButtons.forEach(button => {
