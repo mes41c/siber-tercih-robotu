@@ -218,6 +218,17 @@
         "reputation": 76,
         "curriculum_url": "https://truva.baskent.edu.tr/bilgipaketi/?dil=TR&menu=akademik&inner=katalog&birim=471",
         "yok_atlas_url": "https://yokatlas.yok.gov.tr/onlisans.php?y=210150116",
+        "barinma": {
+            "durum": "Kampüse yürüme mesafesinde ve yakın konumda çok sayıda KYK yurdu seçeneği bulunmaktadır.",
+            "kyk_yurtlari": [
+                { "ad": "Bağlıca Kız Öğrenci Yurdu", "mesafe": "1.1 km", "not": "Kampüse en yakın KYK yurdudur. Yürüme mesafesindedir." },
+                { "ad": "Bağlıca İrfan Kartal Erkek Öğrenci Yurdu", "mesafe": "6.6 km", "not": "Erkek öğrenciler için en yakın seçenektir." },
+                { "ad": "Etimesgut Safiye Erol Kız Yurdu", "mesafe": "9.2 km", "not": "Kız öğrenciler için yakın bir alternatiftir." },
+                { "ad": "ETİMESGUT ERYAMAN YURDU (Kız)", "mesafe": "18.1 km", "not": "Daha uzak bir seçenektir." }
+            ],
+            "notlar": "Yurtların mesafeleri, kampüse olan yakınlıklarına göre kategorize edilmiştir."
+        },
+        "adres_url": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x14d3393901ffae4b:0x1575d53f930351b6?sa=X&ved=1t:8290&ictx=111"
         "details": {
             "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Yetkin.</li><li><b>Uygulamalı Eğitim:</b> Var (Modern ve donanımlı laboratuvarlar).</li><li><b>İngilizce Desteği:</b> Standart (Hazırlık imkanı mevcut).</li></ul>",
             "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> Özellikle sağlık bilişimi alanında güçlü (Üniversitenin hastaneleri mevcut).</li><li><b>Teknopark:</b> Var (Başkent Üniversitesi Teknopark).</li></ul>",
@@ -239,6 +250,18 @@
         "reputation": 70,
         "curriculum_url": "https://myobilgisayar.ostimteknik.edu.tr/",
         "yok_atlas_url": "https://yokatlas.yok.gov.tr/onlisans.php?y=210150116",
+        "barinma": {
+            "durum": "Üniversiteye ait yurt bulunmamaktadır.",
+            "kyk_yurtlari": [
+                { "ad": "Ankara Yenimahalle KYK Kız Yurdu", "adres": "Yeşilevler Mahallesi 934 Cadde No: 2/2 Yenimahalle Merkez - Ankara" },
+                { "ad": "Ankara Zübeyde Hanım KYK Kız Yurdu", "adres": "Beştepeler Mahallesi Meriç Sokak No: 9 Beştepe - Ankara" },
+                { "ad": "Yenimahalle Beştepe KYK Kız Yurdu", "adres": "Beştepeler Mahallesi Meriç Sokak No:11 Yenimahalle - Ankara" },
+                { "ad": "Gazi KYK Kız Öğrenci Yurdu", "adres": "Beştepe Mahallesi Alparslan Türkeş Caddesi No:3 Yenimahalle - Ankara" },
+                { "ad": "Hacı Ömer Sabancı KYK Kız Yurdu", "adres": "Emniyet Mahallesi Boğaziçi Sokak No:4 Yenimahalle - Ankara" }
+            ],
+            "notlar": "Tüm yurtlar üniversitenin bulunduğu Yenimahalle ilçesi sınırları içerisindedir."
+        },
+        "adres_url": "https://www.bing.com/maps?where=100.%20Y%C4%B1l%20Bulvar%C4%B1%2C%2055%2FF%2C%20Yenimahalle%2C%20Ankara%2006374%2C%20TR"
         "details": {
             "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Sektör Odaklı (OSTİM sanayisinin içinden gelen, tecrübeli eğitmenler).</li><li><b>Uygulamalı Eğitim:</b> Çok Güçlü ('İşyeri Deneyimi' modeli ile eğitim süresince yoğun bir şekilde sanayi içinde uygulama imkanı).</li><li><b>İngilizce Desteği:</b> Geliştiriliyor (İsteğe bağlı hazırlık ve mesleki İngilizce dersleri).</li></ul>",
             "career": "<ul><li><b>Staj Programı:</b> Zorunlu ve yaygın (Eğitim modelinin ayrılmaz bir parçası, OSTİM içerisindeki firmalarda).</li><li><b>Sektör İşbirlikleri:</b> Çok Güçlü (OSTİM Sanayi Bölgesi'ndeki binlerce KOBİ, savunma sanayii ve teknoloji firmasıyla organik bağ).</li><li><b>Teknopark:</b> Doğal Teknopark (OSTİM'in kendisi bir sanayi ve teknoloji ekosistemi).</li></ul>",
@@ -300,6 +323,20 @@
         "rank2022": 201979,
         "curriculum_url": "https://mebis.ankaramedipol.edu.tr/ProgramBilgi/ProgramBilgileri?pBolumOID=1OMH8aVdQ67LIBc1jXujXXUgIrktNBplIoeJU9XBduNs%7CJKCdSXIkcCnAr4I26ce&lang=tr",
         "yok_atlas_url": "https://yokatlas.yok.gov.tr/onlisans.php?y=210150116",
+        "barinma": {
+            "durum": "Kampüsün merkezi konumu sayesinde 5 km'den daha yakın mesafede çok sayıda KYK yurdu bulunmaktadır.",
+            "kyk_yurtlari": [
+                { "ad": "Yunus Emre Erkek Öğrenci Yurdu (Altındağ)", "mesafe": "1.3 km" },
+                { "ad": "KYK Hüseyin Gazi Erkek Öğrenci Yurdu (Altındağ)", "mesafe": "1.6 km" },
+                { "ad": "KYK Cebeci Erkek Öğrenci Yurdu (Çankaya)", "mesafe": "2.2 km" },
+                { "ad": "Cebeci Kız Öğrenci Yurdu (Çankaya)", "mesafe": "2.7 km" },
+                { "ad": "Gazi Kız Öğrenci Yurdu (Yenimahalle)", "mesafe": "4.9 km" },
+                { "ad": "Mehmet Akif Ersoy KYK Erkek Öğrenci Yurdu (Yenimahalle)", "mesafe": "7.3 km" },
+                { "ad": "Emine Şerife Hanım KYK Kız Öğrenci Yurdu (Çankaya - Beytepe)", "mesafe": "17.9 km" }
+            ],
+            "notlar": "Ulaşım için merkezi otobüs ve tren hatları (Ankaray) kullanılabilir."
+        },
+        "adres_url": "https://maps.app.goo.gl/W2z3i71BgbAcZYPr7"
         "details": {
             "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Gelişmekte olan, dinamik bir kadro.</li><li><b>Uygulamalı Eğitim:</b> Var (Yeni ve modern laboratuvarlar).</li><li><b>İngilizce Desteği:</b> Güçlü (Hazırlık imkanı).</li></ul>",
             "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> Medipol Sağlık Grubu ve Ankara'daki teknoloji ekosistemi ile gelişen ilişkiler.</li><li><b>Teknopark:</b> Yok.</li></ul>",
@@ -474,6 +511,18 @@
         "reputation": 70,
         "curriculum_url": "https://myobilgisayar.ostimteknik.edu.tr/",
         "yok_atlas_url": "https://yokatlas.yok.gov.tr/onlisans.php?y=210150116",
+        "barinma": {
+            "durum": "Üniversiteye ait yurt bulunmamaktadır.",
+            "kyk_yurtlari": [
+                { "ad": "Ankara Yenimahalle KYK Kız Yurdu", "adres": "Yeşilevler Mahallesi 934 Cadde No: 2/2 Yenimahalle Merkez - Ankara" },
+                { "ad": "Ankara Zübeyde Hanım KYK Kız Yurdu", "adres": "Beştepeler Mahallesi Meriç Sokak No: 9 Beştepe - Ankara" },
+                { "ad": "Yenimahalle Beştepe KYK Kız Yurdu", "adres": "Beştepeler Mahallesi Meriç Sokak No:11 Yenimahalle - Ankara" },
+                { "ad": "Gazi KYK Kız Öğrenci Yurdu", "adres": "Beştepe Mahallesi Alparslan Türkeş Caddesi No:3 Yenimahalle - Ankara" },
+                { "ad": "Hacı Ömer Sabancı KYK Kız Yurdu", "adres": "Emniyet Mahallesi Boğaziçi Sokak No:4 Yenimahalle - Ankara" }
+            ],
+            "notlar": "Tüm yurtlar üniversitenin bulunduğu Yenimahalle ilçesi sınırları içerisindedir."
+        },
+        "adres_url": "https://www.bing.com/maps?where=100.%20Y%C4%B1l%20Bulvar%C4%B1%2C%2055%2FF%2C%20Yenimahalle%2C%20Ankara%2006374%2C%20TR"
         "details": {
             "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Sektör Odaklı (OSTİM sanayisinin içinden gelen, tecrübeli eğitmenler).</li><li><b>Uygulamalı Eğitim:</b> Çok Güçlü ('İşyeri Deneyimi' modeli ile eğitim süresince yoğun bir şekilde sanayi içinde uygulama imkanı).</li><li><b>İngilizce Desteği:</b> Geliştiriliyor (İsteğe bağlı hazırlık ve mesleki İngilizce dersleri).</li></ul>",
             "career": "<ul><li><b>Staj Programı:</b> Zorunlu ve yaygın (Eğitim modelinin ayrılmaz bir parçası, OSTİM içerisindeki firmalarda).</li><li><b>Sektör İşbirlikleri:</b> Çok Güçlü (OSTİM Sanayi Bölgesi'ndeki binlerce KOBİ, savunma sanayii ve teknoloji firmasıyla organik bağ).</li><li><b>Teknopark:</b> Doğal Teknopark (OSTİM'in kendisi bir sanayi ve teknoloji ekosistemi).</li></ul>",
@@ -597,6 +646,18 @@
         "reputation": 92,
         "curriculum_url": "https://balamyo.hacettepe.edu.tr/bbpders.xls",
         "yok_atlas_url": "https://yokatlas.yok.gov.tr/onlisans.php?y=210150116",
+        "barinma": {
+            "durum": "Kampüse en yakın KYK yurtları Etimesgut ve Yenimahalle ilçelerinde bulunmaktadır.",
+            "kyk_yurtlari": [
+                { "ad": "Bağlıca Kız Öğrenci Yurdu", "adres": "Bağlıca, Hilal Cd., 06790 Etimesgut/Ankara" },
+                { "ad": "Etimesgut Safiye Erol Kız Yurdu", "adres": "Süvari, Çınar Cd, 06794 Etimesgut/Ankara" },
+                { "ad": "ETİMESGUT ERYAMAN YURDU (Kız)", "adres": "Yeşilova Mahallesi, Eryaman, 4020. Sk. No :8, 06160 Etimesgut/Ankara" },
+                { "ad": "Bağlıca İrfan Kartal Erkek Öğrenci Yurdu", "adres": "Yeni Bağlıca, Bağlıca Bulvarı, 06790 Etimesgut/Ankara" },
+                { "ad": "Mehmet Akif Ersoy KYK Erkek Öğrenci Yurdu", "adres": "Beşevler/Emniyet Mah., Yenimahalle" }
+            ],
+            "notlar": "Kampüs, OSB içinde yer aldığı için yurtlar genellikle toplu taşıma ile ulaşım gerektiren mesafelerdedir."
+        },
+        "adres_url": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x14d31ddd42ad76ad:0x52c3c0797eabf361?sa=X&ved=1t:8290&ictx=111"
         "details": {
             "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Güçlü (Türkiye'nin en iyi üniversitelerinden birinin akademik yetkinliği).</li><li><b>Uygulamalı Eğitim:</b> Var (Organize Sanayi Bölgesi (OSB) içinde konumlanması, uygulamalı eğitime odaklandığını gösterir).</li><li><b>İngilizce Desteği:</b> Standart (Üniversite genelinde güçlü bir hazırlık eğitimi imkanı var).</li></ul>",
             "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> Güçlü (Başkent OSB içerisindeki sanayi ve teknoloji firmalarıyla doğal bir işbirliği potansiyeli).</li><li><b>Teknopark:</b> Var (Hacettepe Teknokent, Ankara'nın en önemli teknoloji merkezlerinden biridir).</li></ul>",
@@ -639,6 +700,18 @@
         "reputation": 75,
         "curriculum_url": "https://myobilisim.ostimteknik.edu.tr/en/program-mufredat",
         "yok_atlas_url": "https://yokatlas.yok.gov.tr/onlisans.php?y=210150116",
+        "barinma": {
+            "durum": "Üniversiteye ait yurt bulunmamaktadır.",
+            "kyk_yurtlari": [
+                { "ad": "Ankara Yenimahalle KYK Kız Yurdu", "adres": "Yeşilevler Mahallesi 934 Cadde No: 2/2 Yenimahalle Merkez - Ankara" },
+                { "ad": "Ankara Zübeyde Hanım KYK Kız Yurdu", "adres": "Beştepeler Mahallesi Meriç Sokak No: 9 Beştepe - Ankara" },
+                { "ad": "Yenimahalle Beştepe KYK Kız Yurdu", "adres": "Beştepeler Mahallesi Meriç Sokak No:11 Yenimahalle - Ankara" },
+                { "ad": "Gazi KYK Kız Öğrenci Yurdu", "adres": "Beştepe Mahallesi Alparslan Türkeş Caddesi No:3 Yenimahalle - Ankara" },
+                { "ad": "Hacı Ömer Sabancı KYK Kız Yurdu", "adres": "Emniyet Mahallesi Boğaziçi Sokak No:4 Yenimahalle - Ankara" }
+            ],
+            "notlar": "Tüm yurtlar üniversitenin bulunduğu Yenimahalle ilçesi sınırları içerisindedir."
+        },
+        "adres_url": "https://www.bing.com/maps?where=100.%20Y%C4%B1l%20Bulvar%C4%B1%2C%2055%2FF%2C%20Yenimahalle%2C%20Ankara%2006374%2C%20TR"
         "details": {
             "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Sektör Odaklı (Üniversitenin sanayi odaklı yapısı gereği sektör deneyimi güçlü eğitmenler).</li><li><b>Uygulamalı Eğitim:</b> Çok Güçlü (Türkiye'nin en büyük sanayi bölgesi olan OSTİM'in içinde yer alması sayesinde 'iş yeri deneyimi' modeliyle teorik ve pratik eğitim bir arada).</li><li><b>İngilizce Desteği:</b> Var (İsteğe bağlı veya zorunlu hazırlık programları mevcut).</li></ul>",
             "career": "<ul><li><b>Staj Programı:</b> Çok Güçlü (Müfredata entegre iş yeri deneyimi ve staj olanakları).</li><li><b>Sektör İşbirlikleri:</b> Çok Güçlü (OSTİM, İvedik OSB ve Ankara'daki savunma sanayii firmaları (ASELSAN, TUSAŞ, HAVELSAN) ile yakın temas).</li><li><b>Teknopark:</b> Var (Ostim Teknopark).</li></ul>",
@@ -681,6 +754,19 @@
         "reputation": 65,
         "curriculum_url": "https://ankarabilim.edu.tr/bilisim-guvenligi-teknolojisi/akademik/mufredat",
         "yok_atlas_url": "https://yokatlas.yok.gov.tr/onlisans.php?y=210150116",
+        "barinma": {
+            "durum": "Kampüsün merkezi konumu, 5 km'den daha yakın mesafede hem kız hem de erkek öğrenciler için çeşitli KYK yurtlarına erişim imkanı sağlar.",
+            "kyk_yurtlari": [
+                { "ad": "Cebeci Erkek Öğrenci Yurdu (Çankaya)", "mesafe": "2.2 km" },
+                { "ad": "Cebeci Kız Öğrenci Yurdu (Çankaya)", "mesafe": "2.8 km" },
+                { "ad": "Hüseyin Gazi Erkek Öğrenci Yurdu (Altındağ)", "mesafe": "2.9 km" },
+                { "ad": "Hacı Ömer Sabancı KYK Kız Yurdu (Yenimahalle)", "mesafe": "4.5 km" },
+                { "ad": "Gazi KYK Kız Öğrenci Yurdu (Yenimahalle)", "mesafe": "4.8 km" },
+                { "ad": "Ankara Zübeyde Hanım KYK Kız Yurdu (Yenimahalle)", "mesafe": "6.5 km" }
+            ],
+            "notlar": "Yurtlar, farklı ilçelerde yer almakla birlikte, merkezi konum sayesinde ulaşım genellikle kolaydır."
+        },
+        "adres_url": "https://maps.app.goo.gl/ftYPT9XAHUKPqQxEA"
         "details": {
             "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Gelişmekte (Genç ve dinamik bir akademik kadro).</li><li><b>Uygulamalı Eğitim:</b> Var (Modern derslik ve laboratuvar imkanları).</li><li><b>İngilizce Desteği:</b> Var (İngilizce hazırlık programı sunulmaktadır).</li></ul>",
             "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> Gelişmekte (Ankara'daki teknoloji ekosistemiyle ilişkiler kurulmaktadır).</li><li><b>Teknopark:</b> Yok.</li></ul>",
@@ -765,6 +851,19 @@
         "reputation": 65,
         "curriculum_url": "https://ankarabilim.edu.tr/bilgisayar-programciligi/akademik/mufredat",
         "yok_atlas_url": "https://yokatlas.yok.gov.tr/onlisans.php?y=206650462",
+        "barinma": {
+            "durum": "Kampüsün merkezi konumu, 5 km'den daha yakın mesafede hem kız hem de erkek öğrenciler için çeşitli KYK yurtlarına erişim imkanı sağlar.",
+            "kyk_yurtlari": [
+                { "ad": "Cebeci Erkek Öğrenci Yurdu (Çankaya)", "mesafe": "2.2 km" },
+                { "ad": "Cebeci Kız Öğrenci Yurdu (Çankaya)", "mesafe": "2.8 km" },
+                { "ad": "Hüseyin Gazi Erkek Öğrenci Yurdu (Altındağ)", "mesafe": "2.9 km" },
+                { "ad": "Hacı Ömer Sabancı KYK Kız Yurdu (Yenimahalle)", "mesafe": "4.5 km" },
+                { "ad": "Gazi KYK Kız Öğrenci Yurdu (Yenimahalle)", "mesafe": "4.8 km" },
+                { "ad": "Ankara Zübeyde Hanım KYK Kız Yurdu (Yenimahalle)", "mesafe": "6.5 km" }
+            ],
+            "notlar": "Yurtlar, farklı ilçelerde yer almakla birlikte, merkezi konum sayesinde ulaşım genellikle kolaydır."
+        },
+        "adres_url": "https://maps.app.goo.gl/ftYPT9XAHUKPqQxEA"
         "details": {
             "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Gelişmekte olan, genç ve dinamik bir kadroya sahiptir.</li><li><b>Uygulamalı Eğitim:</b> Var. Üniversitenin yeni ve modern laboratuvarlarında uygulama imkanı sunulmaktadır.</li><li><b>İngilizce Desteği:</b> Var. Zorunlu İngilizce hazırlık sınıfı bulunmaktadır. Bu, siber güvenlik alanındaki global gelişmeleri takip edebilmeniz için sağlam bir temel sağlayacaktır.</li></ul>",
             "career": "<ul><li><b>Staj Programı:</b> Zorunlu (30 iş günü).</li><li><b>Sektör İşbirlikleri:</b> Gelişmekte. Ankara'daki teknoloji ve savunma sanayii ekosistemiyle bağlar kurmaktadır.</li><li><b>Teknopark:</b> Yok.</li></ul>",
@@ -807,6 +906,17 @@
         "reputation": 76,
         "curriculum_url": "https://bilsis.baskent.edu.tr/bologna/program_dersleri.php?birim=47&prg=471&dil=TR",
         "yok_atlas_url": "https://yokatlas.yok.gov.tr/onlisans.php?y=200790367",
+        "barinma": {
+            "durum": "Kampüse yürüme mesafesinde ve yakın konumda çok sayıda KYK yurdu seçeneği bulunmaktadır.",
+            "kyk_yurtlari": [
+                { "ad": "Bağlıca Kız Öğrenci Yurdu", "mesafe": "1.1 km", "not": "Kampüse en yakın KYK yurdudur. Yürüme mesafesindedir." },
+                { "ad": "Bağlıca İrfan Kartal Erkek Öğrenci Yurdu", "mesafe": "6.6 km", "not": "Erkek öğrenciler için en yakın seçenektir." },
+                { "ad": "Etimesgut Safiye Erol Kız Yurdu", "mesafe": "9.2 km", "not": "Kız öğrenciler için yakın bir alternatiftir." },
+                { "ad": "ETİMESGUT ERYAMAN YURDU (Kız)", "mesafe": "18.1 km", "not": "Daha uzak bir seçenektir." }
+            ],
+            "notlar": "Yurtların mesafeleri, kampüse olan yakınlıklarına göre kategorize edilmiştir."
+        },
+        "adres_url": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x14d3393901ffae4b:0x1575d53f930351b6?sa=X&ved=1t:8290&ictx=111"
         "details": {
             "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Örgün öğretim ile aynı yetkin kadroya sahiptir.</li><li><b>Uygulamalı Eğitim:</b> Var. İkinci öğretim, gündüz saatlerinde çalışarak veya projeler geliştirerek pratik tecrübe kazanmak isteyenler için bir fırsat sunar.</li><li><b>İngilizce Desteği:</b> Standart. Üniversitenin hazırlık imkanlarından faydalanmak, uluslararası siber güvenlik sertifikasyonlarına hazırlanmanızda size avantaj sağlar.</li></ul>",
             "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> Güçlü. Özellikle üniversitenin hastaneleri üzerinden sağlık bilişimi alanında önemli bağlantıları vardır.</li><li><b>Teknopark:</b> Var (Başkent Üniversitesi Teknopark).</li></ul>",
@@ -828,6 +938,16 @@
         "reputation": 68,
         "curriculum_url": "https://www.yiu.edu.tr/meslek-yuksekokulu-bilgisayar-programciligi-onlisans-programi-ders-icerikleri.html",
         "yok_atlas_url": "https://yokatlas.yok.gov.tr/onlisans.php?y=207950183",
+        "barinma": {
+            "durum": "Kampüsün konumuna 10 km'den daha yakın bir mesafede KYK yurdu bulunmamaktadır.",
+            "kyk_yurtlari": [
+                { "ad": "Dışkapı Kız Öğrenci Yurdu (Altındağ)", "mesafe": "Yaklaşık 14.5 km" },
+                { "ad": "Şerife Bacı Kız Öğrenci Yurdu (Altındağ)", "mesafe": "Yaklaşık 17.5 km" },
+                { "ad": "Cebeci Kız Öğrenci Yurdu (Çankaya)", "mesafe": "Yaklaşık 23.4 km" }
+            ],
+            "notlar": "En yakın yurt seçenekleri komşu ilçelerde yer almakta olup, ulaşım için toplu taşıma planlaması yapılması gerekmektedir."
+        },
+        "adres_url": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x40820936b098ab5f:0xda9fbcfb9d1b4e08?sa=X&ved=1t:8290&ictx=111"
         "details": {
             "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Yetkin. Özellikle sağlık bilişimi alanında odaklanmış bir kadroya sahiptir.</li><li><b>Uygulamalı Eğitim:</b> Var. Üniversitenin sağlık odaklı yapısı, bu alandaki yazılım ve güvenlik uygulamaları için farklı bir bakış açısı sunabilir.</li><li><b>İngilizce Desteği:</b> Var. Sunulan isteğe bağlı hazırlık eğitimi, uluslararası sağlık teknolojileri ve bilişim standartlarını takip etmeniz için bir avantajdır.</li></ul>",
             "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> Güçlü (Sağlık Alanında). Üniversitenin kurucu vakfı aracılığıyla önde gelen özel hastane grupları (Liv Hospital, Medical Park vb.) ile olan ilişkisi, staj ve kariyer için önemli bir ağ sunar.</li><li><b>Teknopark:</b> Yok.</li></ul>",
