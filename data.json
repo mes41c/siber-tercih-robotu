@@ -224,14 +224,46 @@
             "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Aktif.</li><li><b>Ulaşım Kolaylığı:</b> Orta (Şehir merkezine biraz uzak, özel servisler ve otobüsler).</li></ul>",
             "finance": "<ul><li><b>Yurt İmkanı:</b> Var (Kampüs içinde yurt imkanları).</li><li><b>Ek Burs Olanakları:</b> Var.</li><li><b>Şehir Yaşam Maliyeti:</b> Orta.</li></ul>",
             "barinma": {
-                "durum": "Kampüse yürüme mesafesinde ve yakın konumda çok sayıda KYK yurdu seçeneği bulunmaktadır.",
+                "durum": "Kampüse yürüme mesafesinde ve yakın çevrede çeşitli KYK yurt seçenekleri bulunmaktadır. Bu durum, ulaşım maliyetini ve zamanını önemli ölçüde azaltmaktadır.",
                 "kyk_yurtlari": [
-                    { "ad": "Bağlıca Kız Öğrenci Yurdu", "mesafe": "1.1 km", "not": "Kampüse en yakın KYK yurdudur. Yürüme mesafesindedir." },
-                    { "ad": "Bağlıca İrfan Kartal Erkek Öğrenci Yurdu", "mesafe": "6.6 km", "not": "Erkek öğrenciler için en yakın seçenektir." },
-                    { "ad": "Etimesgut Safiye Erol Kız Yurdu", "mesafe": "9.2 km", "not": "Kız öğrenciler için yakın bir alternatiftir." },
-                    { "ad": "ETİMESGUT ERYAMAN YURDU (Kız)", "mesafe": "18.1 km", "not": "Daha uzak bir seçenektir." }
+                    {
+                        "ad": "Bağlıca Kız Öğrenci Yurdu",
+                        "cinsiyet": "Kız",
+                        "adres": "Bağlıca, Hilal Cd., 06790 Etimesgut/Ankara",
+                        "ulasim": {
+                            "mesafe_km": 1.1,
+                            "aracla_dk": 3,
+                            "toplu_tasima_dk": 15
+                        },
+                        "harita_url": "https://www.google.com/maps/search/?api=1&query=Bağlıca+Kız+Öğrenci+Yurdu+Ankara",
+                        "not": "Kampüse en yakın KYK yurdudur ve yürüme mesafesindedir."
+                    },
+                    {
+                        "ad": "Bağlıca İrfan Kartal Erkek Öğrenci Yurdu",
+                        "cinsiyet": "Erkek",
+                        "adres": "Yeni Bağlıca, Bağlıca Bulvarı, 06790 Etimesgut/Ankara",
+                        "ulasim": {
+                            "mesafe_km": 6.6,
+                            "aracla_dk": 10,
+                            "toplu_tasima_dk": 25
+                        },
+                        "harita_url": "https://www.google.com/maps/search/?api=1&query=Bağlıca+İrfan+Kartal+Erkek+Öğrenci+Yurdu",
+                        "not": "Erkek öğrenciler için en yakın ve popüler seçeneklerden biridir."
+                    },
+                    {
+                        "ad": "Etimesgut Safiye Erol Kız Yurdu",
+                        "cinsiyet": "Kız",
+                        "adres": "Süvari, Çınar Cd, 06794 Etimesgut/Ankara",
+                        "ulasim": {
+                            "mesafe_km": 9.2,
+                            "aracla_dk": 15,
+                            "toplu_tasima_dk": 35
+                        },
+                        "harita_url": "https://www.google.com/maps/search/?api=1&query=Etimesgut+Safiye+Erol+Kız+Yurdu",
+                        "not": "Kız öğrenciler için yakın bir alternatiftir ve tek vesait ile ulaşım mümkündür."
+                    }
                 ],
-                "notlar": "Yurtların mesafeleri, kampüse olan yakınlıklarına göre kategorize edilmiştir."
+                "notlar": "Ulaşım süreleri, trafik yoğunluğuna ve kullanılan toplu taşıma hattına göre değişiklik gösterebilir. Mesafe ve süreler, üniversitenin Bağlıca kampüsü baz alınarak yaklaşık olarak hesaplanmıştır."
             },
             "adres_url": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x14d3393901ffae4b:0x1575d53f930351b6?sa=X&ved=1t:8290&ictx=111"
         },
@@ -256,15 +288,46 @@
             "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Gelişmekte Olan (Teknoloji, girişimcilik ve üretim odaklı).</li><li><b>Ulaşım Kolaylığı:</b> İyi (Metro ve otobüs hatları üzerinde).</li></ul>",
             "finance": "<ul><li><b>Yurt İmkanı:</b> Çevrede geniş özel ve KYK yurt seçenekleri mevcut.</li><li><b>Ek Burs Olanakları:</b> Var (OSTİM Vakfı ve sanayiciler tarafından desteklenen burslar).</li><li><b>Şehir Yaşam Maliyeti:</b> Orta.</li></ul>",
             "barinma": {
-                "durum": "Üniversiteye ait yurt bulunmamaktadır.",
+                "durum": "Üniversiteye ait yurt bulunmamaktadır. Ancak OSTİM Metro istasyonuna yakınlığı, Ankara'nın farklı bölgelerindeki yurtlardan ulaşımı kolaylaştırmaktadır.",
                 "kyk_yurtlari": [
-                    { "ad": "Ankara Yenimahalle KYK Kız Yurdu", "adres": "Yeşilevler Mahallesi 934 Cadde No: 2/2 Yenimahalle Merkez - Ankara" },
-                    { "ad": "Ankara Zübeyde Hanım KYK Kız Yurdu", "adres": "Beştepeler Mahallesi Meriç Sokak No: 9 Beştepe - Ankara" },
-                    { "ad": "Yenimahalle Beştepe KYK Kız Yurdu", "adres": "Beştepeler Mahallesi Meriç Sokak No:11 Yenimahalle - Ankara" },
-                    { "ad": "Gazi KYK Kız Öğrenci Yurdu", "adres": "Beştepe Mahallesi Alparslan Türkeş Caddesi No:3 Yenimahalle - Ankara" },
-                    { "ad": "Hacı Ömer Sabancı KYK Kız Yurdu", "adres": "Emniyet Mahallesi Boğaziçi Sokak No:4 Yenimahalle - Ankara" }
+                    {
+                        "ad": "Ankara Yenimahalle KYK Kız Yurdu",
+                        "cinsiyet": "Kız",
+                        "adres": "Yeşilevler Mahallesi 934 Cadde No: 2/2 Yenimahalle Merkez - Ankara",
+                        "ulasim": {
+                            "mesafe_km": 4.8,
+                            "aracla_dk": 10,
+                            "toplu_tasima_dk": 25
+                        },
+                        "harita_url": "https://www.google.com/maps/search/?api=1&query=Ankara+Yenimahalle+KYK+Kız+Yurdu",
+                        "not": "Metro hattı üzerinden aktarma ile kolay ulaşım imkanı sunar."
+                    },
+                    {
+                        "ad": "Yenimahalle Beştepe KYK Kız Yurdu",
+                        "cinsiyet": "Kız",
+                        "adres": "Beştepeler Mahallesi Meriç Sokak No:11 Yenimahalle - Ankara",
+                        "ulasim": {
+                            "mesafe_km": 7.5,
+                            "aracla_dk": 15,
+                            "toplu_tasima_dk": 35
+                        },
+                        "harita_url": "https://www.google.com/maps/search/?api=1&query=Yenimahalle+Beştepe+KYK+Kız+Yurdu",
+                        "not": "Gazi Mahallesi ve Beştepe civarındaki sosyal imkanlara yakındır."
+                    },
+                    {
+                        "ad": "Mehmet Akif Ersoy KYK Erkek Öğrenci Yurdu",
+                        "cinsiyet": "Erkek",
+                        "adres": "Beşevler/Emniyet Mah., Yenimahalle",
+                        "ulasim": {
+                            "mesafe_km": 8.1,
+                            "aracla_dk": 18,
+                            "toplu_tasima_dk": 30
+                        },
+                        "harita_url": "https://www.google.com/maps/search/?api=1&query=Mehmet+Akif+Ersoy+KYK+Erkek+Öğrenci+Yurdu+Ankara",
+                        "not": "Ankaray ve otobüs hatlarına yakınlığı ile ulaşım avantajı sağlar."
+                    }
                 ],
-                "notlar": "Tüm yurtlar üniversitenin bulunduğu Yenimahalle ilçesi sınırları içerisindedir."
+                "notlar": "Tüm yurtlar üniversitenin bulunduğu Yenimahalle ilçesi sınırları içerisinde veya komşu ilçelerde yer almaktadır. Ulaşım için metro ana hat olarak kullanılabilir."
             },
             "adres_url": "https://www.bing.com/maps?where=100.%20Y%C4%B1l%20Bulvar%C4%B1%2C%2055%2FF%2C%20Yenimahalle%2C%20Ankara%2006374%2C%20TR"
         },
@@ -329,19 +392,24 @@
             "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Gelişmekte olan.</li><li><b>Ulaşım Kolaylığı:</b> Çok İyi (Ankara'nın merkezinde, Ulus'ta).</li></ul>",
             "finance": "<ul><li><b>Yurt İmkanı:</b> Üniversite yurdu yok, çevrede özel ve KYK seçenekleri mevcut.</li><li><b>Ek Burs Olanakları:</b> Var.</li><li><b>Şehir Yaşam Maliyeti:</b> Orta.</li></ul>",
             "barinma": {
-                "durum": "Kampüsün merkezi konumu sayesinde 5 km'den daha yakın mesafede çok sayıda KYK yurdu bulunmaktadır.",
+                "durum": "Kampüsün Ankara'nın tarihi merkezi olan Ulus'taki konumu, 5 km'den daha yakın mesafede çok sayıda KYK yurduna erişim imkanı sağlamaktadır.",
                 "kyk_yurtlari": [
-                    { "ad": "Yunus Emre Erkek Öğrenci Yurdu (Altındağ)", "mesafe": "1.3 km" },
-                    { "ad": "KYK Hüseyin Gazi Erkek Öğrenci Yurdu (Altındağ)", "mesafe": "1.6 km" },
-                    { "ad": "KYK Cebeci Erkek Öğrenci Yurdu (Çankaya)", "mesafe": "2.2 km" },
-                    { "ad": "Cebeci Kız Öğrenci Yurdu (Çankaya)", "mesafe": "2.7 km" },
-                    { "ad": "Gazi Kız Öğrenci Yurdu (Yenimahalle)", "mesafe": "4.9 km" },
-                    { "ad": "Mehmet Akif Ersoy KYK Erkek Öğrenci Yurdu (Yenimahalle)", "mesafe": "7.3 km" },
-                    { "ad": "Emine Şerife Hanım KYK Kız Öğrenci Yurdu (Çankaya - Beytepe)", "mesafe": "17.9 km" }
+                    {
+                        "ad": "Cebeci Kız Öğrenci Yurdu (Çankaya)",
+                        "cinsiyet": "Kız",
+                        "adres": "Cebeci, Cemal Gürsel Cd., Çankaya/Ankara",
+                        "ulasim": {
+                            "mesafe_km": 2.7,
+                            "aracla_dk": 10,
+                            "toplu_tasima_dk": 22
+                        },
+                        "harita_url": "https://www.google.com/maps/search/?api=1&query=Cebeci+Kız+Öğrenci+Yurdu+Ankara",
+                        "not": "Ankara Üniversitesi Cebeci kampüsüne ve Kurtuluş Parkı'na yakındır."
+                    }
                 ],
-                "notlar": "Ulaşım için merkezi otobüs ve tren hatları (Ankaray) kullanılabilir."
+                "notlar": "Kampüsün merkezi konumu sayesinde otobüs, dolmuş ve tren (Ankaray) hatları ile yurtlara ulaşım oldukça çeşitlidir."
             },
-            "adres_url": "https://maps.app.goo.gl/W2z3i71BgbAcZYPr7"
+                "adres_url": "https://maps.app.goo.gl/W2z3i71BgbAcZYPr7"
         },
         "scores": { "academic": 2, "practical": 3, "english": 4, "career": 2, "technopark": 1, "transport": 5, "social": 2 }
     },
@@ -499,26 +567,6 @@
         "scores": { "academic": 4, "practical": 4, "english": 5, "career": 4, "technopark": 4, "transport": 5, "social": 4 }
     },
     {
-        "id": 28,
-        "name": "İstanbul Üniversitesi-Cerrahpaşa",
-        "program": "Teknik Bilimler MYO (Bilgisayar Programcılığı)",
-        "city": "İstanbul",
-        "type": "Devlet",
-        "teaching": "Örgün",
-        "rank2024": 253940,
-        "rank2023": 238151,
-        "rank2022": 215062,
-        "curriculum_url": "https://bilgisayarteknikbilimlermyo.iuc.edu.tr/tr/content/egitim/ders-programi#6A0062004200510056006B00750036004E004D0073003100",
-        "yok_atlas_url": "https://yokatlas.yok.gov.tr/onlisans.php?y=210150116",
-        "details": {
-            "academic": "<ul><li><b>Akademisyen Kadrosu:</b> Deneyimli (Türkiye'nin en köklü üniversitelerinden birinin akademik geleneği).</li><li><b>Uygulamalı Eğitim:</b> Var (Büyükçekmece kampüsünde standart bilgisayar laboratuvarları).</li><li><b>İngilizce Desteği:</b> Standart (Program dili Türkçe, üniversite genelinde hazırlık okuma imkanı).</li></ul>",
-            "career": "<ul><li><b>Staj Programı:</b> Zorunlu.</li><li><b>Sektör İşbirlikleri:</b> Üniversitenin geniş sanayi ve kamu kurumları ağı üzerinden staj ve kariyer imkanları.</li><li><b>Teknopark:</b> Var (İÜC Teknokent, Avcılar kampüsünde yer alır ve teknoloji firmalarına ev sahipliği yapar).</li></ul>",
-            "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Aktif (Üniversite genelinde çok sayıda sosyal ve teknik öğrenci kulübü).</li><li><b>Ulaşım Kolaylığı:</b> Orta (Büyükçekmece kampüsüne Metrobüs ve otobüs hatları ile aktarmalı ulaşım).</li></ul>",
-            "finance": "<ul><li><b>Yurt İmkanı:</b> Sınırlı (Kampüs çevresinde ve Avcılar'da KYK yurt seçenekleri).</li><li><b>Şehir Yaşam Maliyeti:</b> Yüksek.</li></ul>"
-        },
-        "scores": { "academic": 3, "practical": 2, "english": 1, "career": 2, "technopark": 4, "transport": 3, "social": 3 }
-    },
-    {
         "id": 29,
         "name": "İstanbul Bilgi Üniversitesi",
         "program": "MYO (Bilgisayar Programcılığı - İÖ - Burslu)",
@@ -621,13 +669,44 @@
             "barinma": {
                 "durum": "Kampüse en yakın KYK yurtları Etimesgut ve Yenimahalle ilçelerinde bulunmaktadır.",
                 "kyk_yurtlari": [
-                    { "ad": "Bağlıca Kız Öğrenci Yurdu", "adres": "Bağlıca, Hilal Cd., 06790 Etimesgut/Ankara" },
-                    { "ad": "Etimesgut Safiye Erol Kız Yurdu", "adres": "Süvari, Çınar Cd, 06794 Etimesgut/Ankara" },
-                    { "ad": "ETİMESGUT ERYAMAN YURDU (Kız)", "adres": "Yeşilova Mahallesi, Eryaman, 4020. Sk. No :8, 06160 Etimesgut/Ankara" },
-                    { "ad": "Bağlıca İrfan Kartal Erkek Öğrenci Yurdu", "adres": "Yeni Bağlıca, Bağlıca Bulvarı, 06790 Etimesgut/Ankara" },
-                    { "ad": "Mehmet Akif Ersoy KYK Erkek Öğrenci Yurdu", "adres": "Beşevler/Emniyet Mah., Yenimahalle" }
-                ],
-                "notlar": "Kampüs, OSB içinde yer aldığı için yurtlar genellikle toplu taşıma ile ulaşım gerektiren mesafelerdedir."
+                {
+                    "ad": "Bağlıca Kız Öğrenci Yurdu",
+                    "cinsiyet": "Kız",
+                    "adres": "Bağlıca, Hilal Cd., 06790 Etimesgut/Ankara",
+                    "ulasim": {
+                        "mesafe_km": 22.5,
+                        "aracla_dk": 25,
+                        "toplu_tasima_dk": 60
+                    },
+                    "harita_url": "https://www.google.com/maps/search/?api=1&query=Bağlıca+Kız+Öğrenci+Yurdu+Ankara",
+                    "not": "Ulaşım için OSB'ye giden özel servisler veya EGO otobüsleri kullanılmalıdır."
+                },
+                {
+                    "ad": "Bağlıca İrfan Kartal Erkek Öğrenci Yurdu",
+                    "cinsiyet": "Erkek",
+                    "adres": "Yeni Bağlıca, Bağlıca Bulvarı, 06790 Etimesgut/Ankara",
+                    "ulasim": {
+                        "mesafe_km": 24.1,
+                        "aracla_dk": 28,
+                        "toplu_tasima_dk": 65
+                    },
+                    "harita_url": "https://www.google.com/maps/search/?api=1&query=Bağlıca+İrfan+Kartal+Erkek+Öğrenci+Yurdu",
+                    "not": "Ulaşım planlaması, ders saatleri göz önünde bulundurularak dikkatli yapılmalıdır."
+                },
+                {
+                    "ad": "Etimesgut Safiye Erol Kız Yurdu",
+                    "cinsiyet": "Kız",
+                    "adres": "Süvari, Çınar Cd, 06794 Etimesgut/Ankara",
+                    "ulasim": {
+                        "mesafe_km": 26.7,
+                        "aracla_dk": 30,
+                        "toplu_tasima_dk": 70
+                    },
+                    "harita_url": "https://www.google.com/maps/search/?api=1&query=Etimesgut+Safiye+Erol+Kız+Yurdu",
+                    "not": "Kampüse olan uzaklık nedeniyle ulaşım süresi ve maliyeti önemli bir faktördür."
+                }
+            ],
+            "notlar": "Kampüsün konumu, barınma ve ulaşım planlamasının önceden detaylı bir şekilde yapılmasını gerektirmektedir. Üniversitenin servis imkanları mutlaka araştırılmalıdır."
         },
         "adres_url": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x14d31ddd42ad76ad:0x52c3c0797eabf361?sa=X&ved=1t:8290&ictx=111"
         },
@@ -673,15 +752,46 @@
             "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Gelişmekte (Siber Güvenlik, Bilişim ve Teknoloji kulüpleri mevcut ve aktif).</li><li><b>Ulaşım Kolaylığı:</b> İyi (Metro istasyonuna yakın konum ve otobüs hatları).</li></ul>",
             "finance": "<ul><li><b>Yurt İmkanı:</b> Sınırlı (Üniversite çevresindeki özel ve KYK yurtları seçenekleri değerlendirilebilir).</li><li><b>Şehir Yaşam Maliyeti:</b> Orta.</li></ul>",
             "barinma": {
-                "durum": "Üniversiteye ait yurt bulunmamaktadır.",
+                "durum": "Üniversiteye ait yurt bulunmamaktadır. Ancak OSTİM Metro istasyonuna yakınlığı, Ankara'nın farklı bölgelerindeki yurtlardan ulaşımı kolaylaştırmaktadır.",
                 "kyk_yurtlari": [
-                    { "ad": "Ankara Yenimahalle KYK Kız Yurdu", "adres": "Yeşilevler Mahallesi 934 Cadde No: 2/2 Yenimahalle Merkez - Ankara" },
-                    { "ad": "Ankara Zübeyde Hanım KYK Kız Yurdu", "adres": "Beştepeler Mahallesi Meriç Sokak No: 9 Beştepe - Ankara" },
-                    { "ad": "Yenimahalle Beştepe KYK Kız Yurdu", "adres": "Beştepeler Mahallesi Meriç Sokak No:11 Yenimahalle - Ankara" },
-                    { "ad": "Gazi KYK Kız Öğrenci Yurdu", "adres": "Beştepe Mahallesi Alparslan Türkeş Caddesi No:3 Yenimahalle - Ankara" },
-                    { "ad": "Hacı Ömer Sabancı KYK Kız Yurdu", "adres": "Emniyet Mahallesi Boğaziçi Sokak No:4 Yenimahalle - Ankara" }
+                    {
+                        "ad": "Ankara Yenimahalle KYK Kız Yurdu",
+                        "cinsiyet": "Kız",
+                        "adres": "Yeşilevler Mahallesi 934 Cadde No: 2/2 Yenimahalle Merkez - Ankara",
+                        "ulasim": {
+                            "mesafe_km": 4.8,
+                            "aracla_dk": 10,
+                            "toplu_tasima_dk": 25
+                        },
+                        "harita_url": "https://www.google.com/maps/search/?api=1&query=Ankara+Yenimahalle+KYK+Kız+Yurdu",
+                        "not": "Metro hattı üzerinden aktarma ile kolay ulaşım imkanı sunar."
+                    },
+                    {
+                        "ad": "Yenimahalle Beştepe KYK Kız Yurdu",
+                        "cinsiyet": "Kız",
+                        "adres": "Beştepeler Mahallesi Meriç Sokak No:11 Yenimahalle - Ankara",
+                        "ulasim": {
+                            "mesafe_km": 7.5,
+                            "aracla_dk": 15,
+                            "toplu_tasima_dk": 35
+                        },
+                        "harita_url": "https://www.google.com/maps/search/?api=1&query=Yenimahalle+Beştepe+KYK+Kız+Yurdu",
+                        "not": "Gazi Mahallesi ve Beştepe civarındaki sosyal imkanlara yakındır."
+                    },
+                    {
+                        "ad": "Mehmet Akif Ersoy KYK Erkek Öğrenci Yurdu",
+                        "cinsiyet": "Erkek",
+                        "adres": "Beşevler/Emniyet Mah., Yenimahalle",
+                        "ulasim": {
+                            "mesafe_km": 8.1,
+                            "aracla_dk": 18,
+                            "toplu_tasima_dk": 30
+                        },
+                        "harita_url": "https://www.google.com/maps/search/?api=1&query=Mehmet+Akif+Ersoy+KYK+Erkek+Öğrenci+Yurdu+Ankara",
+                        "not": "Ankaray ve otobüs hatlarına yakınlığı ile ulaşım avantajı sağlar."
+                    }
                 ],
-                "notlar": "Tüm yurtlar üniversitenin bulunduğu Yenimahalle ilçesi sınırları içerisindedir."
+                "notlar": "Tüm yurtlar üniversitenin bulunduğu Yenimahalle ilçesi sınırları içerisinde veya komşu ilçelerde yer almaktadır. Ulaşım için metro ana hat olarak kullanılabilir."
             },
             "adres_url": "https://www.bing.com/maps?where=100.%20Y%C4%B1l%20Bulvar%C4%B1%2C%2055%2FF%2C%20Yenimahalle%2C%20Ankara%2006374%2C%20TR"
         },
@@ -729,16 +839,46 @@
             "barinma": {
                 "durum": "Kampüsün merkezi konumu, 5 km'den daha yakın mesafede hem kız hem de erkek öğrenciler için çeşitli KYK yurtlarına erişim imkanı sağlar.",
                 "kyk_yurtlari": [
-                    { "ad": "Cebeci Erkek Öğrenci Yurdu (Çankaya)", "mesafe": "2.2 km" },
-                    { "ad": "Cebeci Kız Öğrenci Yurdu (Çankaya)", "mesafe": "2.8 km" },
-                    { "ad": "Hüseyin Gazi Erkek Öğrenci Yurdu (Altındağ)", "mesafe": "2.9 km" },
-                    { "ad": "Hacı Ömer Sabancı KYK Kız Yurdu (Yenimahalle)", "mesafe": "4.5 km" },
-                    { "ad": "Gazi KYK Kız Öğrenci Yurdu (Yenimahalle)", "mesafe": "4.8 km" },
-                    { "ad": "Ankara Zübeyde Hanım KYK Kız Yurdu (Yenimahalle)", "mesafe": "6.5 km" }
+                    {
+                        "ad": "Cebeci Erkek Öğrenci Yurdu (Çankaya)",
+                        "cinsiyet": "Erkek",
+                        "adres": "Cebeci, Cemal Gürsel Cd., Çankaya/Ankara",
+                        "ulasim": {
+                            "mesafe_km": 2.2,
+                            "aracla_dk": 8,
+                            "toplu_tasima_dk": 15
+                        },
+                        "harita_url": "https://www.google.com/maps/search/?api=1&query=Cebeci+Erkek+Öğrenci+Yurdu+Ankara",
+                        "not": "Maltepe istasyonundan Ankaray ile Kurtuluş veya Dikimevi istasyonlarına kısa sürede ulaşılabilir."
+                    },
+                    {
+                        "ad": "Cebeci Kız Öğrenci Yurdu (Çankaya)",
+                        "cinsiyet": "Kız",
+                        "adres": "Cebeci, Cemal Gürsel Cd., Çankaya/Ankara",
+                        "ulasim": {
+                            "mesafe_km": 2.8,
+                            "aracla_dk": 10,
+                            "toplu_tasima_dk": 18
+                        },
+                        "harita_url": "https://www.google.com/maps/search/?api=1&query=Cebeci+Kız+Öğrenci+Yurdu+Ankara",
+                        "not": "Ankaray metro hattı, bu yurda ulaşım için en pratik yöntemdir."
+                    },
+                    {
+                        "ad": "Gazi KYK Kız Öğrenci Yurdu (Yenimahalle)",
+                        "cinsiyet": "Kız",
+                        "adres": "Beştepe Mahallesi Alparslan Türkeş Caddesi No:3 Yenimahalle - Ankara",
+                        "ulasim": {
+                            "mesafe_km": 4.8,
+                            "aracla_dk": 12,
+                            "toplu_tasima_dk": 25
+                        },
+                        "harita_url": "https://www.google.com/maps/search/?api=1&query=Gazi+KYK+Kız+Öğrenci+Yurdu+Yenimahalle",
+                        "not": "Ankaray Maltepe durağından Beşevler durağına geçerek ulaşım sağlanabilir."
+                    }
                 ],
-                "notlar": "Yurtlar, farklı ilçelerde yer almakla birlikte, merkezi konum sayesinde ulaşım genellikle kolaydır."
+                "notlar": "Yurtlar, farklı ilçelerde yer almakla birlikte, kampüsün ana toplu taşıma hatları üzerinde olması sayesinde ulaşım genellikle kolay ve hızlıdır."
             },
-            "adres_url": "https://maps.app.goo.gl/ftYPT9XAHUKPqQxEA"
+                "adres_url": "https://maps.app.goo.gl/ftYPT9XAHUKPqQxEA"
         },
         "scores": { "academic": 3, "practical": 3, "english": 3, "career": 2, "technopark": 1, "transport": 4, "social": 2 }
     },
@@ -826,14 +966,44 @@
             "barinma": {
                 "durum": "Kampüsün merkezi konumu, 5 km'den daha yakın mesafede hem kız hem de erkek öğrenciler için çeşitli KYK yurtlarına erişim imkanı sağlar.",
                 "kyk_yurtlari": [
-                    { "ad": "Cebeci Erkek Öğrenci Yurdu (Çankaya)", "mesafe": "2.2 km" },
-                    { "ad": "Cebeci Kız Öğrenci Yurdu (Çankaya)", "mesafe": "2.8 km" },
-                    { "ad": "Hüseyin Gazi Erkek Öğrenci Yurdu (Altındağ)", "mesafe": "2.9 km" },
-                    { "ad": "Hacı Ömer Sabancı KYK Kız Yurdu (Yenimahalle)", "mesafe": "4.5 km" },
-                    { "ad": "Gazi KYK Kız Öğrenci Yurdu (Yenimahalle)", "mesafe": "4.8 km" },
-                    { "ad": "Ankara Zübeyde Hanım KYK Kız Yurdu (Yenimahalle)", "mesafe": "6.5 km" }
+                    {
+                        "ad": "Cebeci Erkek Öğrenci Yurdu (Çankaya)",
+                        "cinsiyet": "Erkek",
+                        "adres": "Cebeci, Cemal Gürsel Cd., Çankaya/Ankara",
+                        "ulasim": {
+                            "mesafe_km": 2.2,
+                            "aracla_dk": 8,
+                            "toplu_tasima_dk": 15
+                        },
+                        "harita_url": "https://www.google.com/maps/search/?api=1&query=Cebeci+Erkek+Öğrenci+Yurdu+Ankara",
+                        "not": "Maltepe istasyonundan Ankaray ile Kurtuluş veya Dikimevi istasyonlarına kısa sürede ulaşılabilir."
+                    },
+                    {
+                        "ad": "Cebeci Kız Öğrenci Yurdu (Çankaya)",
+                        "cinsiyet": "Kız",
+                        "adres": "Cebeci, Cemal Gürsel Cd., Çankaya/Ankara",
+                        "ulasim": {
+                            "mesafe_km": 2.8,
+                            "aracla_dk": 10,
+                            "toplu_tasima_dk": 18
+                        },
+                        "harita_url": "https://www.google.com/maps/search/?api=1&query=Cebeci+Kız+Öğrenci+Yurdu+Ankara",
+                        "not": "Ankaray metro hattı, bu yurda ulaşım için en pratik yöntemdir."
+                    },
+                    {
+                        "ad": "Gazi KYK Kız Öğrenci Yurdu (Yenimahalle)",
+                        "cinsiyet": "Kız",
+                        "adres": "Beştepe Mahallesi Alparslan Türkeş Caddesi No:3 Yenimahalle - Ankara",
+                        "ulasim": {
+                            "mesafe_km": 4.8,
+                            "aracla_dk": 12,
+                            "toplu_tasima_dk": 25
+                        },
+                        "harita_url": "https://www.google.com/maps/search/?api=1&query=Gazi+KYK+Kız+Öğrenci+Yurdu+Yenimahalle",
+                        "not": "Ankaray Maltepe durağından Beşevler durağına geçerek ulaşım sağlanabilir."
+                    }
                 ],
-                "notlar": "Yurtlar, farklı ilçelerde yer almakla birlikte, merkezi konum sayesinde ulaşım genellikle kolaydır."
+                "notlar": "Yurtlar, farklı ilçelerde yer almakla birlikte, kampüsün ana toplu taşıma hatları üzerinde olması sayesinde ulaşım genellikle kolay ve hızlıdır."
             },
             "adres_url": "https://maps.app.goo.gl/ftYPT9XAHUKPqQxEA"
         },
@@ -879,15 +1049,35 @@
             "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Orta. Ders saatleri nedeniyle kulüp faaliyetlerine katılım daha sınırlı olabilir.</li><li><b>Ulaşım Kolaylığı:</b> Orta. Şehir merkezine biraz uzaktır, ulaşım özel servisler ve otobüslerle sağlanır.</li></ul>",
             "finance": "<ul><li><b>Yurt İmkanı:</b> Var (Kampüs içinde yurt imkanları mevcuttur).</li><li><b>Şehir Yaşam Maliyeti:</b> Orta.</li></ul>",
             "barinma": {
-                "durum": "Kampüse yürüme mesafesinde ve yakın konumda çok sayıda KYK yurdu seçeneği bulunmaktadır.",
+                "durum": "Kampüse yürüme mesafesinde ve yakın çevrede çeşitli KYK yurt seçenekleri bulunmaktadır. Bu durum, ulaşım maliyetini ve zamanını önemli ölçüde azaltmaktadır.",
                 "kyk_yurtlari": [
-                    { "ad": "Bağlıca Kız Öğrenci Yurdu", "mesafe": "1.1 km", "not": "Kampüse en yakın KYK yurdudur. Yürüme mesafesindedir." },
-                    { "ad": "Bağlıca İrfan Kartal Erkek Öğrenci Yurdu", "mesafe": "6.6 km", "not": "Erkek öğrenciler için en yakın seçenektir." },
-                    { "ad": "Etimesgut Safiye Erol Kız Yurdu", "mesafe": "9.2 km", "not": "Kız öğrenciler için yakın bir alternatiftir." },
-                    { "ad": "ETİMESGUT ERYAMAN YURDU (Kız)", "mesafe": "18.1 km", "not": "Daha uzak bir seçenektir." }
+                    {
+                        "ad": "Bağlıca Kız Öğrenci Yurdu",
+                        "cinsiyet": "Kız",
+                        "adres": "Bağlıca, Hilal Cd., 06790 Etimesgut/Ankara",
+                        "ulasim": {
+                            "mesafe_km": 1.1,
+                            "aracla_dk": 3,
+                            "toplu_tasima_dk": 15
+                        },
+                        "harita_url": "https://www.google.com/maps/search/?api=1&query=Bağlıca+Kız+Öğrenci+Yurdu+Ankara",
+                        "not": "Kampüse en yakın KYK yurdudur ve yürüme mesafesindedir."
+                    },
+                    {
+                        "ad": "Etimesgut Safiye Erol Kız Yurdu",
+                        "cinsiyet": "Kız",
+                        "adres": "Süvari, Çınar Cd, 06794 Etimesgut/Ankara",
+                        "ulasim": {
+                            "mesafe_km": 9.2,
+                            "aracla_dk": 15,
+                           "toplu_tasima_dk": 35
+                        },
+                        "harita_url": "https://www.google.com/maps/search/?api=1&query=Etimesgut+Safiye+Erol+Kız+Yurdu",
+                        "not": "Kız öğrenciler için yakın bir alternatiftir ve tek vesait ile ulaşım mümkündür."
+                    }
                 ],
-                "notlar": "Yurtların mesafeleri, kampüse olan yakınlıklarına göre kategorize edilmiştir."
-            },
+                "notlar": "Ulaşım süreleri, trafik yoğunluğuna ve kullanılan toplu taşıma hattına göre değişiklik gösterebilir. Mesafe ve süreler, üniversitenin Bağlıca kampüsü baz alınarak yaklaşık olarak hesaplanmıştır."
+        },
             "adres_url": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x14d3393901ffae4b:0x1575d53f930351b6?sa=X&ved=1t:8290&ictx=111"
         },
         "scores": { "academic": 3, "practical": 3, "english": 2, "career": 3, "technopark": 4, "transport": 3, "social": 2 }
@@ -911,13 +1101,34 @@
             "campus": "<ul><li><b>Öğrenci Kulüpleri:</b> Gelişmekte. Üniversitenin butik yapısı, daha odaklı kulüp faaliyetlerine imkan tanır.</li><li><b>Ulaşım Kolaylığı:</b> Çok İyi. Balgat'taki merkezi konumuyla ulaşım oldukça kolaydır.</li></ul>",
             "finance": "<ul><li><b>Yurt İmkanı:</b> Anlaşmalı yurtlar bulunmaktadır.</li><li><b>Şehir Yaşam Maliyeti:</b> Orta.</li></ul>",
             "barinma": {
-                "durum": "Kampüsün konumuna 10 km'den daha yakın bir mesafede KYK yurdu bulunmamaktadır.",
+                "durum": "Kampüsün Balgat'taki konumuna yürüme mesafesinde KYK yurdu bulunmamaktadır. Öğrenciler genellikle çevre ilçelerdeki yurtları veya özel yurtları tercih etmektedir.",
                 "kyk_yurtlari": [
-                    { "ad": "Dışkapı Kız Öğrenci Yurdu (Altındağ)", "mesafe": "Yaklaşık 14.5 km" },
-                    { "ad": "Şerife Bacı Kız Öğrenci Yurdu (Altındağ)", "mesafe": "Yaklaşık 17.5 km" },
-                    { "ad": "Cebeci Kız Öğrenci Yurdu (Çankaya)", "mesafe": "Yaklaşık 23.4 km" }
+                    {
+                        "ad": "Emine Şerife Hanım KYK Kız Öğrenci Yurdu (Çankaya - Beytepe)",
+                        "cinsiyet": "Kız",
+                        "adres": "Üniversiteler, 1596. Cd., 06800 Çankaya/Ankara",
+                        "ulasim": {
+                            "mesafe_km": 9.8,
+                            "aracla_dk": 15,
+                            "toplu_tasima_dk": 40
+                        },
+                        "harita_url": "https://www.google.com/maps/search/?api=1&query=Emine+Şerife+Hanım+KYK+Kız+Öğrenci+Yurdu",
+                        "not": "Balgat üzerinden geçen otobüs veya dolmuş hatları ile ulaşım sağlanabilir."
+                    },
+                    {
+                        "ad": "Mehmet Akif Ersoy KYK Erkek Öğrenci Yurdu (Yenimahalle)",
+                        "cinsiyet": "Erkek",
+                        "adres": "Beşevler/Emniyet Mah., Yenimahalle",
+                        "ulasim": {
+                            "mesafe_km": 6.5,
+                            "aracla_dk": 18,
+                            "toplu_tasima_dk": 35
+                        },
+                        "harita_url": "https://www.google.com/maps/search/?api=1&query=Mehmet+Akif+Ersoy+KYK+Erkek+Öğrenci+Yurdu+Ankara",
+                        "not": "Konya yolu üzerinden geçen toplu taşıma araçları ile aktarma yapılarak ulaşılabilir."
+                    }
                 ],
-                "notlar": "En yakın yurt seçenekleri komşu ilçelerde yer almakta olup, ulaşım için toplu taşıma planlaması yapılması gerekmektedir."
+                "notlar": "Yakın konumda KYK yurdu olmaması sebebiyle özel yurtlar veya kiralık daire seçenekleri de değerlendirilmelidir. Ulaşım için otobüs ve dolmuş hatlarının güzergahları incelenmelidir."
             },
             "adres_url": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x40820936b098ab5f:0xda9fbcfb9d1b4e08?sa=X&ved=1t:8290&ictx=111"
         },
