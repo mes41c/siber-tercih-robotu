@@ -524,7 +524,7 @@ Sıralamalar Geriye Gitmeyecek, İleriye Gelebilir: Geçen sene belirli bir net 
                     detailsCell.querySelector('.tab-content.active').classList.remove('active');
                     
                     button.classList.add('active');
-                    detailsCell.querySelector(`[data-tab="${button.dataset.tab}"]`).classList.add('active');
+                    detailsCell.querySelector(`#${button.dataset.tab}`).classList.add('active');
                 });
             });
 
