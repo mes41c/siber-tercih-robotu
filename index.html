@@ -66,6 +66,50 @@
         .prediction-inputs { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }
         .prediction-inputs div { display: flex; flex-direction: column; }
         .prediction-inputs input { width: 100%; box-sizing: border-box; padding: 8px; border: 1px solid #ccc; border-radius: 4px; }
+        .dorm-details {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5px 15px; /* Dikey ve yatay boşluk */
+            margin-top: 8px;
+            font-size: 0.9em;
+        }
+        .dorm-details span {
+            display: flex;
+            align-items: center;
+        }
+        .dorm-details .fas {
+            margin-right: 6px;
+            color: var(--secondary-color);
+            width: 15px; /* İkonların hizalı durması için */
+        }
+        .dorm-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+        .dorm-gender {
+            font-size: 0.8em;
+            font-weight: bold;
+            padding: 3px 8px;
+            border-radius: 12px;
+            color: white;
+        }
+        .gender-kiz { background-color: #e63946; }
+        .gender-erkek { background-color: #1d3557; }
+        
+        .dorm-map-link {
+            font-size: 0.85em !important; /* !important ile önceliği artırıldı */
+            padding: 4px 10px;
+            background-color: #6c757d;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+        }
+        .dorm-map-link:hover {
+            background-color: #5a6268;
+        }
         .details-tabs {
             display: flex;
             border-bottom: 2px solid var(--border-color);
@@ -424,22 +468,19 @@ Sıralamalar Geriye Gitmeyecek, İleriye Gelebilir: Geçen sene belirli bir net 
             const detailsRow = rowElement.nextElementSibling;
             const detailsCell = detailsRow.querySelector('td');
 
-            // Eğer satır zaten açıksa, kapat ve fonksiyondan çık.
             if (detailsRow.classList.contains('show')) {
                 rowElement.classList.remove('active');
                 detailsRow.classList.remove('show');
-                detailsCell.innerHTML = ''; // Performans için içeriği temizle
+                detailsCell.innerHTML = '';
                 return;
             }
 
-            // Mevcut açık olan diğer tüm detay satırlarını kapat.
             document.querySelectorAll('.details-row.show').forEach(openRow => {
                 openRow.classList.remove('show');
                 openRow.previousElementSibling.classList.remove('active');
                 openRow.querySelector('td').innerHTML = '';
             });
             
-            // Tıklandığında detay kartının HTML'ini dinamik olarak oluştur.
             const ranksHTML = `<b>24:</b> ${university.rank2024}<br><b>23:</b> ${university.rank2023}<br><b>22:</b> ${university.rank2022}`;
             const detailsCardHTML = `
                 <div class="details-card">
@@ -477,21 +518,33 @@ Sıralamalar Geriye Gitmeyecek, İleriye Gelebilir: Geçen sene belirli bir net 
             
             detailsCell.innerHTML = detailsCardHTML;
 
-            // Barınma sekmesini verilerle doldur
+            // ===== YENİ VE GÜNCELLENMİŞ KOD BAŞLANGICI =====
             const barinmaTab = detailsCell.querySelector('#tab-barinma');
             const barinmaData = university.details.barinma;
-            const adresUrl = university.details.adres_url;
+            // Not: 'adres_url' anahtarı artık 'details' altında değil, doğrudan ana nesnede olabilir.
+            // Bu yüzden her iki olasılığı da kontrol ediyoruz.
+            const adresUrl = university.adres_url || (university.details ? university.details.adres_url : null);
 
             if (barinmaData && adresUrl) {
                 let yurtlarHTML = '';
                 if (barinmaData.kyk_yurtlari && barinmaData.kyk_yurtlari.length > 0) {
+                    
+                    // Yurt listesi yeni veri yapısına göre oluşturuluyor
                     barinmaData.kyk_yurtlari.forEach(yurt => {
+                        const cinsiyetClass = yurt.cinsiyet === 'Kız' ? 'gender-kiz' : 'gender-erkek';
                         yurtlarHTML += `
                             <li>
-                                <strong>${yurt.ad || ''}</strong>
-                                ${yurt.mesafe ? `<span>Mesafe: ${yurt.mesafe}</span>` : ''}
-                                ${yurt.adres ? `<span>Adres: ${yurt.adres}</span>` : ''}
-                                ${yurt.not ? `<span><em>Not: ${yurt.not}</em></span>` : ''}
+                                <div class="dorm-header">
+                                    <strong>${yurt.ad || ''}</strong>
+                                    ${yurt.cinsiyet ? `<span class="dorm-gender ${cinsiyetClass}">${yurt.cinsiyet}</span>` : ''}
+                                </div>
+                                <div class="dorm-details">
+                                    ${yurt.ulasim && yurt.ulasim.mesafe_km ? `<span><i class="fas fa-route"></i> Mesafe: ${yurt.ulasim.mesafe_km.toFixed(1)} km</span>` : ''}
+                                    ${yurt.ulasim && yurt.ulasim.aracla_dk ? `<span><i class="fas fa-car"></i> Araçla: ~${yurt.ulasim.aracla_dk} dk</span>` : ''}
+                                    ${yurt.ulasim && yurt.ulasim.toplu_tasima_dk ? `<span><i class="fas fa-bus"></i> Toplu Taşıma: ~${yurt.ulasim.toplu_tasima_dk} dk</span>` : ''}
+                                    ${yurt.harita_url ? `<a href="${yurt.harita_url}" target="_blank" rel="noopener noreferrer" class="dorm-map-link"><i class="fas fa-map-pin"></i> Yurda Göz At</a>` : ''}
+                                </div>
+                                ${yurt.not ? `<span style="font-size:0.9em; margin-top:8px; display:block;"><em>Not: ${yurt.not}</em></span>` : ''}
                             </li>
                         `;
                     });
@@ -502,18 +555,18 @@ Sıralamalar Geriye Gitmeyecek, İleriye Gelebilir: Geçen sene belirli bir net 
                 barinmaTab.innerHTML = `
                     <h4><i class="fas fa-map-marked-alt"></i> Kampüs Konumu</h4>
                     <p>Aşağıdaki linke tıklayarak kampüsün tam konumunu haritada görebilirsiniz.</p>
-                    <a href="${adresUrl}" target="_blank" rel="noopener noreferrer" class="btn" style="background-color: #28a745; color: white;">Haritada Göster</a>
+                    <a href="${adresUrl}" target="_blank" rel="noopener noreferrer" class="btn" style="background-color: #28a745; color: white;">Üniversiteyi Haritada Gör</a>
                     <hr style="margin: 20px 0;">
                     <h4><i class="fas fa-bed"></i> Yakın Çevredeki KYK Yurtları</h4>
                     <p>${barinmaData.durum || ''}</p>
                     <ul class="dorm-list">${yurtlarHTML}</ul>
-                    ${barinmaData.notlar ? `<div class="dorm-notes"><strong>Not:</strong> ${barinmaData.notlar}</div>` : ''}
+                    ${barinmaData.notlar ? `<div class="dorm-notes"><strong>Genel Not:</strong> ${barinmaData.notlar}</div>` : ''}
                 `;
             } else {
-                barinmaTab.innerHTML = '<p>Bu üniversite için adres ve yurt bilgisi henüz eklenmemiştir.</p>';
+                barinmaTab.innerHTML = '<p>Bu üniversite için detaylı adres ve yurt bilgisi henüz eklenmemiştir.</p>';
             }
+            // ===== YENİ VE GÜNCELLENMİŞ KOD SONU =====
 
-            // Sekme değiştirme olay dinleyicilerini ekle
             const tabButtons = detailsCell.querySelectorAll('.tab-button');
             tabButtons.forEach(button => {
                 button.addEventListener('click', (e) => {
@@ -528,7 +581,6 @@ Sıralamalar Geriye Gitmeyecek, İleriye Gelebilir: Geçen sene belirli bir net 
                 });
             });
 
-            // Detay satırını göster
             rowElement.classList.add('active');
             detailsRow.classList.add('show');
         }
