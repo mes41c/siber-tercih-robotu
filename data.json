@@ -225,6 +225,7 @@
             "finance": "<ul><li><b>Yurt İmkanı:</b> Var (Kampüs içinde yurt imkanları).</li><li><b>Ek Burs Olanakları:</b> Var.</li><li><b>Şehir Yaşam Maliyeti:</b> Orta.</li></ul>",
             "barinma": {
                 "durum": "Kampüse yürüme mesafesinde ve yakın çevrede çeşitli KYK yurt seçenekleri bulunmaktadır. Bu durum, ulaşım maliyetini ve zamanını önemli ölçüde azaltmaktadır.",
+                "campus_address": "Başkent Üniversitesi Bağlıca Kampüsü, Etimesgut, Ankara",
                 "kyk_yurtlari": [
                     {
                         "ad": "Bağlıca Kız Öğrenci Yurdu",
@@ -277,6 +278,7 @@
             "finance": "<ul><li><b>Yurt İmkanı:</b> Çevrede geniş özel ve KYK yurt seçenekleri mevcut.</li><li><b>Ek Burs Olanakları:</b> Var (OSTİM Vakfı ve sanayiciler tarafından desteklenen burslar).</li><li><b>Şehir Yaşam Maliyeti:</b> Orta.</li></ul>",
             "barinma": {
                 "durum": "Üniversiteye ait yurt bulunmamaktadır. Ancak OSTİM Metro istasyonuna yakınlığı, Ankara'nın farklı bölgelerindeki yurtlardan ulaşımı kolaylaştırmaktadır.",
+                "campus_address": "Ostim Teknik Üniversitesi, Yenimahalle, Ankara",
                 "kyk_yurtlari": [
                     {
                         "ad": "Ankara Yenimahalle KYK Kız Yurdu",
@@ -369,6 +371,7 @@
             "finance": "<ul><li><b>Yurt İmkanı:</b> Üniversite yurdu yok, çevrede özel ve KYK seçenekleri mevcut.</li><li><b>Ek Burs Olanakları:</b> Var.</li><li><b>Şehir Yaşam Maliyeti:</b> Orta.</li></ul>",
             "barinma": {
                 "durum": "Kampüsün Ankara'nın tarihi merkezi olan Ulus'taki konumu, 5 km'den daha yakın mesafede çok sayıda KYK yurduna erişim imkanı sağlamaktadır.",
+                "campus_address": "Ankara Medipol Üniversitesi, Anafartalar, Altındağ/Ankara",
                 "kyk_yurtlari": [
                     {
                         "ad": "Cebeci Kız Öğrenci Yurdu (Çankaya)",
@@ -644,6 +647,7 @@
             "finance": "<ul><li><b>Yurt İmkanı:</b> Sınırlı (Ana kampüs ve şehir merkezindeki KYK yurtları değerlendirilebilir).</li><li><b>Şehir Yaşam Maliyeti:</b> Orta.</li></ul>",
             "barinma": {
                 "durum": "Kampüse en yakın KYK yurtları Etimesgut ve Yenimahalle ilçelerinde bulunmaktadır.",
+                 "campus_address": "Hacettepe Üniversitesi Başkent OSB Teknik Bilimler MYO, Sincan, Ankara",
                 "kyk_yurtlari": [
                 {
                     "ad": "Bağlıca Kız Öğrenci Yurdu",
@@ -717,6 +721,7 @@
             "finance": "<ul><li><b>Yurt İmkanı:</b> Sınırlı (Üniversite çevresindeki özel ve KYK yurtları seçenekleri değerlendirilebilir).</li><li><b>Şehir Yaşam Maliyeti:</b> Orta.</li></ul>",
             "barinma": {
                 "durum": "Üniversiteye ait yurt bulunmamaktadır. Ancak OSTİM Metro istasyonuna yakınlığı, Ankara'nın farklı bölgelerindeki yurtlardan ulaşımı kolaylaştırmaktadır.",
+                "campus_address": "Ostim Teknik Üniversitesi, Yenimahalle, Ankara",
                 "kyk_yurtlari": [
                     {
                         "ad": "Ankara Yenimahalle KYK Kız Yurdu",
@@ -790,6 +795,7 @@
             "finance": "<ul><li><b>Yurt İmkanı:</b> Yok (Öğrenciler çevredeki özel ve KYK yurtlarını kullanmaktadır).</li><li><b>Şehir Yaşam Maliyeti:</b> Orta.</li></ul>",
             "barinma": {
                 "durum": "Kampüsün merkezi konumu, 5 km'den daha yakın mesafede hem kız hem de erkek öğrenciler için çeşitli KYK yurtlarına erişim imkanı sağlar.",
+                 "campus_address": "Ankara Bilim Üniversitesi, Maltepe, Çankaya/Ankara",
                 "kyk_yurtlari": [
                     {
                         "ad": "Cebeci Kız Öğrenci Yurdu (Çankaya)",
@@ -905,6 +911,7 @@
             "finance": "<ul><li><b>Yurt İmkanı:</b> Üniversiteye ait yurt bulunmamaktadır, öğrenciler çevredeki özel ve KYK yurtlarını kullanabilir.</li><li><b>Şehir Yaşam Maliyeti:</b> Orta.</li></ul>",
             "barinma": {
                 "durum": "Kampüsün merkezi konumu, 5 km'den daha yakın mesafede hem kız hem de erkek öğrenciler için çeşitli KYK yurtlarına erişim imkanı sağlar.",
+                "campus_address": "Ankara Bilim Üniversitesi, Maltepe, Çankaya/Ankara",
                 "kyk_yurtlari": [
                     {
                         "ad": "Cebeci Kız Öğrenci Yurdu (Çankaya)",
@@ -978,6 +985,7 @@
             "finance": "<ul><li><b>Yurt İmkanı:</b> Var (Kampüs içinde yurt imkanları mevcuttur).</li><li><b>Şehir Yaşam Maliyeti:</b> Orta.</li></ul>",
             "barinma": {
                 "durum": "Kampüse yürüme mesafesinde ve yakın çevrede çeşitli KYK yurt seçenekleri bulunmaktadır. Bu durum, ulaşım maliyetini ve zamanını önemli ölçüde azaltmaktadır.",
+                "campus_address": "Başkent Üniversitesi Bağlıca Kampüsü, Etimesgut, Ankara",
                 "kyk_yurtlari": [
                     {
                         "ad": "Bağlıca Kız Öğrenci Yurdu",
@@ -1030,6 +1038,7 @@
             "finance": "<ul><li><b>Yurt İmkanı:</b> Anlaşmalı yurtlar bulunmaktadır.</li><li><b>Şehir Yaşam Maliyeti:</b> Orta.</li></ul>",
             "barinma": {
                 "durum": "Kampüsün Balgat'taki konumuna yürüme mesafesinde KYK yurdu bulunmamaktadır. Öğrenciler genellikle çevre ilçelerdeki yurtları veya özel yurtları tercih etmektedir.",
+                "campus_address": "Yüksek İhtisas Üniversitesi, Balgat, Çankaya/Ankara",
                 "kyk_yurtlari": [
                     {
                         "ad": "Emine Şerife Hanım KYK Kız Öğrenci Yurdu (Çankaya - Beytepe)",
