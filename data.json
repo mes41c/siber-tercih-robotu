@@ -307,7 +307,7 @@
                 ],
                 "notlar": "Tüm yurtlar üniversitenin bulunduğu Yenimahalle ilçesi sınırları içerisinde veya komşu ilçelerde yer almaktadır. Ulaşım için metro ana hat olarak kullanılabilir."
             },
-            "adres_url": "https://www.bing.com/maps?where=100.%20Y%C4%B1l%20Bulvar%C4%B1%2C%2055%2FF%2C%20Yenimahalle%2C%20Ankara%2006374%2C%20TR"
+            "adres_url": "https://maps.app.goo.gl/cRp65R2KgZ5gf6hb8"
         },
         "scores": { "academic": 3, "practical": 5, "english": 1, "career": 5, "technopark": 5, "transport": 4, "social": 2 }
     },
